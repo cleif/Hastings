@@ -14,13 +14,25 @@
 		624AD24E1964881E00B54741 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 624AD24D1964881E00B54741 /* main.m */; };
 		624AD2521964881E00B54741 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 624AD2511964881E00B54741 /* AppDelegate.m */; };
 		624AD2551964881E00B54741 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624AD2531964881E00B54741 /* Main.storyboard */; };
-		624AD2581964881E00B54741 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 624AD2571964881E00B54741 /* ViewController.m */; };
 		624AD25A1964881E00B54741 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624AD2591964881E00B54741 /* Images.xcassets */; };
-		624AD2611964881E00B54741 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624AD2601964881E00B54741 /* XCTest.framework */; };
 		624AD2621964881E00B54741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624AD2411964881E00B54741 /* Foundation.framework */; };
 		624AD2631964881E00B54741 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624AD2451964881E00B54741 /* UIKit.framework */; };
-		624AD26B1964881E00B54741 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 624AD2691964881E00B54741 /* InfoPlist.strings */; };
-		624AD26D1964881E00B54741 /* HastingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 624AD26C1964881E00B54741 /* HastingsTests.m */; };
+		625F24D419648DA1005BDC64 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 625F24D219648DA1005BDC64 /* AboutViewController.m */; };
+		625F24D519648DA1005BDC64 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625F24D319648DA1005BDC64 /* AboutViewController.xib */; };
+		625F24D819648DE5005BDC64 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 625F24D719648DE5005BDC64 /* MenuViewController.m */; };
+		625F24E01964961F005BDC64 /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 625F24DB1964961F005BDC64 /* IISideController.m */; };
+		625F24E11964961F005BDC64 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 625F24DD1964961F005BDC64 /* IIViewDeckController.m */; };
+		625F24E21964961F005BDC64 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 625F24DF1964961F005BDC64 /* IIWrapController.m */; };
+		625F24E619649709005BDC64 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 625F24E419649709005BDC64 /* HomeViewController.m */; };
+		625F24E719649709005BDC64 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625F24E519649709005BDC64 /* HomeViewController.xib */; };
+		625F24EB196498F2005BDC64 /* AthleticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 625F24E9196498F2005BDC64 /* AthleticsViewController.m */; };
+		625F24EC196498F2005BDC64 /* AthleticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625F24EA196498F2005BDC64 /* AthleticsViewController.xib */; };
+		625F24F019649914005BDC64 /* BroncoBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 625F24EE19649914005BDC64 /* BroncoBoardViewController.m */; };
+		625F24F119649914005BDC64 /* BroncoBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625F24EF19649914005BDC64 /* BroncoBoardViewController.xib */; };
+		625F24F519649940005BDC64 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 625F24F319649940005BDC64 /* MapViewController.m */; };
+		625F24F619649940005BDC64 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625F24F419649940005BDC64 /* MapViewController.xib */; };
+		625F24FA19649F9B005BDC64 /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 625F24F819649F9B005BDC64 /* ContactsTableViewController.m */; };
+		625F24FB19649F9B005BDC64 /* ContactsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625F24F919649F9B005BDC64 /* ContactsTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +57,34 @@
 		624AD2501964881E00B54741 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		624AD2511964881E00B54741 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		624AD2541964881E00B54741 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		624AD2561964881E00B54741 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		624AD2571964881E00B54741 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		624AD2591964881E00B54741 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		624AD25F1964881E00B54741 /* HastingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HastingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		624AD2601964881E00B54741 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		624AD2681964881E00B54741 /* HastingsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HastingsTests-Info.plist"; sourceTree = "<group>"; };
-		624AD26A1964881E00B54741 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		624AD26C1964881E00B54741 /* HastingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HastingsTests.m; sourceTree = "<group>"; };
+		625F24D119648DA1005BDC64 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		625F24D219648DA1005BDC64 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		625F24D319648DA1005BDC64 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		625F24D619648DE5005BDC64 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		625F24D719648DE5005BDC64 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		625F24DA1964961F005BDC64 /* IISideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IISideController.h; sourceTree = "<group>"; };
+		625F24DB1964961F005BDC64 /* IISideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IISideController.m; sourceTree = "<group>"; };
+		625F24DC1964961F005BDC64 /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
+		625F24DD1964961F005BDC64 /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
+		625F24DE1964961F005BDC64 /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
+		625F24DF1964961F005BDC64 /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
+		625F24E319649709005BDC64 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		625F24E419649709005BDC64 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		625F24E519649709005BDC64 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		625F24E8196498F2005BDC64 /* AthleticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AthleticsViewController.h; sourceTree = "<group>"; };
+		625F24E9196498F2005BDC64 /* AthleticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AthleticsViewController.m; sourceTree = "<group>"; };
+		625F24EA196498F2005BDC64 /* AthleticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AthleticsViewController.xib; sourceTree = "<group>"; };
+		625F24ED19649914005BDC64 /* BroncoBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BroncoBoardViewController.h; sourceTree = "<group>"; };
+		625F24EE19649914005BDC64 /* BroncoBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BroncoBoardViewController.m; sourceTree = "<group>"; };
+		625F24EF19649914005BDC64 /* BroncoBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BroncoBoardViewController.xib; sourceTree = "<group>"; };
+		625F24F219649940005BDC64 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		625F24F319649940005BDC64 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		625F24F419649940005BDC64 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		625F24F719649F9B005BDC64 /* ContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewController.h; sourceTree = "<group>"; };
+		625F24F819649F9B005BDC64 /* ContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
+		625F24F919649F9B005BDC64 /* ContactsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624AD2611964881E00B54741 /* XCTest.framework in Frameworks */,
 				624AD2631964881E00B54741 /* UIKit.framework in Frameworks */,
 				624AD2621964881E00B54741 /* Foundation.framework in Frameworks */,
 			);
@@ -83,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				624AD2471964881E00B54741 /* Hastings */,
-				624AD2661964881E00B54741 /* HastingsTests */,
+				625F24AB19648C7A005BDC64 /* CustomFrameworks */,
 				624AD2401964881E00B54741 /* Frameworks */,
 				624AD23F1964881E00B54741 /* Products */,
 			);
@@ -104,7 +135,6 @@
 				624AD2411964881E00B54741 /* Foundation.framework */,
 				624AD2431964881E00B54741 /* CoreGraphics.framework */,
 				624AD2451964881E00B54741 /* UIKit.framework */,
-				624AD2601964881E00B54741 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,9 +144,8 @@
 			children = (
 				624AD2501964881E00B54741 /* AppDelegate.h */,
 				624AD2511964881E00B54741 /* AppDelegate.m */,
+				625F24C619648D82005BDC64 /* ViewControllers */,
 				624AD2531964881E00B54741 /* Main.storyboard */,
-				624AD2561964881E00B54741 /* ViewController.h */,
-				624AD2571964881E00B54741 /* ViewController.m */,
 				624AD2591964881E00B54741 /* Images.xcassets */,
 				624AD2481964881E00B54741 /* Supporting Files */,
 			);
@@ -134,22 +163,133 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		624AD2661964881E00B54741 /* HastingsTests */ = {
+		625F24AB19648C7A005BDC64 /* CustomFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				624AD26C1964881E00B54741 /* HastingsTests.m */,
-				624AD2671964881E00B54741 /* Supporting Files */,
+				625F24D91964961F005BDC64 /* ViewDeck */,
 			);
-			path = HastingsTests;
+			name = CustomFrameworks;
+			path = Hastings/CustomFrameworks;
 			sourceTree = "<group>";
 		};
-		624AD2671964881E00B54741 /* Supporting Files */ = {
+		625F24C619648D82005BDC64 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				624AD2681964881E00B54741 /* HastingsTests-Info.plist */,
-				624AD2691964881E00B54741 /* InfoPlist.strings */,
+				625F24C719648D82005BDC64 /* About */,
+				625F24C819648D82005BDC64 /* Athletics */,
+				625F24C919648D82005BDC64 /* BroncoBoard */,
+				625F24CA19648D82005BDC64 /* Calendar */,
+				625F24CB19648D82005BDC64 /* Contacts */,
+				625F24CC19648D82005BDC64 /* Home */,
+				625F24CD19648D82005BDC64 /* Maps */,
+				625F24CE19648D82005BDC64 /* Menu */,
+				625F24CF19648D82005BDC64 /* Sodexo */,
+				625F24D019648D82005BDC64 /* Twitter */,
 			);
-			name = "Supporting Files";
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		625F24C719648D82005BDC64 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				625F24D119648DA1005BDC64 /* AboutViewController.h */,
+				625F24D219648DA1005BDC64 /* AboutViewController.m */,
+				625F24D319648DA1005BDC64 /* AboutViewController.xib */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		625F24C819648D82005BDC64 /* Athletics */ = {
+			isa = PBXGroup;
+			children = (
+				625F24E8196498F2005BDC64 /* AthleticsViewController.h */,
+				625F24E9196498F2005BDC64 /* AthleticsViewController.m */,
+				625F24EA196498F2005BDC64 /* AthleticsViewController.xib */,
+			);
+			path = Athletics;
+			sourceTree = "<group>";
+		};
+		625F24C919648D82005BDC64 /* BroncoBoard */ = {
+			isa = PBXGroup;
+			children = (
+				625F24ED19649914005BDC64 /* BroncoBoardViewController.h */,
+				625F24EE19649914005BDC64 /* BroncoBoardViewController.m */,
+				625F24EF19649914005BDC64 /* BroncoBoardViewController.xib */,
+			);
+			path = BroncoBoard;
+			sourceTree = "<group>";
+		};
+		625F24CA19648D82005BDC64 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		625F24CB19648D82005BDC64 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				625F24F719649F9B005BDC64 /* ContactsTableViewController.h */,
+				625F24F819649F9B005BDC64 /* ContactsTableViewController.m */,
+				625F24F919649F9B005BDC64 /* ContactsTableViewController.xib */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		625F24CC19648D82005BDC64 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				625F24E319649709005BDC64 /* HomeViewController.h */,
+				625F24E419649709005BDC64 /* HomeViewController.m */,
+				625F24E519649709005BDC64 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		625F24CD19648D82005BDC64 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				625F24F219649940005BDC64 /* MapViewController.h */,
+				625F24F319649940005BDC64 /* MapViewController.m */,
+				625F24F419649940005BDC64 /* MapViewController.xib */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		625F24CE19648D82005BDC64 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				625F24D619648DE5005BDC64 /* MenuViewController.h */,
+				625F24D719648DE5005BDC64 /* MenuViewController.m */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		625F24CF19648D82005BDC64 /* Sodexo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sodexo;
+			sourceTree = "<group>";
+		};
+		625F24D019648D82005BDC64 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Twitter;
+			sourceTree = "<group>";
+		};
+		625F24D91964961F005BDC64 /* ViewDeck */ = {
+			isa = PBXGroup;
+			children = (
+				625F24DA1964961F005BDC64 /* IISideController.h */,
+				625F24DB1964961F005BDC64 /* IISideController.m */,
+				625F24DC1964961F005BDC64 /* IIViewDeckController.h */,
+				625F24DD1964961F005BDC64 /* IIViewDeckController.m */,
+				625F24DE1964961F005BDC64 /* IIWrapController.h */,
+				625F24DF1964961F005BDC64 /* IIWrapController.m */,
+			);
+			path = ViewDeck;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +368,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				624AD25A1964881E00B54741 /* Images.xcassets in Resources */,
+				625F24FB19649F9B005BDC64 /* ContactsTableViewController.xib in Resources */,
 				624AD24C1964881E00B54741 /* InfoPlist.strings in Resources */,
+				625F24F119649914005BDC64 /* BroncoBoardViewController.xib in Resources */,
+				625F24F619649940005BDC64 /* MapViewController.xib in Resources */,
+				625F24EC196498F2005BDC64 /* AthleticsViewController.xib in Resources */,
+				625F24E719649709005BDC64 /* HomeViewController.xib in Resources */,
+				625F24D519648DA1005BDC64 /* AboutViewController.xib in Resources */,
 				624AD2551964881E00B54741 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,7 +383,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624AD26B1964881E00B54741 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +393,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624AD2581964881E00B54741 /* ViewController.m in Sources */,
 				624AD2521964881E00B54741 /* AppDelegate.m in Sources */,
+				625F24D419648DA1005BDC64 /* AboutViewController.m in Sources */,
+				625F24FA19649F9B005BDC64 /* ContactsTableViewController.m in Sources */,
+				625F24E21964961F005BDC64 /* IIWrapController.m in Sources */,
 				624AD24E1964881E00B54741 /* main.m in Sources */,
+				625F24F019649914005BDC64 /* BroncoBoardViewController.m in Sources */,
+				625F24EB196498F2005BDC64 /* AthleticsViewController.m in Sources */,
+				625F24D819648DE5005BDC64 /* MenuViewController.m in Sources */,
+				625F24E01964961F005BDC64 /* IISideController.m in Sources */,
+				625F24E11964961F005BDC64 /* IIViewDeckController.m in Sources */,
+				625F24E619649709005BDC64 /* HomeViewController.m in Sources */,
+				625F24F519649940005BDC64 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +412,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624AD26D1964881E00B54741 /* HastingsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,14 +440,6 @@
 				624AD2541964881E00B54741 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		624AD2691964881E00B54741 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				624AD26A1964881E00B54741 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -455,6 +600,7 @@
 				624AD2721964881E00B54741 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		624AD2731964881E00B54741 /* Build configuration list for PBXNativeTarget "HastingsTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +609,7 @@
 				624AD2751964881E00B54741 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
