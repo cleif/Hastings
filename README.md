@@ -1,0 +1,4 @@
+Hastings
+========
+
+Hastings iOS Application
