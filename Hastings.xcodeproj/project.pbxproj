@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2702C6BE1964C98A00BC6CEE /* SodexoTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2702C6BC1964C98A00BC6CEE /* SodexoTableTableViewController.m */; };
-		2702C6BF1964C98A00BC6CEE /* SodexoTableTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6BD1964C98A00BC6CEE /* SodexoTableTableViewController.xib */; };
+		2702C6BE1964C98A00BC6CEE /* SodexoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2702C6BC1964C98A00BC6CEE /* SodexoTableViewController.m */; };
+		2702C6BF1964C98A00BC6CEE /* SodexoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6BD1964C98A00BC6CEE /* SodexoTableViewController.xib */; };
 		2702C6C11964F14200BC6CEE /* About-Image_iOS.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6C01964F14200BC6CEE /* About-Image_iOS.png */; };
 		2702C6CA1964F17D00BC6CEE /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6C31964F17D00BC6CEE /* Icon-60@2x.png */; };
 		2702C6CB1964F17D00BC6CEE /* Icon-Small-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6C41964F17D00BC6CEE /* Icon-Small-40.png */; };
@@ -19,6 +19,10 @@
 		2702C6D01964F17D00BC6CEE /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6C91964F17D00BC6CEE /* iTunesArtwork@2x.png */; };
 		27DBF20C1965A8AD003A15DD /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF20A1965A8AD003A15DD /* menu-icon.png */; };
 		27DBF20D1965A8AD003A15DD /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF20B1965A8AD003A15DD /* menu-icon@2x.png */; };
+		27DBF2111965D775003A15DD /* SodexoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBF2101965D775003A15DD /* SodexoModel.m */; };
+		27DBF2131965D7B3003A15DD /* Menu.xml in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF2121965D7B3003A15DD /* Menu.xml */; };
+		27DBF21A1965DA6E003A15DD /* SodexoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBF2191965DA6E003A15DD /* SodexoTableViewCell.m */; };
+		27DBF21C1965DAAF003A15DD /* SodexoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF21B1965DAAF003A15DD /* SodexoTableViewCell.xib */; };
 		624AD2421964881E00B54741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624AD2411964881E00B54741 /* Foundation.framework */; };
 		624AD2441964881E00B54741 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624AD2431964881E00B54741 /* CoreGraphics.framework */; };
 		624AD2461964881E00B54741 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624AD2451964881E00B54741 /* UIKit.framework */; };
@@ -58,9 +62,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2702C6BB1964C98A00BC6CEE /* SodexoTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodexoTableTableViewController.h; sourceTree = SOURCE_ROOT; };
-		2702C6BC1964C98A00BC6CEE /* SodexoTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SodexoTableTableViewController.m; sourceTree = SOURCE_ROOT; };
-		2702C6BD1964C98A00BC6CEE /* SodexoTableTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SodexoTableTableViewController.xib; sourceTree = SOURCE_ROOT; };
+		2702C6BB1964C98A00BC6CEE /* SodexoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodexoTableViewController.h; sourceTree = SOURCE_ROOT; };
+		2702C6BC1964C98A00BC6CEE /* SodexoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SodexoTableViewController.m; sourceTree = SOURCE_ROOT; };
+		2702C6BD1964C98A00BC6CEE /* SodexoTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SodexoTableViewController.xib; sourceTree = SOURCE_ROOT; };
 		2702C6C01964F14200BC6CEE /* About-Image_iOS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-Image_iOS.png"; sourceTree = "<group>"; };
 		2702C6C31964F17D00BC6CEE /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		2702C6C41964F17D00BC6CEE /* Icon-Small-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40.png"; sourceTree = "<group>"; };
@@ -71,6 +75,12 @@
 		2702C6C91964F17D00BC6CEE /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		27DBF20A1965A8AD003A15DD /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
 		27DBF20B1965A8AD003A15DD /* menu-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon@2x.png"; sourceTree = "<group>"; };
+		27DBF20F1965D775003A15DD /* SodexoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodexoModel.h; sourceTree = "<group>"; };
+		27DBF2101965D775003A15DD /* SodexoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SodexoModel.m; sourceTree = "<group>"; };
+		27DBF2121965D7B3003A15DD /* Menu.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Menu.xml; sourceTree = "<group>"; };
+		27DBF2181965DA6E003A15DD /* SodexoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodexoTableViewCell.h; sourceTree = "<group>"; };
+		27DBF2191965DA6E003A15DD /* SodexoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SodexoTableViewCell.m; sourceTree = "<group>"; };
+		27DBF21B1965DAAF003A15DD /* SodexoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SodexoTableViewCell.xib; sourceTree = "<group>"; };
 		624AD23E1964881E00B54741 /* Hastings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hastings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624AD2411964881E00B54741 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		624AD2431964881E00B54741 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -152,6 +162,34 @@
 			path = "Hastings/Image Files";
 			sourceTree = "<group>";
 		};
+		27DBF20E1965D67C003A15DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27DBF2121965D7B3003A15DD /* Menu.xml */,
+				27DBF20F1965D775003A15DD /* SodexoModel.h */,
+				27DBF2101965D775003A15DD /* SodexoModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27DBF2141965DA2A003A15DD /* CustomUIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				27DBF2151965DA2A003A15DD /* SodexoTableViewCell */,
+			);
+			path = CustomUIComponents;
+			sourceTree = "<group>";
+		};
+		27DBF2151965DA2A003A15DD /* SodexoTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				27DBF2181965DA6E003A15DD /* SodexoTableViewCell.h */,
+				27DBF2191965DA6E003A15DD /* SodexoTableViewCell.m */,
+				27DBF21B1965DAAF003A15DD /* SodexoTableViewCell.xib */,
+			);
+			path = SodexoTableViewCell;
+			sourceTree = "<group>";
+		};
 		624AD2351964881E00B54741 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +223,8 @@
 		624AD2471964881E00B54741 /* Hastings */ = {
 			isa = PBXGroup;
 			children = (
+				27DBF2141965DA2A003A15DD /* CustomUIComponents */,
+				27DBF20E1965D67C003A15DD /* Models */,
 				625F24CE19648D82005BDC64 /* Menu */,
 				624AD2501964881E00B54741 /* AppDelegate.h */,
 				624AD2511964881E00B54741 /* AppDelegate.m */,
@@ -313,9 +353,9 @@
 		625F24CF19648D82005BDC64 /* Sodexo */ = {
 			isa = PBXGroup;
 			children = (
-				2702C6BB1964C98A00BC6CEE /* SodexoTableTableViewController.h */,
-				2702C6BC1964C98A00BC6CEE /* SodexoTableTableViewController.m */,
-				2702C6BD1964C98A00BC6CEE /* SodexoTableTableViewController.xib */,
+				2702C6BB1964C98A00BC6CEE /* SodexoTableViewController.h */,
+				2702C6BC1964C98A00BC6CEE /* SodexoTableViewController.m */,
+				2702C6BD1964C98A00BC6CEE /* SodexoTableViewController.xib */,
 			);
 			path = Sodexo;
 			sourceTree = "<group>";
@@ -425,6 +465,7 @@
 				2702C6CC1964F17D00BC6CEE /* Icon-Small-40@2x.png in Resources */,
 				27DBF20C1965A8AD003A15DD /* menu-icon.png in Resources */,
 				625F24F119649914005BDC64 /* BroncoBoardViewController.xib in Resources */,
+				27DBF2131965D7B3003A15DD /* Menu.xml in Resources */,
 				625F24F619649940005BDC64 /* MapViewController.xib in Resources */,
 				2702C6C11964F14200BC6CEE /* About-Image_iOS.png in Resources */,
 				625F24EC196498F2005BDC64 /* AthleticsViewController.xib in Resources */,
@@ -432,8 +473,9 @@
 				625F24E719649709005BDC64 /* HomeViewController.xib in Resources */,
 				27DBF20D1965A8AD003A15DD /* menu-icon@2x.png in Resources */,
 				625F24D519648DA1005BDC64 /* AboutViewController.xib in Resources */,
-				2702C6BF1964C98A00BC6CEE /* SodexoTableTableViewController.xib in Resources */,
+				2702C6BF1964C98A00BC6CEE /* SodexoTableViewController.xib in Resources */,
 				2702C6D01964F17D00BC6CEE /* iTunesArtwork@2x.png in Resources */,
+				27DBF21C1965DAAF003A15DD /* SodexoTableViewCell.xib in Resources */,
 				624AD2551964881E00B54741 /* Main.storyboard in Resources */,
 				2702C6CE1964F17D00BC6CEE /* Icon-Small@2x.png in Resources */,
 				2702C6CA1964F17D00BC6CEE /* Icon-60@2x.png in Resources */,
@@ -457,11 +499,13 @@
 			files = (
 				624AD2521964881E00B54741 /* AppDelegate.m in Sources */,
 				625F24D419648DA1005BDC64 /* AboutViewController.m in Sources */,
-				2702C6BE1964C98A00BC6CEE /* SodexoTableTableViewController.m in Sources */,
+				2702C6BE1964C98A00BC6CEE /* SodexoTableViewController.m in Sources */,
 				625F24FA19649F9B005BDC64 /* ContactsTableViewController.m in Sources */,
 				625F24E21964961F005BDC64 /* IIWrapController.m in Sources */,
 				624AD24E1964881E00B54741 /* main.m in Sources */,
+				27DBF21A1965DA6E003A15DD /* SodexoTableViewCell.m in Sources */,
 				625F24F019649914005BDC64 /* BroncoBoardViewController.m in Sources */,
+				27DBF2111965D775003A15DD /* SodexoModel.m in Sources */,
 				625F24EB196498F2005BDC64 /* AthleticsViewController.m in Sources */,
 				625F24D819648DE5005BDC64 /* MenuViewController.m in Sources */,
 				625F24E01964961F005BDC64 /* IISideController.m in Sources */,

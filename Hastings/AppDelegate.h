@@ -15,7 +15,7 @@
 #import "BroncoBoardViewController.h"
 #import "ContactsTableViewController.h"
 #import "MapViewController.h"
-#import "SodexoTableTableViewController.h"
+#import "SodexoTableViewController.h"
 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

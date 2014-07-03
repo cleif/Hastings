@@ -9,6 +9,8 @@
 @synthesize mapViewController = _mapViewController;
 @synthesize broncoBoardViewController = _broncoBoardViewController;
 @synthesize contactsTableViewController = _contactsTableViewController;
+@synthesize sodexoTableViewController = _sodexoTableViewController;
+
 
 - (void) initViewControllers{
 
@@ -18,7 +20,7 @@
     self.broncoBoardViewController      = [[BroncoBoardViewController alloc] initWithNibName:@"BroncoBoardViewController" bundle:nil];
     self.mapViewController              = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
     self.contactsTableViewController    = [[ContactsTableViewController alloc] initWithNibName:@"ContactsTableViewController" bundle:nil];
-    
+    self.sodexoTableViewController      = [[SodexoTableViewController alloc] initWithNibName:@"SodexoTableViewController" bundle:nil];
 }
 
 #pragma mark - Display methods
@@ -51,6 +53,10 @@
 - (void) displayContactsViewController{
     
     self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.contactsTableViewController];
+}
+- (void) displaySodexoViewController{
+    
+    self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.sodexoTableViewController];
 }
 
 - (void) viewDidLoad{
@@ -96,6 +102,9 @@
             break;
         case 4:
             [self displayBroncoBoardViewController];
+            break;
+        case 5:
+            [self displaySodexoViewController];
             break;
         case 8:
             [self displayContactsViewController];

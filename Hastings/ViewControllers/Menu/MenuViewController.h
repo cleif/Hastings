@@ -5,6 +5,7 @@
 #import "BroncoBoardViewController.h"
 #import "MapViewController.h"
 #import "ContactsTableViewController.h"
+#import "SodexoTableViewController.h"
 
 @interface MenuViewController : UITableViewController
 
@@ -14,5 +15,6 @@
 @property (strong, nonatomic) MapViewController             *mapViewController;
 @property (strong, nonatomic) AthleticsViewController       *athleticsViewController;
 @property (strong, nonatomic) ContactsTableViewController   *contactsTableViewController;
+@property (strong, nonatomic) SodexoTableViewController     *sodexoTableViewController;
 
 @end
