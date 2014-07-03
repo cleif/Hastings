@@ -1,24 +1,25 @@
 //
-//  ContactsTableViewController.m
+//  SodexoTableTableViewController.m
 //  Hastings
 //
-//  Created by Casey Egan  on 7/2/14.
+//  Created by Creighton Leif on 7/2/14.
 //
 //
 
-#import "ContactsTableViewController.h"
+#import "SodexoTableTableViewController.h"
 
-@interface ContactsTableViewController ()
+@interface SodexoTableTableViewController ()
 
 @end
 
-@implementation ContactsTableViewController
+@implementation SodexoTableTableViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    self.title = @"Contacts";
+    self.title = @"Sodexo";
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

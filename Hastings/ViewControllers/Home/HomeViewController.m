@@ -30,6 +30,11 @@
     [super viewDidLoad];
    
     self.title = @"Home";
+    
+    NSString *fullURL = @"http://www.hastings.edu";
+    NSURL *url = [NSURL URLWithString:fullURL];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [_HomeWebView loadRequest:requestObj];
 }
 
 

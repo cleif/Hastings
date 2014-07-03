@@ -26,7 +26,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"Bronco Board";
+    self.title = @"Broncoboard";
+    NSString *fullURL = @"http://broncoboard.hastings.edu/login/index.php";
+    NSURL *url = [NSURL URLWithString:fullURL];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [_BBWebView loadRequest:requestObj];
 }
 
 - (void)didReceiveMemoryWarning

@@ -1,14 +1,5 @@
-//
-//  MenuViewController.m
-//  RevealControllerStoryboardExample
-//
-//  Created by Nick Hodapp on 1/9/13.
-//  Copyright (c) 2013 CoDeveloper. All rights reserved.
-//
-
 #import "MenuViewController.h"
 #import "IIViewDeckController.h"
-
 
 @implementation MenuViewController
 
@@ -19,22 +10,16 @@
 @synthesize broncoBoardViewController = _broncoBoardViewController;
 @synthesize contactsTableViewController = _contactsTableViewController;
 
-
-
-
 - (void) initViewControllers{
+
+    self.homeViewController             = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+    self.aboutViewController            = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+    self.athleticsViewController        = [[AthleticsViewController alloc] initWithNibName:@"AthleticsViewController" bundle:nil];
+    self.broncoBoardViewController      = [[BroncoBoardViewController alloc] initWithNibName:@"BroncoBoardViewController" bundle:nil];
+    self.mapViewController              = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+    self.contactsTableViewController    = [[ContactsTableViewController alloc] initWithNibName:@"ContactsTableViewController" bundle:nil];
     
-    self.homeViewController         = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
-    self.aboutViewController        = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
-    self.athleticsViewController    = [[AthleticsViewController alloc] initWithNibName:@"AthleticsViewController" bundle:nil];
-    self.broncoBoardViewController  = [[BroncoBoardViewController alloc] initWithNibName:@"BroncoBoardViewController" bundle:nil];
-    self.mapViewController          = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
-    self.contactsTableViewController  = [[ContactsTableViewController alloc] initWithNibName:@"ContactsTableViewController" bundle:nil];
 }
-
-
-
-
 
 #pragma mark - Display methods
 
@@ -45,12 +30,12 @@
 
 - (void) displayAboutViewController{
     
-    self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.aboutViewController];;
+    self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.aboutViewController];
 }
 
 - (void) displayAthleticsViewController{
     
-    self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.athleticsViewController];;
+    self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.athleticsViewController];
 }
 
 - (void) displayMapViewController{
@@ -60,20 +45,19 @@
 
 - (void) displayBroncoBoardViewController{
     
-    self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.broncoBoardViewController];;
+    self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.broncoBoardViewController];
 }
 
 - (void) displayContactsViewController{
     
-    self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.contactsTableViewController];;
+    self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.contactsTableViewController];
 }
-
 
 - (void) viewDidLoad{
     
     [self initViewControllers];
+    
 }
-
 
 - (void) closeMenu{
     
@@ -83,19 +67,16 @@
     }];
 }
 
-
-
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
+
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 9;
+    return 10;
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -103,38 +84,29 @@
     switch (indexPath.row) {
             
         case 0:
+            break;
+        case 1:
             [self displayHomeViewController];
             break;
-            
-            
-        case 1:
+        case 2:
             [self displayAthleticsViewController];
             break;
-            
-        case 2:
+        case 3:
             [self displayMapViewController];
             break;
-            
-        case 3:
+        case 4:
             [self displayBroncoBoardViewController];
             break;
-            
-            
-        case 7:
+        case 8:
             [self displayContactsViewController];
             break;
-            
-            
-        case 8:
+        case 9:
             [self displayAboutViewController];
             break;
-            
             
         default:
             break;
     }
-    
-    
     [self closeMenu];
 }
 
@@ -151,45 +123,40 @@
     switch ( indexPath.row )
     {
         case 0:
+            break;
+        case 1:
             cell.textLabel.text = @"Home";
             break;
-            
-        case 1:
+        case 2:
             cell.textLabel.text = @"Athletics";
             break;
-
-        case 2:
+        case 3:
             cell.textLabel.text = @"Maps";
             break;
-            
-        case 3:
+        case 4:
             cell.textLabel.text = @"Broncoboard";
             break;
-            
-        case 4:
+        case 5:
             cell.textLabel.text = @"Sodexo";
             break;
-            
-        case 5:
+        case 6:
             cell.textLabel.text = @"Calendar";
             break;
-            
-        case 6:
+        case 7:
             cell.textLabel.text = @"Twitter";
             break;
-            
-        case 7:
+        case 8:
             cell.textLabel.text = @"Contacts";
             break;
-            
-        case 8:
+        case 9:
             cell.textLabel.text = @"About";
+            break;
+        
+        default:
+            cell.textLabel.text = @"Hastings";
             break;
 
     }
-
-    
- 
     return cell;
 }
 

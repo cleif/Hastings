@@ -12,8 +12,6 @@
 
 @synthesize menuViewController = _menuViewController;
 
-
-
 - (IIViewDeckController*) initializeMainViewControllers {
     
     UIViewController *menuViewController      = [[MenuViewController alloc] init];
@@ -25,12 +23,7 @@
     return deckController;
 }
 
-
-
-
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
-    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
     IIViewDeckController* deckController    = [self initializeMainViewControllers];
     

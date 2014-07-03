@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AthleticsViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIWebView *AthleticsWebView;
 
 @end

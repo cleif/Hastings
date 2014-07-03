@@ -18,7 +18,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -28,6 +27,10 @@
     [super viewDidLoad];
     
     self.title = @"Athletics";
+    NSString *fullURL = @"http://www.hastingsbroncos.com";
+    NSURL *url = [NSURL URLWithString:fullURL];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [_AthleticsWebView  loadRequest:requestObj];
 }
 
 - (void)didReceiveMemoryWarning

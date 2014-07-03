@@ -26,8 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.title = @"Maps";
+
+    self.title = @"Campus Map";
+    //map implementation
 }
 
 - (void)didReceiveMemoryWarning
