@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  Hastings
 //
-//  Created by Casey Egan  on 7/2/14.
+//  Created by Creighton Leif  on 7/2/14.
 //
 //
 

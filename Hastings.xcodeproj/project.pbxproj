@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2702C6BE1964C98A00BC6CEE /* SodexoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2702C6BC1964C98A00BC6CEE /* SodexoTableViewController.m */; };
 		2702C6BF1964C98A00BC6CEE /* SodexoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6BD1964C98A00BC6CEE /* SodexoTableViewController.xib */; };
-		2702C6C11964F14200BC6CEE /* About-Image_iOS.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6C01964F14200BC6CEE /* About-Image_iOS.png */; };
 		2702C6CA1964F17D00BC6CEE /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6C31964F17D00BC6CEE /* Icon-60@2x.png */; };
 		2702C6CB1964F17D00BC6CEE /* Icon-Small-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6C41964F17D00BC6CEE /* Icon-Small-40.png */; };
 		2702C6CC1964F17D00BC6CEE /* Icon-Small-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6C51964F17D00BC6CEE /* Icon-Small-40@2x.png */; };
@@ -23,13 +22,17 @@
 		27DBF2131965D7B3003A15DD /* Menu.xml in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF2121965D7B3003A15DD /* Menu.xml */; };
 		27DBF21A1965DA6E003A15DD /* SodexoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBF2191965DA6E003A15DD /* SodexoTableViewCell.m */; };
 		27DBF21C1965DAAF003A15DD /* SodexoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF21B1965DAAF003A15DD /* SodexoTableViewCell.xib */; };
+		27F3C6091968CD1B00DE17F4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F3C6081968CD1B00DE17F4 /* MapKit.framework */; };
+		27F9A307196A31E4000193AE /* About-Image-iOS.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F9A306196A31E4000193AE /* About-Image-iOS.png */; };
+		27F9A309196A31F0000193AE /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F9A308196A31F0000193AE /* default.png */; };
+		27F9A30C196A4192000193AE /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F9A30B196A4192000193AE /* Annotation.m */; };
+		27F9A30E196A4289000193AE /* map_data in Resources */ = {isa = PBXBuildFile; fileRef = 27F9A30D196A4289000193AE /* map_data */; };
 		624AD2421964881E00B54741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624AD2411964881E00B54741 /* Foundation.framework */; };
 		624AD2441964881E00B54741 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624AD2431964881E00B54741 /* CoreGraphics.framework */; };
 		624AD2461964881E00B54741 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624AD2451964881E00B54741 /* UIKit.framework */; };
 		624AD24C1964881E00B54741 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 624AD24A1964881E00B54741 /* InfoPlist.strings */; };
 		624AD24E1964881E00B54741 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 624AD24D1964881E00B54741 /* main.m */; };
 		624AD2521964881E00B54741 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 624AD2511964881E00B54741 /* AppDelegate.m */; };
-		624AD2551964881E00B54741 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624AD2531964881E00B54741 /* Main.storyboard */; };
 		624AD25A1964881E00B54741 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624AD2591964881E00B54741 /* Images.xcassets */; };
 		624AD2621964881E00B54741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624AD2411964881E00B54741 /* Foundation.framework */; };
 		624AD2631964881E00B54741 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624AD2451964881E00B54741 /* UIKit.framework */; };
@@ -65,7 +68,6 @@
 		2702C6BB1964C98A00BC6CEE /* SodexoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodexoTableViewController.h; sourceTree = SOURCE_ROOT; };
 		2702C6BC1964C98A00BC6CEE /* SodexoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SodexoTableViewController.m; sourceTree = SOURCE_ROOT; };
 		2702C6BD1964C98A00BC6CEE /* SodexoTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SodexoTableViewController.xib; sourceTree = SOURCE_ROOT; };
-		2702C6C01964F14200BC6CEE /* About-Image_iOS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-Image_iOS.png"; sourceTree = "<group>"; };
 		2702C6C31964F17D00BC6CEE /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		2702C6C41964F17D00BC6CEE /* Icon-Small-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40.png"; sourceTree = "<group>"; };
 		2702C6C51964F17D00BC6CEE /* Icon-Small-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40@2x.png"; sourceTree = "<group>"; };
@@ -81,6 +83,12 @@
 		27DBF2181965DA6E003A15DD /* SodexoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodexoTableViewCell.h; sourceTree = "<group>"; };
 		27DBF2191965DA6E003A15DD /* SodexoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SodexoTableViewCell.m; sourceTree = "<group>"; };
 		27DBF21B1965DAAF003A15DD /* SodexoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SodexoTableViewCell.xib; sourceTree = "<group>"; };
+		27F3C6081968CD1B00DE17F4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		27F9A306196A31E4000193AE /* About-Image-iOS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-Image-iOS.png"; sourceTree = "<group>"; };
+		27F9A308196A31F0000193AE /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		27F9A30A196A4192000193AE /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		27F9A30B196A4192000193AE /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		27F9A30D196A4289000193AE /* map_data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map_data; sourceTree = "<group>"; };
 		624AD23E1964881E00B54741 /* Hastings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hastings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624AD2411964881E00B54741 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		624AD2431964881E00B54741 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,8 +99,7 @@
 		624AD24F1964881E00B54741 /* Hastings-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hastings-Prefix.pch"; sourceTree = "<group>"; };
 		624AD2501964881E00B54741 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		624AD2511964881E00B54741 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		624AD2541964881E00B54741 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		624AD2591964881E00B54741 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		624AD2591964881E00B54741 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Hastings/Images.xcassets; sourceTree = "<group>"; };
 		624AD25F1964881E00B54741 /* HastingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HastingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		625F24D119648DA1005BDC64 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		625F24D219648DA1005BDC64 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
@@ -127,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F3C6091968CD1B00DE17F4 /* MapKit.framework in Frameworks */,
 				624AD2441964881E00B54741 /* CoreGraphics.framework in Frameworks */,
 				624AD2461964881E00B54741 /* UIKit.framework in Frameworks */,
 				624AD2421964881E00B54741 /* Foundation.framework in Frameworks */,
@@ -148,6 +156,7 @@
 		2702C6C21964F17D00BC6CEE /* Image Files */ = {
 			isa = PBXGroup;
 			children = (
+				27F9A308196A31F0000193AE /* default.png */,
 				27DBF20A1965A8AD003A15DD /* menu-icon.png */,
 				27DBF20B1965A8AD003A15DD /* menu-icon@2x.png */,
 				2702C6C31964F17D00BC6CEE /* Icon-60@2x.png */,
@@ -198,6 +207,7 @@
 				625F24AB19648C7A005BDC64 /* CustomFrameworks */,
 				624AD2401964881E00B54741 /* Frameworks */,
 				624AD23F1964881E00B54741 /* Products */,
+				624AD2591964881E00B54741 /* Images.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,6 +223,7 @@
 		624AD2401964881E00B54741 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27F3C6081968CD1B00DE17F4 /* MapKit.framework */,
 				624AD2411964881E00B54741 /* Foundation.framework */,
 				624AD2431964881E00B54741 /* CoreGraphics.framework */,
 				624AD2451964881E00B54741 /* UIKit.framework */,
@@ -223,14 +234,12 @@
 		624AD2471964881E00B54741 /* Hastings */ = {
 			isa = PBXGroup;
 			children = (
+				624AD2501964881E00B54741 /* AppDelegate.h */,
+				624AD2511964881E00B54741 /* AppDelegate.m */,
 				27DBF2141965DA2A003A15DD /* CustomUIComponents */,
 				27DBF20E1965D67C003A15DD /* Models */,
 				625F24CE19648D82005BDC64 /* Menu */,
-				624AD2501964881E00B54741 /* AppDelegate.h */,
-				624AD2511964881E00B54741 /* AppDelegate.m */,
 				625F24C619648D82005BDC64 /* ViewControllers */,
-				624AD2531964881E00B54741 /* Main.storyboard */,
-				624AD2591964881E00B54741 /* Images.xcassets */,
 				624AD2481964881E00B54741 /* Supporting Files */,
 			);
 			path = Hastings;
@@ -275,7 +284,7 @@
 		625F24C719648D82005BDC64 /* About */ = {
 			isa = PBXGroup;
 			children = (
-				2702C6C01964F14200BC6CEE /* About-Image_iOS.png */,
+				27F9A306196A31E4000193AE /* About-Image-iOS.png */,
 				625F24D119648DA1005BDC64 /* AboutViewController.h */,
 				625F24D219648DA1005BDC64 /* AboutViewController.m */,
 				625F24D319648DA1005BDC64 /* AboutViewController.xib */,
@@ -333,9 +342,12 @@
 		625F24CD19648D82005BDC64 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				27F9A30D196A4289000193AE /* map_data */,
 				625F24F219649940005BDC64 /* MapViewController.h */,
 				625F24F319649940005BDC64 /* MapViewController.m */,
 				625F24F419649940005BDC64 /* MapViewController.xib */,
+				27F9A30A196A4192000193AE /* Annotation.h */,
+				27F9A30B196A4192000193AE /* Annotation.m */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -467,18 +479,19 @@
 				625F24F119649914005BDC64 /* BroncoBoardViewController.xib in Resources */,
 				27DBF2131965D7B3003A15DD /* Menu.xml in Resources */,
 				625F24F619649940005BDC64 /* MapViewController.xib in Resources */,
-				2702C6C11964F14200BC6CEE /* About-Image_iOS.png in Resources */,
 				625F24EC196498F2005BDC64 /* AthleticsViewController.xib in Resources */,
 				2702C6CD1964F17D00BC6CEE /* Icon-Small.png in Resources */,
 				625F24E719649709005BDC64 /* HomeViewController.xib in Resources */,
 				27DBF20D1965A8AD003A15DD /* menu-icon@2x.png in Resources */,
 				625F24D519648DA1005BDC64 /* AboutViewController.xib in Resources */,
+				27F9A30E196A4289000193AE /* map_data in Resources */,
 				2702C6BF1964C98A00BC6CEE /* SodexoTableViewController.xib in Resources */,
+				27F9A309196A31F0000193AE /* default.png in Resources */,
 				2702C6D01964F17D00BC6CEE /* iTunesArtwork@2x.png in Resources */,
 				27DBF21C1965DAAF003A15DD /* SodexoTableViewCell.xib in Resources */,
-				624AD2551964881E00B54741 /* Main.storyboard in Resources */,
 				2702C6CE1964F17D00BC6CEE /* Icon-Small@2x.png in Resources */,
 				2702C6CA1964F17D00BC6CEE /* Icon-60@2x.png in Resources */,
+				27F9A307196A31E4000193AE /* About-Image-iOS.png in Resources */,
 				2702C6CB1964F17D00BC6CEE /* Icon-Small-40.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +512,7 @@
 			files = (
 				624AD2521964881E00B54741 /* AppDelegate.m in Sources */,
 				625F24D419648DA1005BDC64 /* AboutViewController.m in Sources */,
+				27F9A30C196A4192000193AE /* Annotation.m in Sources */,
 				2702C6BE1964C98A00BC6CEE /* SodexoTableViewController.m in Sources */,
 				625F24FA19649F9B005BDC64 /* ContactsTableViewController.m in Sources */,
 				625F24E21964961F005BDC64 /* IIWrapController.m in Sources */,
@@ -539,14 +553,6 @@
 				624AD24B1964881E00B54741 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		624AD2531964881E00B54741 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				624AD2541964881E00B54741 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,8 +1,8 @@
 //
-//  AthleticsViewController.m
+//  AthleticsViewController.h
 //  Hastings
 //
-//  Created by Casey Egan  on 7/2/14.
+//  Created by Creighton Leif 7/2/2014
 //
 //
 

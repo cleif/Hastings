@@ -1,3 +1,11 @@
+//
+//  MenuViewController.m
+//  Hastings
+//
+//  Created by Creighton Leif 7/2/2014
+//
+//
+
 #import "MenuViewController.h"
 #import "IIViewDeckController.h"
 

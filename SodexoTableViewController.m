@@ -1,8 +1,8 @@
 //
-//  SodexoTableTableViewController.m
+//  SodexoTableViewController.m
 //  Hastings
 //
-//  Created by Creighton Leif on 7/2/14.
+//  Created by Creighton Leif 7/2/2014
 //
 //
 
@@ -44,7 +44,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 80;
+    return 60;
 }
 
 
