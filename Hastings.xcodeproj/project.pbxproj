@@ -16,6 +16,8 @@
 		2702C6CE1964F17D00BC6CEE /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6C71964F17D00BC6CEE /* Icon-Small@2x.png */; };
 		2702C6CF1964F17D00BC6CEE /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6C81964F17D00BC6CEE /* iTunesArtwork.png */; };
 		2702C6D01964F17D00BC6CEE /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6C91964F17D00BC6CEE /* iTunesArtwork@2x.png */; };
+		270F4B01196AE7950020978F /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270F4AFF196AE7950020978F /* TwitterViewController.m */; };
+		270F4B02196AE7950020978F /* TwitterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270F4B00196AE7950020978F /* TwitterViewController.xib */; };
 		27DBF20C1965A8AD003A15DD /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF20A1965A8AD003A15DD /* menu-icon.png */; };
 		27DBF20D1965A8AD003A15DD /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF20B1965A8AD003A15DD /* menu-icon@2x.png */; };
 		27DBF2111965D775003A15DD /* SodexoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBF2101965D775003A15DD /* SodexoModel.m */; };
@@ -75,6 +77,9 @@
 		2702C6C71964F17D00BC6CEE /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		2702C6C81964F17D00BC6CEE /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		2702C6C91964F17D00BC6CEE /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		270F4AFE196AE7950020978F /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = SOURCE_ROOT; };
+		270F4AFF196AE7950020978F /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = SOURCE_ROOT; };
+		270F4B00196AE7950020978F /* TwitterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterViewController.xib; sourceTree = SOURCE_ROOT; };
 		27DBF20A1965A8AD003A15DD /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
 		27DBF20B1965A8AD003A15DD /* menu-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon@2x.png"; sourceTree = "<group>"; };
 		27DBF20F1965D775003A15DD /* SodexoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodexoModel.h; sourceTree = "<group>"; };
@@ -342,12 +347,12 @@
 		625F24CD19648D82005BDC64 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				27F9A30D196A4289000193AE /* map_data */,
+				27F9A30B196A4192000193AE /* Annotation.m */,
+				27F9A30A196A4192000193AE /* Annotation.h */,
 				625F24F219649940005BDC64 /* MapViewController.h */,
 				625F24F319649940005BDC64 /* MapViewController.m */,
 				625F24F419649940005BDC64 /* MapViewController.xib */,
-				27F9A30A196A4192000193AE /* Annotation.h */,
-				27F9A30B196A4192000193AE /* Annotation.m */,
+				27F9A30D196A4289000193AE /* map_data */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -375,6 +380,9 @@
 		625F24D019648D82005BDC64 /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				270F4AFE196AE7950020978F /* TwitterViewController.h */,
+				270F4AFF196AE7950020978F /* TwitterViewController.m */,
+				270F4B00196AE7950020978F /* TwitterViewController.xib */,
 			);
 			path = Twitter;
 			sourceTree = "<group>";
@@ -482,6 +490,7 @@
 				625F24EC196498F2005BDC64 /* AthleticsViewController.xib in Resources */,
 				2702C6CD1964F17D00BC6CEE /* Icon-Small.png in Resources */,
 				625F24E719649709005BDC64 /* HomeViewController.xib in Resources */,
+				270F4B02196AE7950020978F /* TwitterViewController.xib in Resources */,
 				27DBF20D1965A8AD003A15DD /* menu-icon@2x.png in Resources */,
 				625F24D519648DA1005BDC64 /* AboutViewController.xib in Resources */,
 				27F9A30E196A4289000193AE /* map_data in Resources */,
@@ -518,6 +527,7 @@
 				625F24E21964961F005BDC64 /* IIWrapController.m in Sources */,
 				624AD24E1964881E00B54741 /* main.m in Sources */,
 				27DBF21A1965DA6E003A15DD /* SodexoTableViewCell.m in Sources */,
+				270F4B01196AE7950020978F /* TwitterViewController.m in Sources */,
 				625F24F019649914005BDC64 /* BroncoBoardViewController.m in Sources */,
 				27DBF2111965D775003A15DD /* SodexoModel.m in Sources */,
 				625F24EB196498F2005BDC64 /* AthleticsViewController.m in Sources */,

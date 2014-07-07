@@ -15,6 +15,7 @@
 #import "MapViewController.h"
 #import "ContactsTableViewController.h"
 #import "SodexoTableViewController.h"
+#import "TwitterViewController.h"
 
 @interface MenuViewController : UITableViewController
 
@@ -25,5 +26,6 @@
 @property (strong, nonatomic) AthleticsViewController       *athleticsViewController;
 @property (strong, nonatomic) ContactsTableViewController   *contactsTableViewController;
 @property (strong, nonatomic) SodexoTableViewController     *sodexoTableViewController;
+@property (strong, nonatomic) TwitterViewController         *twitterViewController;
 
 @end

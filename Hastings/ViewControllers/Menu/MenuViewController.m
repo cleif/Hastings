@@ -11,13 +11,14 @@
 
 @implementation MenuViewController
 
-@synthesize homeViewController = _homeViewController;
-@synthesize aboutViewController = _aboutViewController;
-@synthesize athleticsViewController = _athleticsViewController;
-@synthesize mapViewController = _mapViewController;
-@synthesize broncoBoardViewController = _broncoBoardViewController;
+@synthesize homeViewController          = _homeViewController;
+@synthesize aboutViewController         = _aboutViewController;
+@synthesize athleticsViewController     = _athleticsViewController;
+@synthesize mapViewController           = _mapViewController;
+@synthesize broncoBoardViewController   = _broncoBoardViewController;
 @synthesize contactsTableViewController = _contactsTableViewController;
-@synthesize sodexoTableViewController = _sodexoTableViewController;
+@synthesize sodexoTableViewController   = _sodexoTableViewController;
+@synthesize twitterViewController       = _twitterViewController;
 
 
 - (void) initViewControllers{
@@ -29,6 +30,7 @@
     self.mapViewController              = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
     self.contactsTableViewController    = [[ContactsTableViewController alloc] initWithNibName:@"ContactsTableViewController" bundle:nil];
     self.sodexoTableViewController      = [[SodexoTableViewController alloc] initWithNibName:@"SodexoTableViewController" bundle:nil];
+        self.twitterViewController      = [[TwitterViewController alloc] initWithNibName:@"TwitterViewController" bundle:nil];
 }
 
 #pragma mark - Display methods
@@ -65,6 +67,10 @@
 - (void) displaySodexoViewController{
     
     self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.sodexoTableViewController];
+}
+- (void) displayTwitterViewController{
+    
+    self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.twitterViewController];
 }
 
 - (void) viewDidLoad{
@@ -113,6 +119,9 @@
             break;
         case 5:
             [self displaySodexoViewController];
+            break;
+        case 7:
+            [self displayTwitterViewController];
             break;
         case 8:
             [self displayContactsViewController];

@@ -21,8 +21,8 @@
 #define SPAN 0.015f;
 #define METERS_PER_MILE 1609.344
 
-#define DEN_LATTITUDE 40.5962
-#define DEN_LONGITUDE -98.374084
+#define CHAPEL_LATTITUDE 40.591628
+#define CHAPEL_LONGITUDE -98.373567
 
 @implementation MapViewController
 @synthesize mapView;
@@ -62,15 +62,16 @@
     [mapView setRegion:hastingsCollegeRegion animated:YES];
     
     //Campus Locations Annotations
+    //Location 1: Chapel
+    CLLocationCoordinate2D chapelLocation;
+    chapelLocation.longitude = CHAPEL_LONGITUDE;
+    chapelLocation.latitude = CHAPEL_LATTITUDE;
+    Annotation * chapelAnnotation =[Annotation alloc];
+    chapelAnnotation.title = @"French Memorial Chapel";
+    //chapelAnnotation.subtitle = @" ";
+    [self.mapView addAnnotation:chapelAnnotation];
     
-    //Location 1: The Den
-    CLLocationCoordinate2D denLocation;
-    denLocation.longitude = DEN_LONGITUDE;
-    denLocation.latitude = DEN_LATTITUDE;
-    Annotation * denAnnotation =[Annotation alloc];
-    denAnnotation.title = @"The Den";
-    denAnnotation.subtitle = @"@HC_DEN Voted Hastings College Best House";
-    [self.mapView addAnnotation:denAnnotation];
+    //Location 2: Kewitt Gymnasium
     
 }
 
