@@ -18,6 +18,12 @@
 		2702C6D01964F17D00BC6CEE /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6C91964F17D00BC6CEE /* iTunesArtwork@2x.png */; };
 		270F4B01196AE7950020978F /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270F4AFF196AE7950020978F /* TwitterViewController.m */; };
 		270F4B02196AE7950020978F /* TwitterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270F4B00196AE7950020978F /* TwitterViewController.xib */; };
+		270F4B09196AEF900020978F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270F4B03196AEF900020978F /* AddressBook.framework */; };
+		270F4B0A196AEF900020978F /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270F4B04196AEF900020978F /* AddressBookUI.framework */; };
+		270F4B0B196AEF900020978F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270F4B05196AEF900020978F /* CoreData.framework */; };
+		270F4B0C196AEF900020978F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270F4B06196AEF900020978F /* JavaScriptCore.framework */; };
+		270F4B0D196AEF900020978F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270F4B07196AEF900020978F /* Social.framework */; };
+		270F4B0E196AEF900020978F /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270F4B08196AEF900020978F /* Twitter.framework */; };
 		27DBF20C1965A8AD003A15DD /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF20A1965A8AD003A15DD /* menu-icon.png */; };
 		27DBF20D1965A8AD003A15DD /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF20B1965A8AD003A15DD /* menu-icon@2x.png */; };
 		27DBF2111965D775003A15DD /* SodexoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBF2101965D775003A15DD /* SodexoModel.m */; };
@@ -80,6 +86,12 @@
 		270F4AFE196AE7950020978F /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = SOURCE_ROOT; };
 		270F4AFF196AE7950020978F /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = SOURCE_ROOT; };
 		270F4B00196AE7950020978F /* TwitterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterViewController.xib; sourceTree = SOURCE_ROOT; };
+		270F4B03196AEF900020978F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		270F4B04196AEF900020978F /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		270F4B05196AEF900020978F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		270F4B06196AEF900020978F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		270F4B07196AEF900020978F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		270F4B08196AEF900020978F /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		27DBF20A1965A8AD003A15DD /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
 		27DBF20B1965A8AD003A15DD /* menu-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon@2x.png"; sourceTree = "<group>"; };
 		27DBF20F1965D775003A15DD /* SodexoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodexoModel.h; sourceTree = "<group>"; };
@@ -139,9 +151,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270F4B09196AEF900020978F /* AddressBook.framework in Frameworks */,
+				270F4B0A196AEF900020978F /* AddressBookUI.framework in Frameworks */,
+				270F4B0B196AEF900020978F /* CoreData.framework in Frameworks */,
+				270F4B0C196AEF900020978F /* JavaScriptCore.framework in Frameworks */,
+				270F4B0D196AEF900020978F /* Social.framework in Frameworks */,
+				270F4B0E196AEF900020978F /* Twitter.framework in Frameworks */,
+				624AD2461964881E00B54741 /* UIKit.framework in Frameworks */,
 				27F3C6091968CD1B00DE17F4 /* MapKit.framework in Frameworks */,
 				624AD2441964881E00B54741 /* CoreGraphics.framework in Frameworks */,
-				624AD2461964881E00B54741 /* UIKit.framework in Frameworks */,
 				624AD2421964881E00B54741 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +246,12 @@
 		624AD2401964881E00B54741 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				270F4B03196AEF900020978F /* AddressBook.framework */,
+				270F4B04196AEF900020978F /* AddressBookUI.framework */,
+				270F4B05196AEF900020978F /* CoreData.framework */,
+				270F4B06196AEF900020978F /* JavaScriptCore.framework */,
+				270F4B07196AEF900020978F /* Social.framework */,
+				270F4B08196AEF900020978F /* Twitter.framework */,
 				27F3C6081968CD1B00DE17F4 /* MapKit.framework */,
 				624AD2411964881E00B54741 /* Foundation.framework */,
 				624AD2431964881E00B54741 /* CoreGraphics.framework */,

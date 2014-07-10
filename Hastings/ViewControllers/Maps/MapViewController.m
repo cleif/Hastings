@@ -16,9 +16,9 @@
 @end
 
 //defined coordinates
-#define HC_LATITUDE 40.5943979
+#define HC_LATITUDE 40.5960000
 #define HC_LONGGITUDE -98.3707043
-#define SPAN 0.015f;
+#define SPAN 0.0125f;
 #define METERS_PER_MILE 1609.344
 
 #define CHAPEL_LATTITUDE 40.591628

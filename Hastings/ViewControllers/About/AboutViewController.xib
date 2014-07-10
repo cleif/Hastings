@@ -15,7 +15,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="About-Image-iOS.png" translatesAutoresizingMaskIntoConstraints="NO" id="otp-93-ZKz">
-                    <rect key="frame" x="0.0" y="43" width="320" height="568"/>
+                    <rect key="frame" x="0.0" y="20" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
             </subviews>

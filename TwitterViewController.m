@@ -27,8 +27,7 @@
 {
     [super viewDidLoad];
     self.title = @"Twitter";
-    
-    NSString *fullURL = @"https://twitter.com/HC_Advantage";
+    NSString *fullURL = @"https://1c6c5262646a93928bcc5104f39d2d0018574911.googledrive.com/host/0B33MIzmxUSJTRHJHMWdZc1lxYjA/index.html";
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_twitterWebView loadRequest:requestObj];
