@@ -19,5 +19,8 @@
 @property (nonatomic, assign) NSString *carbohydrates;
 @property (nonatomic, assign) NSString *sugars;
 @property (nonatomic, assign) NSString *proteins;
+@property (nonatomic, assign) NSString *mealType;
+@property (nonatomic, assign) NSString *day;
+@property (nonatomic, assign) NSString *menuDate;
 
 @end

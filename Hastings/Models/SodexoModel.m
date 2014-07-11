@@ -21,5 +21,7 @@
 @synthesize carbohydrates = _carbohydrates;
 @synthesize sugars = _sugars;
 @synthesize proteins = _proteins;
+@synthesize mealType = _mealType;
+@synthesize day = _day;
 
 @end

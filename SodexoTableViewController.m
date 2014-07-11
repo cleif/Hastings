@@ -19,15 +19,10 @@
     
     self.title = @"Sodexo";
     
-    //self.menuItems = [self getMockMenuItems];
-    self.menuItems = [self getMenuItems];
+    self.menuItems = [[NSMutableArray alloc] init];
+    [self populateMenuItems];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 #pragma mark - Table view data source
 
@@ -90,27 +85,25 @@
     return items;
 }
 
-- (NSMutableArray *) getMenuItems{
+- (void) populateMenuItems{
     
-    NSMutableArray * items = [[NSMutableArray alloc] init];
     NSXMLParser *parser = [[NSXMLParser alloc]initWithContentsOfURL:[NSURL URLWithString:@"http://forms.hastings.edu/Apps/menu.xml"]];
     [parser setDelegate:self];
     
     [parser parse];
     
-    return items;
 }
 
-- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict
-{
-          if ( [elementName isEqualToString:@"weeklymenu"])
-          {
-              SodexoModel * menuItem = [[SodexoModel alloc] init];
-              
-              menuItem.itemName = [attributeDict valueForKey:@"item_name"];
-              NSLog(@"%@", @"Test");
-              return;
-          }
+- (void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict{
+    
+      if ( [elementName isEqualToString:@"weeklymenu"]){
+          
+          SodexoModel * menuItem = [[SodexoModel alloc] init];
+          
+          menuItem.itemName = [attributeDict valueForKey:@"item_name"];
+          
+          [self.menuItems addObject:menuItem];
+      }
 }
 
 @end
