@@ -26,6 +26,7 @@
 
 @implementation MapViewController
 @synthesize mapView;
+@synthesize mapData;
 
 
 
@@ -41,6 +42,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.mapView.delegate = self;
 
     self.title = @"Campus Map";
     //map implementation
@@ -66,59 +69,121 @@
     CLLocationCoordinate2D chapelLocation;
     chapelLocation.longitude = CHAPEL_LONGITUDE;
     chapelLocation.latitude = CHAPEL_LATTITUDE;
-    Annotation * chapelAnnotation =[Annotation alloc];
+    Annotation * chapelAnnotation =[[Annotation alloc] init];
+    
+    
+    chapelAnnotation.coordinate = chapelLocation;
     chapelAnnotation.title = @"French Memorial Chapel";
-    //chapelAnnotation.subtitle = @" ";
+    
     [self.mapView addAnnotation:chapelAnnotation];
     
     //Location 2: Kewitt Gymnasium
     
 }
 
-//- (MKAnnotationView *) mapView:(MKMapView *) mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+- (MKAnnotationView *) mapView:(MKMapView *) mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    
+    if ([annotation isKindOfClass:[Annotation class]]) {
+        
+        MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [self.mapView dequeueReusableAnnotationViewWithIdentifier:@""];
+        
+        if (annotationView == nil) {
+            
+            
+            annotationView                           = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@""];
+            annotationView.image                     = [UIImage imageNamed:@"fcsaMarker.png"];
+            annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            annotationView.tintColor                 = [UIColor colorWithRed:153.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1];;
+            annotationView.enabled                   = YES;
+            annotationView.canShowCallout            = YES;
+        }
+        else
+        {
+            annotationView.annotation = annotation;
+        }
+        
+        return annotationView;
+    }
+    
+    return nil;
+}
+
+- (void) mapView:(MKMapView *) mapView didAddAnnotationViews:(NSArray *)views {
+    
+    for (MKAnnotationView *anotationView in views) {
+        
+        CGRect endFrame = anotationView.frame;
+        
+        anotationView.frame = CGRectMake(anotationView.frame.origin.x, anotationView.frame.origin.y - 230.0, anotationView.frame.size.width, anotationView.frame.size.height);
+        
+        [UIView animateWithDuration:0.45f delay:0.30f options:UIViewAnimationOptionCurveEaseIn animations:^{
+            
+            [anotationView setFrame:endFrame];
+        }
+                         completion:^ (BOOL finished){
+                             
+                             
+                             
+                         }];
+    }
+}
+
+
+
+
+//- (NSMutableArray*) getAllFCSAOfficeLoctions{
 //    
-//    if ([annotation isKindOfClass:[FCSAOfficeLocation class]]) {
+//    NSMutableArray *returnOfficeList = [[NSMutableArray alloc] init];
+//    
+//    NSString *filePath               = [[NSBundle mainBundle] pathForResource:@"FCSAOfficeLocations" ofType:@"json"];
+//    NSData *myData                   = [NSData dataWithContentsOfFile:filePath];
+//    NSDictionary *results            = [NSJSONSerialization JSONObjectWithData:myData options:kNilOptions error:nil];
+//    NSDictionary *officeList         = [results objectForKey:@"Locations"];
+//    
+//    
+//    for (NSDictionary *item in officeList){
 //        
-//        MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [self.mapView dequeueReusableAnnotationViewWithIdentifier:kFCSAOfficeLocationIdentifier];
+//        NSArray *address        = (NSArray*) [item objectForKey:@"Address"];
+//        NSArray *mailingAddress = (NSArray*) [item objectForKey:@"MailingAddress"];
 //        
-//        if (annotationView == nil) {
+//        CLLocationCoordinate2D coordinate;
+//        coordinate.latitude  = [[item objectForKey:@"Lat"] doubleValue];
+//        coordinate.longitude = [[item objectForKey:@"Lng"] doubleValue];
+//        
+//        FCSAOfficeLocation *officeLocation = [[FCSAOfficeLocation alloc] init];
+//        
+//        officeLocation.name             = [item objectForKey:@"Name"];
+//        officeLocation.thCoordinate     = coordinate;
+//        officeLocation.distanceToOffice = [self getDistanceToFCSAOfficeLocation:officeLocation];
+//        
+//        for (NSDictionary *addressItem in address) {
 //            
-//            annotationView                           = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:kFCSAOfficeLocationIdentifier];
-//            annotationView.image                     = [UIImage imageNamed:@"fcsaMarker.png"];
-//            annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-//            annotationView.tintColor                 = NAVIGATION_BAR_TINT_COLOR;
-//            annotationView.enabled                   = YES;
-//            annotationView.canShowCallout            = YES;
-//        }
-//        else
-//        {
-//            annotationView.annotation = annotation;
+//            officeLocation.address      = [addressItem objectForKey:@"Street"];
+//            officeLocation.city         = [addressItem objectForKey:@"City"];
+//            officeLocation.state        = [addressItem objectForKey:@"State"];
+//            officeLocation.stateLong    = [addressItem objectForKey:@"StateLong"];
+//            officeLocation.zipCode      = [addressItem objectForKey:@"ZipCode"];
+//            officeLocation.phoneNumber  = [addressItem objectForKey:@"Phone"];
+//            officeLocation.faxNumber    = [addressItem objectForKey:@"Fax"];
+//            officeLocation.officeEmail  = [addressItem objectForKey:@"OfficeEmail"];
+//            officeLocation.country      = @"United States";
 //        }
 //        
-//        return annotationView;
+//        
+//        for (NSDictionary *mailingAddressItem in mailingAddress) {
+//            
+//            officeLocation.mailingAddress      = [mailingAddressItem objectForKey:@"MailingAddress"];
+//            officeLocation.mailingCity         = [mailingAddressItem objectForKey:@"MailingCity"];
+//            officeLocation.mailingState        = [mailingAddressItem objectForKey:@"State"];
+//            officeLocation.mailingZipCode      = [mailingAddressItem objectForKey:@"ZipCode"];
+//            officeLocation.mailingCountry      = @"United States";
+//        }
+//        
+//        
+//        [returnOfficeList addObject:officeLocation];
 //    }
 //    
-//    return nil;
-//}
-//
-//- (void) mapView:(MKMapView *) mapView didAddAnnotationViews:(NSArray *)views {
-//    
-//    for (MKAnnotationView *anotationView in views) {
-//        
-//        CGRect endFrame = anotationView.frame;
-//        
-//        anotationView.frame = CGRectMake(anotationView.frame.origin.x, anotationView.frame.origin.y - 230.0, anotationView.frame.size.width, anotationView.frame.size.height);
-//        
-//        [UIView animateWithDuration:0.45f delay:0.30f options:UIViewAnimationOptionCurveEaseIn animations:^{
-//            
-//            [anotationView setFrame:endFrame];
-//        }
-//                         completion:^ (BOOL finished){
-//                             
-//                             
-//                             
-//                         }];
-//    }
+//    return returnOfficeList;
 //}
 
 @end

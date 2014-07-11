@@ -11,6 +11,9 @@
 #import "Annotation.h"
 
 @interface MapViewController : UIViewController <MKMapViewDelegate>
+
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
+
+@property (nonatomic, strong) NSMutableArray *mapData;
 
 @end
