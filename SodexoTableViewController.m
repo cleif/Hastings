@@ -79,7 +79,7 @@
     
     NSMutableArray * items = [[NSMutableArray alloc] init];
     
-    for (int x = 0; x <= 4; x++) {
+    for (int x = 0; x <= 10; x++) {
         SodexoModel * item = [[SodexoModel alloc] init];
         
         item.itemName = @"Oatmeal";
