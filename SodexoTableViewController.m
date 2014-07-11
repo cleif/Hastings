@@ -19,7 +19,8 @@
     
     self.title = @"Sodexo";
     
-    self.menuItems = [self getMockMenuItems];
+    //self.menuItems = [self getMockMenuItems];
+    self.menuItems = [self getMenuItems];
 }
 
 - (void)didReceiveMemoryWarning
@@ -87,6 +88,29 @@
         [items addObject:item];
     }
     return items;
+}
+
+- (NSMutableArray *) getMenuItems{
+    
+    NSMutableArray * items = [[NSMutableArray alloc] init];
+    NSXMLParser *parser = [[NSXMLParser alloc]initWithContentsOfURL:[NSURL URLWithString:@"http://forms.hastings.edu/Apps/menu.xml"]];
+    [parser setDelegate:self];
+    
+    [parser parse];
+    
+    return items;
+}
+
+- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict
+{
+          if ( [elementName isEqualToString:@"weeklymenu"])
+          {
+              SodexoModel * menuItem = [[SodexoModel alloc] init];
+              
+              menuItem.itemName = [attributeDict valueForKey:@"item_name"];
+              NSLog(@"%@", @"Test");
+              return;
+          }
 }
 
 @end

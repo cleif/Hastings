@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SodexoTableViewCell.h"
 
-@interface SodexoTableViewController : UITableViewController
+@interface SodexoTableViewController : UITableViewController <NSXMLParserDelegate>
 
 @property (strong, nonatomic) NSMutableArray *menuItems;
 
