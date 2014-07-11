@@ -75,10 +75,50 @@
     
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+//- (MKAnnotationView *) mapView:(MKMapView *) mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+//    
+//    if ([annotation isKindOfClass:[FCSAOfficeLocation class]]) {
+//        
+//        MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [self.mapView dequeueReusableAnnotationViewWithIdentifier:kFCSAOfficeLocationIdentifier];
+//        
+//        if (annotationView == nil) {
+//            
+//            annotationView                           = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:kFCSAOfficeLocationIdentifier];
+//            annotationView.image                     = [UIImage imageNamed:@"fcsaMarker.png"];
+//            annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+//            annotationView.tintColor                 = NAVIGATION_BAR_TINT_COLOR;
+//            annotationView.enabled                   = YES;
+//            annotationView.canShowCallout            = YES;
+//        }
+//        else
+//        {
+//            annotationView.annotation = annotation;
+//        }
+//        
+//        return annotationView;
+//    }
+//    
+//    return nil;
+//}
+//
+//- (void) mapView:(MKMapView *) mapView didAddAnnotationViews:(NSArray *)views {
+//    
+//    for (MKAnnotationView *anotationView in views) {
+//        
+//        CGRect endFrame = anotationView.frame;
+//        
+//        anotationView.frame = CGRectMake(anotationView.frame.origin.x, anotationView.frame.origin.y - 230.0, anotationView.frame.size.width, anotationView.frame.size.height);
+//        
+//        [UIView animateWithDuration:0.45f delay:0.30f options:UIViewAnimationOptionCurveEaseIn animations:^{
+//            
+//            [anotationView setFrame:endFrame];
+//        }
+//                         completion:^ (BOOL finished){
+//                             
+//                             
+//                             
+//                         }];
+//    }
+//}
 
 @end
