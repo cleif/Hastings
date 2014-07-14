@@ -43,6 +43,9 @@
 {
     [super viewDidLoad];
     
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self action:@selector(pp:)];
+    [self.navigationItem setLeftBarButtonItem: menuButton];
+    
     self.mapView.delegate = self;
 
     self.title = @"Campus Map";
@@ -91,7 +94,7 @@
             
             
             annotationView                           = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@""];
-            annotationView.image                     = [UIImage imageNamed:@"fcsaMarker.png"];
+            annotationView.image                     = [UIImage imageNamed:@"map-marker.png"];
             annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
             annotationView.tintColor                 = [UIColor colorWithRed:153.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1];;
             annotationView.enabled                   = YES;
@@ -129,8 +132,45 @@
 }
 
 
+-(NSMutableArray*) getCampusLocations{
+    
+    // create array to hold all locations
+    NSMutableArray *returnLocationList  = [[NSMutableArray alloc] init];
 
+    // create connection to data source and create dictionary of data
+    NSString *filePath                  = [[NSBundle mainBundle] pathForResource:@"map-data" ofType:@"json"];
+    NSData *hcData                      = [NSData dataWithContentsOfFile:filePath];
+    NSDictionary *results               = [NSJSONSerialization JSONObjectWithData:hcData options:kNilOptions error:nil];
+    NSDictionary *buildingList          = [results objectForKey:@"_id"];
+    
+    //loop through dictionary adding title and snippet with coordinates to array
+    for (NSDictionary *item in buildingList) {
+        NSArray *buildingName   = (NSArray*) [item objectForKey:@"title"];
+        NSArray *buildingDescr  = (NSArray*) [item objectForKey:@"snippet"];
+        
+        CLLocationCoordinate2D coordinate;
+        coordinate.latitude     = [[item objectForKey:@"latitude"] doubleValue];
+        coordinate.longitude    = [[item objectForKey:@"longitude"] doubleValue];
 
+        HCCampusLocation *campusLocation   = [[HCCampusLocation alloc] init];
+        
+        campusLocation.buildingName         = [item objectForKey:@"title"];
+        campusLocation.buildingDescr        = [item objectForKey:@"snippet"];
+        campusLocation.coordinate           = coordinate;
+   }
+//    
+//    //add the array of locations to the location list
+//    [returnLocationList addObject:campusLocation];
+    
+    
+    //return the list to populate the map.
+    return returnLocationList;
+}
+
+@end
+
+//NotesFromCasey
+/*{
 //- (NSMutableArray*) getAllFCSAOfficeLoctions{
 //    
 //    NSMutableArray *returnOfficeList = [[NSMutableArray alloc] init];
@@ -145,7 +185,7 @@
 //        
 //        NSArray *address        = (NSArray*) [item objectForKey:@"Address"];
 //        NSArray *mailingAddress = (NSArray*) [item objectForKey:@"MailingAddress"];
-//        
+//
 //        CLLocationCoordinate2D coordinate;
 //        coordinate.latitude  = [[item objectForKey:@"Lat"] doubleValue];
 //        coordinate.longitude = [[item objectForKey:@"Lng"] doubleValue];
@@ -186,4 +226,5 @@
 //    return returnOfficeList;
 //}
 //
-@end
+}*/
+

@@ -1,0 +1,198 @@
+[
+  {
+    "_id":1,
+    "latitude":40.590561,
+    "longitude":-98.373438,
+    "title":"Kiewit Building",
+    "snippet":""
+  },
+  {
+    "_id":2,
+    "latitude":40.5907,
+    "longitude":-98.374554,
+    "title":"Hurley-McDonald",
+    "snippet":""
+  },
+  {
+    "_id":3,
+    "latitude":40.590246,
+    "longitude":-98.374471,
+    "title":"Perkins Library",
+    "snippet":""
+  },
+  {
+    "_id":4,
+    "latitude":40.591074,
+    "longitude":-98.373674,
+    "title":"Daugherty Center",
+    "snippet":""
+  },
+  {
+    "_id":5,
+    "latitude":40.591628,
+    "longitude":-98.373567,
+    "title":"French Memorial Chapel",
+    "snippet":""
+  },
+  {
+    "_id":6,
+    "latitude":40.592288,
+    "longitude":-98.373674,
+    "title":"McCormick Hall",
+    "snippet":""
+  },
+  {
+    "_id":7,
+    "latitude":40.592321,
+    "longitude":-98.373299,
+    "title":"Scott Studio Theatre",
+    "snippet":""
+  },
+  {
+    "_id":8,
+    "latitude":40.592688,
+    "longitude":-98.37346,
+    "title":"Wilson Mathematics & Computer Science Center",
+    "snippet":""
+  },
+  {
+    "_id":9,
+    "latitude":40.592631,
+    "longitude":-98.374629,
+    "title":"Taylor Hall",
+    "snippet":""
+  },
+  {
+    "_id":10,
+    "latitude":40.593193,
+    "longitude":-98.375297,
+    "title":"Stone Health Center",
+    "snippet":""
+  },
+  {
+    "_id":11,
+    "latitude":40.593095,
+    "longitude":-98.374597,
+    "title":"Babcock Hall",
+    "snippet":""
+  },
+  {
+    "_id":12,
+    "latitude":40.593071,
+    "longitude":-98.372226,
+    "title":"Bronc Hall",
+    "snippet":""
+  },
+  {
+    "_id":13,
+    "latitude":40.592337,
+    "longitude":-98.372022,
+    "title":"Altman Hall",
+    "snippet":""
+  },
+  {
+    "_id":14,
+    "latitude":40.592653,
+    "longitude":-98.371067,
+    "title":"Maintenance Department",
+    "snippet":""
+  },
+  {
+    "_id":15,
+    "latitude":40.591074,
+    "longitude":-98.371947,
+    "title":"Morrison-Reeves Science Center",
+    "snippet":""
+  },
+  {
+    "_id":16,
+    "latitude":40.593869,
+    "longitude":-98.372966,
+    "title":"Hazelrigg Student Union (HSU)",
+    "snippet":""
+  },
+  {
+    "_id":17,
+    "latitude":40.595596,
+    "longitude":-98.373063,
+    "title":"Gray Center for Communication Arts",
+    "snippet":""
+  },
+  {
+    "_id":18,
+    "latitude":40.593934,
+    "longitude":-98.371821,
+    "title":"Weyer Hall",
+    "snippet":""
+  },
+  {
+    "_id":19,
+    "latitude":40.594431,
+    "longitude":-98.371829,
+    "title":"Fuhr Hall of Music",
+    "snippet":""
+  },
+  {
+    "_id":20,
+    "latitude":40.595839,
+    "longitude":-98.370638,
+    "title":"Farrell Arena/Fleharty Educational Center",
+    "snippet":""
+  },
+  {
+    "_id":21,
+    "latitude":40.594625,
+    "longitude":-98.369629,
+    "title":"Physical Fitness Facility (PFF)",
+    "snippet":""
+  },
+  {
+    "_id":22,
+    "latitude":40.594191,
+    "longitude":-98.369659,
+    "title":"Doris Becker Tennis Facility",
+    "snippet":""
+  },
+  {
+    "_id":23,
+    "latitude":40.596129,
+    "longitude":-98.368763,
+    "title":"Lloyd Wilson Field/Stadium",
+    "snippet":""
+  },
+  {
+    "_id":24,
+    "latitude":40.594408,
+    "longitude":-98.365992,
+    "title":"Bronco Village Apartments",
+    "snippet":""
+  },
+  {
+    "_id":25,
+    "latitude":40.595308,
+    "longitude":-98.364667,
+    "title":"Barrett Alumni Center",
+    "snippet":""
+  },
+  {
+    "_id":26,
+    "latitude":40.596161,
+    "longitude":-98.365268,
+    "title":"Track and Field Complex",
+    "snippet":""
+  },
+  {
+    "_id":27,
+    "latitude":40.525371,
+    "longitude":-98.382986,
+    "title":"Sachtleben Observatory",
+    "snippet":""
+  },
+  {
+    "_id":28,
+    "latitude":40.5962,
+    "longitude":-98.374084,
+    "title":"The Den",
+    "snippet":"@HC_DEN - Voted Hastings College's Best House."
+  }
+]

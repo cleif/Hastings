@@ -17,6 +17,13 @@
 {
     [super viewDidLoad];
     
+    //refresh
+    UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(pp:)];
+    [self.navigationItem setRightBarButtonItem: refreshButton];
+    
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self action:@selector(populateMenuItems)];
+    [self.navigationItem setLeftBarButtonItem: menuButton];
+    
     self.title = @"Sodexo";
     
     self.menuItems = [[NSMutableArray alloc] init];
@@ -98,9 +105,31 @@
     
       if ( [elementName isEqualToString:@"weeklymenu"]){
           
-          SodexoModel * menuItem = [[SodexoModel alloc] init];
-          
-          menuItem.itemName = [attributeDict valueForKey:@"item_name"];
+          //initialize
+          SodexoModel * menuItem        = [[SodexoModel alloc] init];
+          SodexoModel * menuDesc        = [[SodexoModel alloc] init];
+          SodexoModel * menuCal         = [[SodexoModel alloc] init];
+          SodexoModel * menuFat         = [[SodexoModel alloc] init];
+          SodexoModel * menuSatFat      = [[SodexoModel alloc] init];
+          SodexoModel * menuSodium      = [[SodexoModel alloc] init];
+          SodexoModel * menuCarbs       = [[SodexoModel alloc] init];
+          SodexoModel * menuSugars      = [[SodexoModel alloc] init];
+          SodexoModel * menuProteins    = [[SodexoModel alloc] init];
+          SodexoModel * menuMealType    = [[SodexoModel alloc] init];
+          SodexoModel * menuDay         = [[SodexoModel alloc] init];
+
+          //set from value found
+          menuItem.itemName         = [attributeDict valueForKey:@"item_name"];
+          menuDesc.itemDescription  = [attributeDict valueForKey:@"item_desc"];
+          menuCal.calories          = [attributeDict valueForKey:@"calories"];
+          menuFat.fat               = [attributeDict valueForKey:@"fat"];
+          menuSatFat.saturatedFat   = [attributeDict valueForKey:@"satfat"];
+          menuSodium.sodium         = [attributeDict valueForKey:@"sodium"];
+          menuCarbs.carbohydrates   = [attributeDict valueForKey:@"carbo"];
+          menuSugars.sugars         = [attributeDict valueForKey:@"sugars"];
+          menuProteins.proteins     = [attributeDict valueForKey:@"protein"];
+          menuMealType.mealType     = [attributeDict valueForKey:@"meal"];
+          menuDay.day               = [attributeDict valueForKey:@"dayname"];
           
           [self.menuItems addObject:menuItem];
       }

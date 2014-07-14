@@ -26,17 +26,27 @@
     
     [super viewDidLoad];
     
+    //refresh
+    UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemClicked)];
+    [self.navigationItem setRightBarButtonItem: refreshButton];
+    
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self action:@selector(pp:)];
+    [self.navigationItem setLeftBarButtonItem: menuButton];
+    
     self.title = @"Athletics";
+    [self loadInitialView];
+
+}
+
+-(void)loadInitialView{
     NSString *fullURL = @"http://www.hastingsbroncos.com";
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_AthleticsWebView  loadRequest:requestObj];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)buttonItemClicked{
+    [self loadInitialView];
 }
 
 @end

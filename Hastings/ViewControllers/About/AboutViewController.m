@@ -28,6 +28,8 @@
     [super viewDidLoad];
     
     self.title = @"About";
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self action:@selector(pp:)];
+    [self.navigationItem setLeftBarButtonItem: menuButton];
 }
 
 - (void)didReceiveMemoryWarning

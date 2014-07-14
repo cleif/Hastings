@@ -26,17 +26,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //refresh
+    UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemClicked)];
+    [self.navigationItem setRightBarButtonItem: refreshButton];
+    
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self action:@selector(pp:)];
+    [self.navigationItem setLeftBarButtonItem: menuButton];
+    
     self.title = @"Broncoboard";
-    NSString *fullURL = @"http://broncoboard.hastings.edu/login/index.php";
+
+}
+
+-(void)loadInitialView{
+    NSString *fullURL = @"http://broncoboard.hastings.edu";
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_BBWebView loadRequest:requestObj];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)buttonItemClicked{
+    [self loadInitialView];
 }
 
 @end

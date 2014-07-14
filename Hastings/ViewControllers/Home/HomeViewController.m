@@ -28,13 +28,27 @@
 - (void) viewDidLoad{
     
     [super viewDidLoad];
+    //refresh
+    UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemClicked)];
+    [self.navigationItem setRightBarButtonItem: refreshButton];
+    //menu icon
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self action:@selector(:)];
+    [self.navigationItem setLeftBarButtonItem: menuButton];
    
     self.title = @"Home";
     
+    [self loadInitialView];
+}
+
+-(void)loadInitialView{
     NSString *fullURL = @"http://www.hastings.edu";
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_HomeWebView loadRequest:requestObj];
+}
+
+-(void)buttonItemClicked{
+    [self loadInitialView];
 }
 
 
