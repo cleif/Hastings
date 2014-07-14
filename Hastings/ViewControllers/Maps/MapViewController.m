@@ -152,11 +152,11 @@
         coordinate.latitude     = [[item objectForKey:@"latitude"] doubleValue];
         coordinate.longitude    = [[item objectForKey:@"longitude"] doubleValue];
 
-        HCCampusLocation *campusLocation   = [[HCCampusLocation alloc] init];
-        
-        campusLocation.buildingName         = [item objectForKey:@"title"];
-        campusLocation.buildingDescr        = [item objectForKey:@"snippet"];
-        campusLocation.coordinate           = coordinate;
+//        HCCampusLocation *campusLocation   = [[HCCampusLocation alloc] init];
+//        
+//        campusLocation.buildingName         = [item objectForKey:@"title"];
+//        campusLocation.buildingDescr        = [item objectForKey:@"snippet"];
+//        campusLocation.coordinate           = coordinate;
    }
 //    
 //    //add the array of locations to the location list
