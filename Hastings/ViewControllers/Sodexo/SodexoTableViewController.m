@@ -106,16 +106,7 @@
           
           //initialize
           SodexoModel * menuItem        = [[SodexoModel alloc] init];
-          SodexoModel * menuDesc        = [[SodexoModel alloc] init];
-          SodexoModel * menuCal         = [[SodexoModel alloc] init];
-          SodexoModel * menuFat         = [[SodexoModel alloc] init];
-          SodexoModel * menuSatFat      = [[SodexoModel alloc] init];
-          SodexoModel * menuSodium      = [[SodexoModel alloc] init];
-          SodexoModel * menuCarbs       = [[SodexoModel alloc] init];
-          SodexoModel * menuSugars      = [[SodexoModel alloc] init];
-          SodexoModel * menuProteins    = [[SodexoModel alloc] init];
-          SodexoModel * menuMealType    = [[SodexoModel alloc] init];
-          SodexoModel * menuDay         = [[SodexoModel alloc] init];
+
 
           //set from value found
           menuItem.itemName         = [attributeDict valueForKey:@"item_name"];

@@ -46,6 +46,7 @@
     [_HomeWebView loadRequest:requestObj];
 }
 
+//add spinner UX
 -(void)buttonItemClicked{
     [self loadInitialView];
 }
