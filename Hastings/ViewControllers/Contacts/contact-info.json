@@ -1,0 +1,30 @@
+[
+  {
+    "contact_name":"Bronco Bus",
+    "contact_number":"402-469-1564"
+  },
+  {
+    "contact_name":"Hastings Police",
+    "contact_number":"402-461-2380"
+  },
+  {
+    "contact_name":"Health Services",
+    "contact_number":"402-461-7372"
+  },
+  {
+    "contact_name":"I.T. Service Desk",
+    "contact_number":"402-461-1333"
+  },
+  {
+    "contact_name":"Maintenance",
+    "contact_number":"402-461-7337"
+  },
+  {
+    "contact_name":"Public Safety",
+    "contact_number":"402-463-8064"
+  },
+  {
+    "contact_name":"Student Affairs",
+    "contact_number":"402-461-7305"
+  }
+]

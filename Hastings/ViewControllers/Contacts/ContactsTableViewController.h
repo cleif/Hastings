@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ContactsTableViewCell.h"
 
 @interface ContactsTableViewController : UITableViewController
+
+@property (strong, nonatomic) NSMutableArray *contactInfo;
 
 @end

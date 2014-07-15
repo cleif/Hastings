@@ -67,7 +67,6 @@
     [cell bindCellDetails:item];
     
     return cell;
-    
 }
 
 
