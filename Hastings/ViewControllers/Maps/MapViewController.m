@@ -67,18 +67,18 @@
     //set map view
     [mapView setRegion:hastingsCollegeRegion animated:YES];
     
-    //Campus Locations Annotations
-    //Location 1: Chapel
-    CLLocationCoordinate2D chapelLocation;
-    chapelLocation.longitude = CHAPEL_LONGITUDE;
-    chapelLocation.latitude = CHAPEL_LATTITUDE;
-    Annotation * chapelAnnotation =[[Annotation alloc] init];
+//    //Campus Locations Annotations
+//    //Location 1: Chapel
+//    CLLocationCoordinate2D chapelLocation;
+//    chapelLocation.longitude = CHAPEL_LONGITUDE;
+//    chapelLocation.latitude = CHAPEL_LATTITUDE;
+//    Annotation * chapelAnnotation =[[Annotation alloc] init];
+//    
+//    
+//    chapelAnnotation.coordinate = chapelLocation;
+//    chapelAnnotation.title = @"French Memorial Chapel";
     
-    
-    chapelAnnotation.coordinate = chapelLocation;
-    chapelAnnotation.title = @"French Memorial Chapel";
-    
-    [self.mapView addAnnotation:chapelAnnotation];
+    [self.mapView addAnnotations:[self getCampusLocations]];
     
     //Location 2: Kewitt Gymnasium
     
@@ -141,26 +141,26 @@
     NSString *filePath                  = [[NSBundle mainBundle] pathForResource:@"map-data" ofType:@"json"];
     NSData *hcData                      = [NSData dataWithContentsOfFile:filePath];
     NSDictionary *results               = [NSJSONSerialization JSONObjectWithData:hcData options:kNilOptions error:nil];
-    NSDictionary *buildingList          = [results objectForKey:@"_id"];
+    NSDictionary *buildingList          = [results objectForKey:@"Locations"];
     
     //loop through dictionary adding title and snippet with coordinates to array
     for (NSDictionary *item in buildingList) {
-        NSArray *buildingName   = (NSArray*) [item objectForKey:@"title"];
-        NSArray *buildingDescr  = (NSArray*) [item objectForKey:@"snippet"];
         
         CLLocationCoordinate2D coordinate;
         coordinate.latitude     = [[item objectForKey:@"latitude"] doubleValue];
         coordinate.longitude    = [[item objectForKey:@"longitude"] doubleValue];
 
-        //HCCampusLocation *campusLocation   = [[HCCampusLocation alloc] init];
+        Annotation *campusLocation   = [[Annotation alloc] init];
         
-        //campusLocation.buildingName         = [item objectForKey:@"title"];
-        //campusLocation.buildingDescr        = [item objectForKey:@"snippet"];
-        //campusLocation.coordinate           = coordinate;
+        campusLocation.buildingName         = [item objectForKey:@"title"];
+        campusLocation.buildingDesc        = [item objectForKey:@"snippet"];
+        campusLocation.coordinate           = coordinate;
+        
+        [returnLocationList addObject:campusLocation];
    }
 //    
 //    //add the array of locations to the location list
-//    [returnLocationList addObject:campusLocation];
+    
     
     
     //return the list to populate the map.

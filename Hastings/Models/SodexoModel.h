@@ -10,8 +10,8 @@
 
 @interface SodexoModel : NSObject
 
-@property (nonatomic, assign) NSString *itemName;
-@property (nonatomic, assign) NSString *itemDescription;
+@property (nonatomic, copy) NSString *itemName;
+@property (nonatomic, copy) NSString *itemDescription;
 @property (nonatomic, assign) NSString *calories;
 @property (nonatomic, assign) NSString *fat;
 @property (nonatomic, assign) NSString *saturatedFat;

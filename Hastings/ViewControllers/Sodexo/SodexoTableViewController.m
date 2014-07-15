@@ -106,21 +106,20 @@
           
           //initialize
           SodexoModel * menuItem        = [[SodexoModel alloc] init];
+          
 
-
-          //set from value found
           menuItem.itemName         = [attributeDict valueForKey:@"item_name"];
           menuItem.itemDescription  = [attributeDict valueForKey:@"item_desc"];
           menuItem.calories          = [attributeDict valueForKey:@"calories"];
           menuItem.fat               = [attributeDict valueForKey:@"fat"];
-          menuItem.saturatedFat   = [attributeDict valueForKey:@"satfat"];
-          menuItem.sodium         = [attributeDict valueForKey:@"sodium"];
-          menuItem.carbohydrates   = [attributeDict valueForKey:@"carbo"];
-          menuItem.sugars         = [attributeDict valueForKey:@"sugars"];
-          menuItem.proteins     = [attributeDict valueForKey:@"protein"];
-          menuItem.mealType     = [attributeDict valueForKey:@"meal"];
+          menuItem.saturatedFat      = [attributeDict valueForKey:@"satfat"];
+          menuItem.sodium            = [attributeDict valueForKey:@"sodium"];
+          menuItem.carbohydrates     = [attributeDict valueForKey:@"carbo"];
+          menuItem.sugars            = [attributeDict valueForKey:@"sugars"];
+          menuItem.proteins          = [attributeDict valueForKey:@"protein"];
+          menuItem.mealType          = [attributeDict valueForKey:@"meal"];
           menuItem.day               = [attributeDict valueForKey:@"dayname"];
-          
+
           [self.menuItems addObject:menuItem];
       }
 }
