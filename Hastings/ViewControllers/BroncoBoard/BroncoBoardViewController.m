@@ -35,6 +35,7 @@
     [self.navigationItem setLeftBarButtonItem: menuButton];
     
     self.title = @"Broncoboard";
+    [self loadInitialView];
 
 }
 

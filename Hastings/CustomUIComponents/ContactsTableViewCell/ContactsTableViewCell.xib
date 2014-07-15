@@ -27,6 +27,10 @@
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phone-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="IMB-Cf-uqb">
+                        <rect key="frame" x="252" y="-3" width="68" height="66"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
                 </subviews>
             </tableViewCellContentView>
             <connections>
@@ -35,4 +39,7 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="phone-icon.png" width="64" height="64"/>
+    </resources>
 </document>
