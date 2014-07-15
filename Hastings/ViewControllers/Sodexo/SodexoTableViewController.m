@@ -110,16 +110,16 @@
 
           //set from value found
           menuItem.itemName         = [attributeDict valueForKey:@"item_name"];
-          menuDesc.itemDescription  = [attributeDict valueForKey:@"item_desc"];
-          menuCal.calories          = [attributeDict valueForKey:@"calories"];
-          menuFat.fat               = [attributeDict valueForKey:@"fat"];
-          menuSatFat.saturatedFat   = [attributeDict valueForKey:@"satfat"];
-          menuSodium.sodium         = [attributeDict valueForKey:@"sodium"];
-          menuCarbs.carbohydrates   = [attributeDict valueForKey:@"carbo"];
-          menuSugars.sugars         = [attributeDict valueForKey:@"sugars"];
-          menuProteins.proteins     = [attributeDict valueForKey:@"protein"];
-          menuMealType.mealType     = [attributeDict valueForKey:@"meal"];
-          menuDay.day               = [attributeDict valueForKey:@"dayname"];
+          menuItem.itemDescription  = [attributeDict valueForKey:@"item_desc"];
+          menuItem.calories          = [attributeDict valueForKey:@"calories"];
+          menuItem.fat               = [attributeDict valueForKey:@"fat"];
+          menuItem.saturatedFat   = [attributeDict valueForKey:@"satfat"];
+          menuItem.sodium         = [attributeDict valueForKey:@"sodium"];
+          menuItem.carbohydrates   = [attributeDict valueForKey:@"carbo"];
+          menuItem.sugars         = [attributeDict valueForKey:@"sugars"];
+          menuItem.proteins     = [attributeDict valueForKey:@"protein"];
+          menuItem.mealType     = [attributeDict valueForKey:@"meal"];
+          menuItem.day               = [attributeDict valueForKey:@"dayname"];
           
           [self.menuItems addObject:menuItem];
       }
