@@ -7,6 +7,7 @@
 //
 
 #import "SodexoTableViewController.h"
+#import "IIViewDeckController.h"
 
 
 @implementation SodexoTableViewController
@@ -18,10 +19,10 @@
     [super viewDidLoad];
     
     //refresh
-    UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(pp:)];
+    UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(populateMenuItems)];
     [self.navigationItem setRightBarButtonItem: refreshButton];
     
-    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self action:@selector(populateMenuItems)];
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self.viewDeckController action:@selector(toggleLeftView)];
     [self.navigationItem setLeftBarButtonItem: menuButton];
     
     self.title = @"Sodexo";

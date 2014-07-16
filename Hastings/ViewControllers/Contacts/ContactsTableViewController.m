@@ -7,6 +7,7 @@
 //
 
 #import "ContactsTableViewController.h"
+#import "IIViewDeckController.h"
 
 @interface ContactsTableViewController ()
 
@@ -20,7 +21,7 @@
 {
     [super viewDidLoad];
     
-    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self action:@selector(pp:)];
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self.viewDeckController action:@selector(toggleLeftView)];
     [self.navigationItem setLeftBarButtonItem: menuButton];
     
     self.title = @"Contacts";
@@ -45,6 +46,7 @@
     
     return 60;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     

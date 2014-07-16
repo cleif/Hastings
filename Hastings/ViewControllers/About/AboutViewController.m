@@ -7,6 +7,7 @@
 //
 
 #import "AboutViewController.h"
+#import "IIViewDeckController.h"
 
 @interface AboutViewController ()
 
@@ -28,7 +29,7 @@
     [super viewDidLoad];
     
     self.title = @"About";
-    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self action:@selector(pp:)];
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self.viewDeckController action:@selector(toggleLeftView)];
     [self.navigationItem setLeftBarButtonItem: menuButton];
 }
 @end

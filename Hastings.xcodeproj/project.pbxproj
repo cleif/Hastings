@@ -26,6 +26,8 @@
 		270F4B0C196AEF900020978F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270F4B06196AEF900020978F /* JavaScriptCore.framework */; };
 		270F4B0D196AEF900020978F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270F4B07196AEF900020978F /* Social.framework */; };
 		270F4B0E196AEF900020978F /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270F4B08196AEF900020978F /* Twitter.framework */; };
+		2723E7281976D1B400EF6AA3 /* CalendarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2723E7261976D1B400EF6AA3 /* CalendarTableViewController.m */; };
+		2723E7291976D1B400EF6AA3 /* CalendarTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2723E7271976D1B400EF6AA3 /* CalendarTableViewController.xib */; };
 		2777158F1974B8790019A317 /* ContactsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2777158E1974B8790019A317 /* ContactsModel.m */; };
 		277715941974B94F0019A317 /* ContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 277715921974B94F0019A317 /* ContactsTableViewCell.m */; };
 		277715951974B94F0019A317 /* ContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277715931974B94F0019A317 /* ContactsTableViewCell.xib */; };
@@ -101,6 +103,9 @@
 		270F4B06196AEF900020978F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		270F4B07196AEF900020978F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		270F4B08196AEF900020978F /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		2723E7251976D1B400EF6AA3 /* CalendarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTableViewController.h; sourceTree = SOURCE_ROOT; };
+		2723E7261976D1B400EF6AA3 /* CalendarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTableViewController.m; sourceTree = SOURCE_ROOT; };
+		2723E7271976D1B400EF6AA3 /* CalendarTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewController.xib; sourceTree = SOURCE_ROOT; };
 		2777158D1974B8790019A317 /* ContactsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsModel.h; sourceTree = "<group>"; };
 		2777158E1974B8790019A317 /* ContactsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsModel.m; sourceTree = "<group>"; };
 		277715911974B94F0019A317 /* ContactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewCell.h; sourceTree = "<group>"; };
@@ -376,6 +381,9 @@
 		625F24CA19648D82005BDC64 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				2723E7251976D1B400EF6AA3 /* CalendarTableViewController.h */,
+				2723E7261976D1B400EF6AA3 /* CalendarTableViewController.m */,
+				2723E7271976D1B400EF6AA3 /* CalendarTableViewController.xib */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -503,9 +511,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				TargetAttributes = {
-					624AD23D1964881E00B54741 = {
-						DevelopmentTeam = 4V5CEJJJ22;
-					};
 					624AD25E1964881E00B54741 = {
 						TestTargetID = 624AD23D1964881E00B54741;
 					};
@@ -560,6 +565,7 @@
 				27F9A309196A31F0000193AE /* default.png in Resources */,
 				2702C6D01964F17D00BC6CEE /* iTunesArtwork@2x.png in Resources */,
 				277715971974C39B0019A317 /* contact-info.json in Resources */,
+				2723E7291976D1B400EF6AA3 /* CalendarTableViewController.xib in Resources */,
 				27DBF21C1965DAAF003A15DD /* SodexoTableViewCell.xib in Resources */,
 				2702C6CE1964F17D00BC6CEE /* Icon-Small@2x.png in Resources */,
 				2702C6CA1964F17D00BC6CEE /* Icon-60@2x.png in Resources */,
@@ -590,6 +596,7 @@
 				625F24E21964961F005BDC64 /* IIWrapController.m in Sources */,
 				624AD24E1964881E00B54741 /* main.m in Sources */,
 				277715941974B94F0019A317 /* ContactsTableViewCell.m in Sources */,
+				2723E7281976D1B400EF6AA3 /* CalendarTableViewController.m in Sources */,
 				27DBF21A1965DA6E003A15DD /* SodexoTableViewCell.m in Sources */,
 				27006C01197378B200BD4DAF /* SodexoTableViewController.m in Sources */,
 				625F24F019649914005BDC64 /* BroncoBoardViewController.m in Sources */,
