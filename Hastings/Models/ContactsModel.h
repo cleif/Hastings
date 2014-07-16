@@ -10,7 +10,7 @@
 
 @interface ContactsModel : NSObject
 
-@property (nonatomic, assign) NSString *contactName;
-@property (nonatomic, assign) NSString *contactNumber;
+@property (nonatomic, copy) NSString *contactName;
+@property (nonatomic, copy) NSString *contactNumber;
 
 @end
