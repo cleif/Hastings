@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "MenuViewController.h"
 
 @interface HomeViewController ()
 
@@ -27,9 +28,11 @@
 - (void) viewDidLoad{
     
     [super viewDidLoad];
+    
     //refresh
     UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemClicked)];
     [self.navigationItem setRightBarButtonItem: refreshButton];
+    
     //menu icon
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self action:@selector(pp:)];
     [self.navigationItem setLeftBarButtonItem: menuButton];

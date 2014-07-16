@@ -76,7 +76,6 @@
 - (void) viewDidLoad{
     
     [self initViewControllers];
-    
 }
 
 - (void) closeMenu{
@@ -166,7 +165,7 @@
             cell.textLabel.text = @"Sodexo";
             break;
         case 6:
-            cell.textLabel.text = @"Calendar";
+            cell.textLabel.text = @"Special Event";
             break;
         case 7:
             cell.textLabel.text = @"Twitter";
