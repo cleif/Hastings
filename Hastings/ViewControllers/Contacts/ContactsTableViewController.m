@@ -26,7 +26,7 @@
     self.title = @"Contacts";
     
     self.contactInfo = [[NSMutableArray alloc] init];
-    [self getTestContactInfo];
+    [self getContactInfo];
 }
 
 #pragma mark - Table view data source
@@ -45,7 +45,6 @@
     
     return 60;
 }
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
@@ -63,6 +62,10 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
 - (NSMutableArray *) getTestContactInfo{
     
     NSMutableArray * contactInfo = [[NSMutableArray alloc] init];
@@ -74,6 +77,26 @@
         items.contactName   = @"Public Safety";
         items.contactNumber = @"(402) 984-8064";
         [contactInfo addObject:items];
+    }
+    return contactInfo;
+}
+
+-(NSMutableArray *) getContactInfo{
+    NSMutableArray * contactInfo    = [[NSMutableArray alloc] init];
+    
+    NSString *filePath              = [[NSBundle mainBundle] pathForResource:@"contact-info" ofType:@"json"];
+    NSData *contactData             = [NSData dataWithContentsOfFile:filePath];
+    NSDictionary *results           = [NSJSONSerialization JSONObjectWithData:contactData options:kNilOptions error:nil];
+    NSDictionary *contactList       = [results objectForKey:@"Contacts"];
+
+    for (NSDictionary * contacts in contactList) {
+        ContactsModel * contactInfo     = [[ContactsModel alloc] init];
+        
+        contactInfo.contactName     = [contacts objectForKey:@"contact_name"];
+        contactInfo.contactNumber   = [contacts objectForKey:@"contact_number"];
+        
+        [self.contactInfo addObject:contactInfo];
+        
     }
     return contactInfo;
 }

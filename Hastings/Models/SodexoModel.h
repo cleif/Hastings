@@ -12,15 +12,15 @@
 
 @property (nonatomic, copy) NSString *itemName;
 @property (nonatomic, copy) NSString *itemDescription;
-@property (nonatomic, assign) NSString *calories;
-@property (nonatomic, assign) NSString *fat;
-@property (nonatomic, assign) NSString *saturatedFat;
-@property (nonatomic, assign) NSString *sodium;
-@property (nonatomic, assign) NSString *carbohydrates;
-@property (nonatomic, assign) NSString *sugars;
-@property (nonatomic, assign) NSString *proteins;
-@property (nonatomic, assign) NSString *mealType;
-@property (nonatomic, assign) NSString *day;
-@property (nonatomic, assign) NSString *menuDate;
+@property (nonatomic, copy) NSString *calories;
+@property (nonatomic, copy) NSString *fat;
+@property (nonatomic, copy) NSString *saturatedFat;
+@property (nonatomic, copy) NSString *sodium;
+@property (nonatomic, copy) NSString *carbohydrates;
+@property (nonatomic, copy) NSString *sugars;
+@property (nonatomic, copy) NSString *proteins;
+@property (nonatomic, copy) NSString *mealType;
+@property (nonatomic, copy) NSString *day;
+@property (nonatomic, copy) NSString *menuDate;
 
 @end

@@ -157,7 +157,7 @@
             cell.textLabel.text = @"Athletics";
             break;
         case 3:
-            cell.textLabel.text = @"Maps";
+            cell.textLabel.text = @"Campus Map";
             break;
         case 4:
             cell.textLabel.text = @"Broncoboard";
@@ -172,7 +172,7 @@
             cell.textLabel.text = @"Twitter";
             break;
         case 8:
-            cell.textLabel.text = @"Contacts";
+            cell.textLabel.text = @"Campus Contacts";
             break;
         case 9:
             cell.textLabel.text = @"About";

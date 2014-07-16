@@ -36,9 +36,8 @@
 }
 
 -(void) bindCellDetails:(SodexoModel *) menuDetails{
-    NSLog(@"%@", menuDetails.itemName);
     self.menuItem.text = menuDetails.itemName;
-    //self.menuDescription.text = menuDetails.itemDescription;
+    self.menuDescription.text = menuDetails.itemDescription;
     
 }
 

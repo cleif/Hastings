@@ -15,14 +15,11 @@
 
 @end
 
-//defined coordinates
-#define HC_LATITUDE 40.5960000
-#define HC_LONGGITUDE -98.3707043
+//defined coordinates 40.593490, -98.370377
+#define HC_LATITUDE 40.593490
+#define HC_LONGGITUDE -98.369798
 #define SPAN 0.0125f;
 #define METERS_PER_MILE 1609.344
-
-#define CHAPEL_LATTITUDE 40.591628
-#define CHAPEL_LONGITUDE -98.373567
 
 @implementation MapViewController
 @synthesize mapView;
@@ -67,21 +64,7 @@
     //set map view
     [mapView setRegion:hastingsCollegeRegion animated:YES];
     
-//    //Campus Locations Annotations
-//    //Location 1: Chapel
-//    CLLocationCoordinate2D chapelLocation;
-//    chapelLocation.longitude = CHAPEL_LONGITUDE;
-//    chapelLocation.latitude = CHAPEL_LATTITUDE;
-//    Annotation * chapelAnnotation =[[Annotation alloc] init];
-//    
-//    
-//    chapelAnnotation.coordinate = chapelLocation;
-//    chapelAnnotation.title = @"French Memorial Chapel";
-    
     [self.mapView addAnnotations:[self getCampusLocations]];
-    
-    //Location 2: Kewitt Gymnasium
-    
 }
 
 - (MKAnnotationView *) mapView:(MKMapView *) mapView viewForAnnotation:(id <MKAnnotation>)annotation {
@@ -168,63 +151,3 @@
 }
 
 @end
-
-//NotesFromCasey
-/*{
-//- (NSMutableArray*) getAllFCSAOfficeLoctions{
-//    
-//    NSMutableArray *returnOfficeList = [[NSMutableArray alloc] init];
-//    
-//    NSString *filePath               = [[NSBundle mainBundle] pathForResource:@"FCSAOfficeLocations" ofType:@"json"];
-//    NSData *myData                   = [NSData dataWithContentsOfFile:filePath];
-//    NSDictionary *results            = [NSJSONSerialization JSONObjectWithData:myData options:kNilOptions error:nil];
-//    NSDictionary *officeList         = [results objectForKey:@"Locations"];
-//    
-//    
-//    for (NSDictionary *item in officeList){
-//        
-//        NSArray *address        = (NSArray*) [item objectForKey:@"Address"];
-//        NSArray *mailingAddress = (NSArray*) [item objectForKey:@"MailingAddress"];
-//
-//        CLLocationCoordinate2D coordinate;
-//        coordinate.latitude  = [[item objectForKey:@"Lat"] doubleValue];
-//        coordinate.longitude = [[item objectForKey:@"Lng"] doubleValue];
-//        
-//        FCSAOfficeLocation *officeLocation = [[FCSAOfficeLocation alloc] init];
-//        
-//        officeLocation.name             = [item objectForKey:@"Name"];
-//        officeLocation.thCoordinate     = coordinate;
-//        officeLocation.distanceToOffice = [self getDistanceToFCSAOfficeLocation:officeLocation];
-//        
-//        for (NSDictionary *addressItem in address) {
-//            
-//            officeLocation.address      = [addressItem objectForKey:@"Street"];
-//            officeLocation.city         = [addressItem objectForKey:@"City"];
-//            officeLocation.state        = [addressItem objectForKey:@"State"];
-//            officeLocation.stateLong    = [addressItem objectForKey:@"StateLong"];
-//            officeLocation.zipCode      = [addressItem objectForKey:@"ZipCode"];
-//            officeLocation.phoneNumber  = [addressItem objectForKey:@"Phone"];
-//            officeLocation.faxNumber    = [addressItem objectForKey:@"Fax"];
-//            officeLocation.officeEmail  = [addressItem objectForKey:@"OfficeEmail"];
-//            officeLocation.country      = @"United States";
-//        }
-//        
-//        
-//        for (NSDictionary *mailingAddressItem in mailingAddress) {
-//            
-//            officeLocation.mailingAddress      = [mailingAddressItem objectForKey:@"MailingAddress"];
-//            officeLocation.mailingCity         = [mailingAddressItem objectForKey:@"MailingCity"];
-//            officeLocation.mailingState        = [mailingAddressItem objectForKey:@"State"];
-//            officeLocation.mailingZipCode      = [mailingAddressItem objectForKey:@"ZipCode"];
-//            officeLocation.mailingCountry      = @"United States";
-//        }
-//        
-//        
-//        [returnOfficeList addObject:officeLocation];
-//    }
-//    
-//    return returnOfficeList;
-//}
-//
-}*/
-

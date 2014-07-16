@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27006BFA197373C800BD4DAF /* map-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27006BF8197373C800BD4DAF /* map-marker@2x.png */; };
 		27006BFB197373C800BD4DAF /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 27006BF9197373C800BD4DAF /* refresh.png */; };
 		27006BFE1973789A00BD4DAF /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27006BFD1973789A00BD4DAF /* TwitterViewController.m */; };
 		27006C01197378B200BD4DAF /* SodexoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27006C00197378B200BD4DAF /* SodexoTableViewController.m */; };
@@ -31,13 +30,15 @@
 		277715941974B94F0019A317 /* ContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 277715921974B94F0019A317 /* ContactsTableViewCell.m */; };
 		277715951974B94F0019A317 /* ContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277715931974B94F0019A317 /* ContactsTableViewCell.xib */; };
 		277715971974C39B0019A317 /* contact-info.json in Resources */ = {isa = PBXBuildFile; fileRef = 277715961974C39B0019A317 /* contact-info.json */; };
+		278CBC72197605C2004A4587 /* phone-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 278CBC71197605C2004A4587 /* phone-icon.png */; };
+		278CBC7A19760FBA004A4587 /* map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 278CBC7919760FBA004A4587 /* map-marker.png */; };
+		278CBC7C19761232004A4587 /* detail-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 278CBC7B19761232004A4587 /* detail-icon.png */; };
 		279AA51F197416D80009545F /* map-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 279AA51E197416D80009545F /* map-data.json */; };
 		27DBF20C1965A8AD003A15DD /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF20A1965A8AD003A15DD /* menu-icon.png */; };
 		27DBF20D1965A8AD003A15DD /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF20B1965A8AD003A15DD /* menu-icon@2x.png */; };
 		27DBF2111965D775003A15DD /* SodexoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBF2101965D775003A15DD /* SodexoModel.m */; };
 		27DBF21A1965DA6E003A15DD /* SodexoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBF2191965DA6E003A15DD /* SodexoTableViewCell.m */; };
 		27DBF21C1965DAAF003A15DD /* SodexoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF21B1965DAAF003A15DD /* SodexoTableViewCell.xib */; };
-		27EA3AED19756E5900F39C24 /* phone-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27EA3AEC19756E5900F39C24 /* phone-icon.png */; };
 		27F3C6091968CD1B00DE17F4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F3C6081968CD1B00DE17F4 /* MapKit.framework */; };
 		27F9A309196A31F0000193AE /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F9A308196A31F0000193AE /* default.png */; };
 		27F9A30C196A4192000193AE /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F9A30B196A4192000193AE /* Annotation.m */; };
@@ -79,7 +80,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		27006BF8197373C800BD4DAF /* map-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker@2x.png"; sourceTree = "<group>"; };
 		27006BF9197373C800BD4DAF /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
 		27006BFC1973789A00BD4DAF /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
 		27006BFD1973789A00BD4DAF /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
@@ -107,6 +107,9 @@
 		277715921974B94F0019A317 /* ContactsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewCell.m; sourceTree = "<group>"; };
 		277715931974B94F0019A317 /* ContactsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsTableViewCell.xib; sourceTree = "<group>"; };
 		277715961974C39B0019A317 /* contact-info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "contact-info.json"; sourceTree = "<group>"; };
+		278CBC71197605C2004A4587 /* phone-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone-icon.png"; sourceTree = "<group>"; };
+		278CBC7919760FBA004A4587 /* map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker.png"; sourceTree = "<group>"; };
+		278CBC7B19761232004A4587 /* detail-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detail-icon.png"; sourceTree = "<group>"; };
 		279AA51E197416D80009545F /* map-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "map-data.json"; sourceTree = "<group>"; };
 		27DBF20A1965A8AD003A15DD /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
 		27DBF20B1965A8AD003A15DD /* menu-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon@2x.png"; sourceTree = "<group>"; };
@@ -115,7 +118,6 @@
 		27DBF2181965DA6E003A15DD /* SodexoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodexoTableViewCell.h; sourceTree = "<group>"; };
 		27DBF2191965DA6E003A15DD /* SodexoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SodexoTableViewCell.m; sourceTree = "<group>"; };
 		27DBF21B1965DAAF003A15DD /* SodexoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SodexoTableViewCell.xib; sourceTree = "<group>"; };
-		27EA3AEC19756E5900F39C24 /* phone-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone-icon.png"; sourceTree = "<group>"; };
 		27F3C6081968CD1B00DE17F4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		27F9A308196A31F0000193AE /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
 		27F9A30A196A4192000193AE /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
@@ -193,8 +195,9 @@
 		2702C6C21964F17D00BC6CEE /* Image Files */ = {
 			isa = PBXGroup;
 			children = (
-				27EA3AEC19756E5900F39C24 /* phone-icon.png */,
-				27006BF8197373C800BD4DAF /* map-marker@2x.png */,
+				278CBC7B19761232004A4587 /* detail-icon.png */,
+				278CBC7919760FBA004A4587 /* map-marker.png */,
+				278CBC71197605C2004A4587 /* phone-icon.png */,
 				27006BF9197373C800BD4DAF /* refresh.png */,
 				27F9A308196A31F0000193AE /* default.png */,
 				27DBF20A1965A8AD003A15DD /* menu-icon.png */,
@@ -542,14 +545,15 @@
 				625F24F119649914005BDC64 /* BroncoBoardViewController.xib in Resources */,
 				625F24F619649940005BDC64 /* MapViewController.xib in Resources */,
 				625F24EC196498F2005BDC64 /* AthleticsViewController.xib in Resources */,
-				27006BFA197373C800BD4DAF /* map-marker@2x.png in Resources */,
+				278CBC7C19761232004A4587 /* detail-icon.png in Resources */,
 				279AA51F197416D80009545F /* map-data.json in Resources */,
 				2702C6CD1964F17D00BC6CEE /* Icon-Small.png in Resources */,
 				625F24E719649709005BDC64 /* HomeViewController.xib in Resources */,
 				27006BFB197373C800BD4DAF /* refresh.png in Resources */,
 				270F4B02196AE7950020978F /* TwitterViewController.xib in Resources */,
 				27006C0519737B7300BD4DAF /* About-Image-iOS.png in Resources */,
-				27EA3AED19756E5900F39C24 /* phone-icon.png in Resources */,
+				278CBC7A19760FBA004A4587 /* map-marker.png in Resources */,
+				278CBC72197605C2004A4587 /* phone-icon.png in Resources */,
 				27DBF20D1965A8AD003A15DD /* menu-icon@2x.png in Resources */,
 				625F24D519648DA1005BDC64 /* AboutViewController.xib in Resources */,
 				2702C6BF1964C98A00BC6CEE /* SodexoTableViewController.xib in Resources */,
