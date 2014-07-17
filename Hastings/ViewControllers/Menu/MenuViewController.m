@@ -17,8 +17,9 @@
 @synthesize mapViewController           = _mapViewController;
 @synthesize broncoBoardViewController   = _broncoBoardViewController;
 @synthesize contactsTableViewController = _contactsTableViewController;
-@synthesize sodexoTableViewController   = _sodexoTableViewController;
+@synthesize sodexoViewController        = _sodexoViewController;
 @synthesize twitterViewController       = _twitterViewController;
+@synthesize calendarTableViewController = _calendarTableViewController;
 
 
 - (void) initViewControllers{
@@ -29,8 +30,9 @@
     self.broncoBoardViewController      = [[BroncoBoardViewController alloc] initWithNibName:@"BroncoBoardViewController" bundle:nil];
     self.mapViewController              = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
     self.contactsTableViewController    = [[ContactsTableViewController alloc] initWithNibName:@"ContactsTableViewController" bundle:nil];
-    self.sodexoTableViewController      = [[SodexoTableViewController alloc] initWithNibName:@"SodexoTableViewController" bundle:nil];
-        self.twitterViewController      = [[TwitterViewController alloc] initWithNibName:@"TwitterViewController" bundle:nil];
+    self.sodexoViewController           = [[SodexoViewController alloc] initWithNibName:@"SodexoViewController" bundle:nil];
+    self.twitterViewController          = [[TwitterViewController alloc] initWithNibName:@"TwitterViewController" bundle:nil];
+    self.calendarTableViewController    = [[CalendarTableViewController alloc] initWithNibName:@"CalendarTableViewController" bundle:nil];
 }
 
 #pragma mark - Display methods
@@ -66,11 +68,16 @@
 }
 - (void) displaySodexoViewController{
     
-    self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.sodexoTableViewController];
+    self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.sodexoViewController];
 }
 - (void) displayTwitterViewController{
     
     self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.twitterViewController];
+}
+
+- (void) displayCalendarViewController{
+    
+    self.viewDeckController.centerController = [[UINavigationController alloc] initWithRootViewController:self.calendarTableViewController];
 }
 
 - (void) viewDidLoad{
@@ -119,6 +126,9 @@
         case 5:
             [self displaySodexoViewController];
             break;
+        case 6:
+            [self displayCalendarViewController];
+            break;
         case 7:
             [self displayTwitterViewController];
             break;
@@ -165,7 +175,7 @@
             cell.textLabel.text = @"Sodexo";
             break;
         case 6:
-            cell.textLabel.text = @"Special Event";
+            cell.textLabel.text = @"Campus Events";
             break;
         case 7:
             cell.textLabel.text = @"Twitter";

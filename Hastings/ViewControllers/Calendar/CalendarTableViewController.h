@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "calendarTableViewCell.h"
 
 @interface CalendarTableViewController : UITableViewController
+
+@property (strong, nonatomic) NSMutableArray *eventInfo;
 
 @end

@@ -64,23 +64,10 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-}
 
-- (NSMutableArray *) getTestContactInfo{
-    
-    NSMutableArray * contactInfo = [[NSMutableArray alloc] init];
-    
-    for (int x = 0; x <= 10; x++) {
-        
-        ContactsModel * items = [[ContactsModel alloc] init];
-        
-        items.contactName   = @"Public Safety";
-        items.contactNumber = @"(402) 984-8064";
-        [contactInfo addObject:items];
-    }
-    return contactInfo;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    //NSString * phoneNumber   = [@"telprompt://" stringByAppendingString:/*phone number variable.*/];
+    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
 }
 
 -(NSMutableArray *) getContactInfo{

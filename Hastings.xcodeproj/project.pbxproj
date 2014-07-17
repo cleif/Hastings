@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		27006BFB197373C800BD4DAF /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 27006BF9197373C800BD4DAF /* refresh.png */; };
 		27006BFE1973789A00BD4DAF /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27006BFD1973789A00BD4DAF /* TwitterViewController.m */; };
-		27006C01197378B200BD4DAF /* SodexoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27006C00197378B200BD4DAF /* SodexoTableViewController.m */; };
-		27006C0519737B7300BD4DAF /* About-Image-iOS.png in Resources */ = {isa = PBXBuildFile; fileRef = 27006C0419737B7300BD4DAF /* About-Image-iOS.png */; };
-		2702C6BF1964C98A00BC6CEE /* SodexoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6BD1964C98A00BC6CEE /* SodexoTableViewController.xib */; };
 		2702C6CA1964F17D00BC6CEE /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6C31964F17D00BC6CEE /* Icon-60@2x.png */; };
 		2702C6CB1964F17D00BC6CEE /* Icon-Small-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6C41964F17D00BC6CEE /* Icon-Small-40.png */; };
 		2702C6CC1964F17D00BC6CEE /* Icon-Small-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2702C6C51964F17D00BC6CEE /* Icon-Small-40@2x.png */; };
@@ -26,8 +23,9 @@
 		270F4B0C196AEF900020978F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270F4B06196AEF900020978F /* JavaScriptCore.framework */; };
 		270F4B0D196AEF900020978F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270F4B07196AEF900020978F /* Social.framework */; };
 		270F4B0E196AEF900020978F /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270F4B08196AEF900020978F /* Twitter.framework */; };
-		2723E7281976D1B400EF6AA3 /* CalendarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2723E7261976D1B400EF6AA3 /* CalendarTableViewController.m */; };
 		2723E7291976D1B400EF6AA3 /* CalendarTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2723E7271976D1B400EF6AA3 /* CalendarTableViewController.xib */; };
+		2723E72D197713FA00EF6AA3 /* SodexoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2723E72B197713FA00EF6AA3 /* SodexoViewController.m */; };
+		2723E72E197713FA00EF6AA3 /* SodexoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2723E72C197713FA00EF6AA3 /* SodexoViewController.xib */; };
 		2777158F1974B8790019A317 /* ContactsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2777158E1974B8790019A317 /* ContactsModel.m */; };
 		277715941974B94F0019A317 /* ContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 277715921974B94F0019A317 /* ContactsTableViewCell.m */; };
 		277715951974B94F0019A317 /* ContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277715931974B94F0019A317 /* ContactsTableViewCell.xib */; };
@@ -36,11 +34,19 @@
 		278CBC7A19760FBA004A4587 /* map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 278CBC7919760FBA004A4587 /* map-marker.png */; };
 		278CBC7C19761232004A4587 /* detail-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 278CBC7B19761232004A4587 /* detail-icon.png */; };
 		279AA51F197416D80009545F /* map-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 279AA51E197416D80009545F /* map-data.json */; };
+		279BC2BA19784E5000B330B6 /* CalendarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BC2B919784E5000B330B6 /* CalendarModel.m */; };
+		279BC2BE19784EC400B330B6 /* CalendarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BC2BD19784EC400B330B6 /* CalendarTableViewController.m */; };
+		279BC2C219784EE700B330B6 /* CalendarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BC2C019784EE700B330B6 /* CalendarTableViewCell.m */; };
+		279BC2C319784EE700B330B6 /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279BC2C119784EE700B330B6 /* CalendarTableViewCell.xib */; };
+		279BC2C519785D6700B330B6 /* event-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 279BC2C419785D6700B330B6 /* event-data.json */; };
 		27DBF20C1965A8AD003A15DD /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF20A1965A8AD003A15DD /* menu-icon.png */; };
 		27DBF20D1965A8AD003A15DD /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF20B1965A8AD003A15DD /* menu-icon@2x.png */; };
 		27DBF2111965D775003A15DD /* SodexoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBF2101965D775003A15DD /* SodexoModel.m */; };
 		27DBF21A1965DA6E003A15DD /* SodexoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBF2191965DA6E003A15DD /* SodexoTableViewCell.m */; };
 		27DBF21C1965DAAF003A15DD /* SodexoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF21B1965DAAF003A15DD /* SodexoTableViewCell.xib */; };
+		27DF9AA4197752D600122B76 /* About-Image-iOS.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DF9AA3197752D600122B76 /* About-Image-iOS.png */; };
+		27DF9AA81977544E00122B76 /* NutritionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DF9AA61977544E00122B76 /* NutritionViewController.m */; };
+		27DF9AA91977544E00122B76 /* NutritionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DF9AA71977544E00122B76 /* NutritionViewController.xib */; };
 		27F3C6091968CD1B00DE17F4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F3C6081968CD1B00DE17F4 /* MapKit.framework */; };
 		27F9A309196A31F0000193AE /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F9A308196A31F0000193AE /* default.png */; };
 		27F9A30C196A4192000193AE /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F9A30B196A4192000193AE /* Annotation.m */; };
@@ -85,10 +91,6 @@
 		27006BF9197373C800BD4DAF /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
 		27006BFC1973789A00BD4DAF /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
 		27006BFD1973789A00BD4DAF /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
-		27006BFF197378B200BD4DAF /* SodexoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodexoTableViewController.h; sourceTree = "<group>"; };
-		27006C00197378B200BD4DAF /* SodexoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SodexoTableViewController.m; sourceTree = "<group>"; };
-		27006C0419737B7300BD4DAF /* About-Image-iOS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-Image-iOS.png"; sourceTree = "<group>"; };
-		2702C6BD1964C98A00BC6CEE /* SodexoTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SodexoTableViewController.xib; sourceTree = SOURCE_ROOT; };
 		2702C6C31964F17D00BC6CEE /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		2702C6C41964F17D00BC6CEE /* Icon-Small-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40.png"; sourceTree = "<group>"; };
 		2702C6C51964F17D00BC6CEE /* Icon-Small-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40@2x.png"; sourceTree = "<group>"; };
@@ -103,9 +105,10 @@
 		270F4B06196AEF900020978F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		270F4B07196AEF900020978F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		270F4B08196AEF900020978F /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
-		2723E7251976D1B400EF6AA3 /* CalendarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTableViewController.h; sourceTree = SOURCE_ROOT; };
-		2723E7261976D1B400EF6AA3 /* CalendarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTableViewController.m; sourceTree = SOURCE_ROOT; };
 		2723E7271976D1B400EF6AA3 /* CalendarTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewController.xib; sourceTree = SOURCE_ROOT; };
+		2723E72A197713FA00EF6AA3 /* SodexoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodexoViewController.h; sourceTree = "<group>"; };
+		2723E72B197713FA00EF6AA3 /* SodexoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SodexoViewController.m; sourceTree = "<group>"; };
+		2723E72C197713FA00EF6AA3 /* SodexoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SodexoViewController.xib; sourceTree = "<group>"; };
 		2777158D1974B8790019A317 /* ContactsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsModel.h; sourceTree = "<group>"; };
 		2777158E1974B8790019A317 /* ContactsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsModel.m; sourceTree = "<group>"; };
 		277715911974B94F0019A317 /* ContactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewCell.h; sourceTree = "<group>"; };
@@ -116,6 +119,14 @@
 		278CBC7919760FBA004A4587 /* map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker.png"; sourceTree = "<group>"; };
 		278CBC7B19761232004A4587 /* detail-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detail-icon.png"; sourceTree = "<group>"; };
 		279AA51E197416D80009545F /* map-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "map-data.json"; sourceTree = "<group>"; };
+		279BC2B819784E5000B330B6 /* CalendarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarModel.h; sourceTree = "<group>"; };
+		279BC2B919784E5000B330B6 /* CalendarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarModel.m; sourceTree = "<group>"; };
+		279BC2BC19784EC400B330B6 /* CalendarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTableViewController.h; sourceTree = "<group>"; };
+		279BC2BD19784EC400B330B6 /* CalendarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTableViewController.m; sourceTree = "<group>"; };
+		279BC2BF19784EE700B330B6 /* CalendarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTableViewCell.h; sourceTree = "<group>"; };
+		279BC2C019784EE700B330B6 /* CalendarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTableViewCell.m; sourceTree = "<group>"; };
+		279BC2C119784EE700B330B6 /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
+		279BC2C419785D6700B330B6 /* event-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "event-data.json"; sourceTree = "<group>"; };
 		27DBF20A1965A8AD003A15DD /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
 		27DBF20B1965A8AD003A15DD /* menu-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon@2x.png"; sourceTree = "<group>"; };
 		27DBF20F1965D775003A15DD /* SodexoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodexoModel.h; sourceTree = "<group>"; };
@@ -123,6 +134,10 @@
 		27DBF2181965DA6E003A15DD /* SodexoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodexoTableViewCell.h; sourceTree = "<group>"; };
 		27DBF2191965DA6E003A15DD /* SodexoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SodexoTableViewCell.m; sourceTree = "<group>"; };
 		27DBF21B1965DAAF003A15DD /* SodexoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SodexoTableViewCell.xib; sourceTree = "<group>"; };
+		27DF9AA3197752D600122B76 /* About-Image-iOS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-Image-iOS.png"; sourceTree = "<group>"; };
+		27DF9AA51977544E00122B76 /* NutritionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NutritionViewController.h; sourceTree = "<group>"; };
+		27DF9AA61977544E00122B76 /* NutritionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NutritionViewController.m; sourceTree = "<group>"; };
+		27DF9AA71977544E00122B76 /* NutritionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NutritionViewController.xib; sourceTree = "<group>"; };
 		27F3C6081968CD1B00DE17F4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		27F9A308196A31F0000193AE /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
 		27F9A30A196A4192000193AE /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
@@ -229,6 +244,16 @@
 			path = ContactsTableViewCell;
 			sourceTree = "<group>";
 		};
+		279BC2BB19784EB400B330B6 /* CalendarTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				279BC2BF19784EE700B330B6 /* CalendarTableViewCell.h */,
+				279BC2C019784EE700B330B6 /* CalendarTableViewCell.m */,
+				279BC2C119784EE700B330B6 /* CalendarTableViewCell.xib */,
+			);
+			path = CalendarTableViewCell;
+			sourceTree = "<group>";
+		};
 		27DBF20E1965D67C003A15DD /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +261,8 @@
 				27DBF2101965D775003A15DD /* SodexoModel.m */,
 				2777158D1974B8790019A317 /* ContactsModel.h */,
 				2777158E1974B8790019A317 /* ContactsModel.m */,
+				279BC2B819784E5000B330B6 /* CalendarModel.h */,
+				279BC2B919784E5000B330B6 /* CalendarModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,6 +270,7 @@
 		27DBF2141965DA2A003A15DD /* CustomUIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				279BC2BB19784EB400B330B6 /* CalendarTableViewCell */,
 				277715901974B9230019A317 /* ContactsTableViewCell */,
 				27DBF2151965DA2A003A15DD /* SodexoTableViewCell */,
 			);
@@ -350,7 +378,7 @@
 		625F24C719648D82005BDC64 /* About */ = {
 			isa = PBXGroup;
 			children = (
-				27006C0419737B7300BD4DAF /* About-Image-iOS.png */,
+				27DF9AA3197752D600122B76 /* About-Image-iOS.png */,
 				625F24D119648DA1005BDC64 /* AboutViewController.h */,
 				625F24D219648DA1005BDC64 /* AboutViewController.m */,
 				625F24D319648DA1005BDC64 /* AboutViewController.xib */,
@@ -381,8 +409,9 @@
 		625F24CA19648D82005BDC64 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				2723E7251976D1B400EF6AA3 /* CalendarTableViewController.h */,
-				2723E7261976D1B400EF6AA3 /* CalendarTableViewController.m */,
+				279BC2C419785D6700B330B6 /* event-data.json */,
+				279BC2BC19784EC400B330B6 /* CalendarTableViewController.h */,
+				279BC2BD19784EC400B330B6 /* CalendarTableViewController.m */,
 				2723E7271976D1B400EF6AA3 /* CalendarTableViewController.xib */,
 			);
 			path = Calendar;
@@ -435,9 +464,12 @@
 		625F24CF19648D82005BDC64 /* Sodexo */ = {
 			isa = PBXGroup;
 			children = (
-				27006BFF197378B200BD4DAF /* SodexoTableViewController.h */,
-				27006C00197378B200BD4DAF /* SodexoTableViewController.m */,
-				2702C6BD1964C98A00BC6CEE /* SodexoTableViewController.xib */,
+				2723E72A197713FA00EF6AA3 /* SodexoViewController.h */,
+				2723E72B197713FA00EF6AA3 /* SodexoViewController.m */,
+				2723E72C197713FA00EF6AA3 /* SodexoViewController.xib */,
+				27DF9AA51977544E00122B76 /* NutritionViewController.h */,
+				27DF9AA61977544E00122B76 /* NutritionViewController.m */,
+				27DF9AA71977544E00122B76 /* NutritionViewController.xib */,
 			);
 			path = Sodexo;
 			sourceTree = "<group>";
@@ -540,12 +572,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2723E72E197713FA00EF6AA3 /* SodexoViewController.xib in Resources */,
 				624AD25A1964881E00B54741 /* Images.xcassets in Resources */,
 				2702C6CF1964F17D00BC6CEE /* iTunesArtwork.png in Resources */,
 				625F24FB19649F9B005BDC64 /* ContactsTableViewController.xib in Resources */,
 				624AD24C1964881E00B54741 /* InfoPlist.strings in Resources */,
 				277715951974B94F0019A317 /* ContactsTableViewCell.xib in Resources */,
 				2702C6CC1964F17D00BC6CEE /* Icon-Small-40@2x.png in Resources */,
+				279BC2C319784EE700B330B6 /* CalendarTableViewCell.xib in Resources */,
 				27DBF20C1965A8AD003A15DD /* menu-icon.png in Resources */,
 				625F24F119649914005BDC64 /* BroncoBoardViewController.xib in Resources */,
 				625F24F619649940005BDC64 /* MapViewController.xib in Resources */,
@@ -556,19 +590,20 @@
 				625F24E719649709005BDC64 /* HomeViewController.xib in Resources */,
 				27006BFB197373C800BD4DAF /* refresh.png in Resources */,
 				270F4B02196AE7950020978F /* TwitterViewController.xib in Resources */,
-				27006C0519737B7300BD4DAF /* About-Image-iOS.png in Resources */,
 				278CBC7A19760FBA004A4587 /* map-marker.png in Resources */,
 				278CBC72197605C2004A4587 /* phone-icon.png in Resources */,
+				27DF9AA4197752D600122B76 /* About-Image-iOS.png in Resources */,
 				27DBF20D1965A8AD003A15DD /* menu-icon@2x.png in Resources */,
 				625F24D519648DA1005BDC64 /* AboutViewController.xib in Resources */,
-				2702C6BF1964C98A00BC6CEE /* SodexoTableViewController.xib in Resources */,
 				27F9A309196A31F0000193AE /* default.png in Resources */,
 				2702C6D01964F17D00BC6CEE /* iTunesArtwork@2x.png in Resources */,
 				277715971974C39B0019A317 /* contact-info.json in Resources */,
+				27DF9AA91977544E00122B76 /* NutritionViewController.xib in Resources */,
 				2723E7291976D1B400EF6AA3 /* CalendarTableViewController.xib in Resources */,
 				27DBF21C1965DAAF003A15DD /* SodexoTableViewCell.xib in Resources */,
 				2702C6CE1964F17D00BC6CEE /* Icon-Small@2x.png in Resources */,
 				2702C6CA1964F17D00BC6CEE /* Icon-60@2x.png in Resources */,
+				279BC2C519785D6700B330B6 /* event-data.json in Resources */,
 				2702C6CB1964F17D00BC6CEE /* Icon-Small-40.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,18 +627,21 @@
 				2777158F1974B8790019A317 /* ContactsModel.m in Sources */,
 				27F9A30C196A4192000193AE /* Annotation.m in Sources */,
 				27006BFE1973789A00BD4DAF /* TwitterViewController.m in Sources */,
+				279BC2BE19784EC400B330B6 /* CalendarTableViewController.m in Sources */,
 				625F24FA19649F9B005BDC64 /* ContactsTableViewController.m in Sources */,
 				625F24E21964961F005BDC64 /* IIWrapController.m in Sources */,
 				624AD24E1964881E00B54741 /* main.m in Sources */,
+				2723E72D197713FA00EF6AA3 /* SodexoViewController.m in Sources */,
+				279BC2BA19784E5000B330B6 /* CalendarModel.m in Sources */,
 				277715941974B94F0019A317 /* ContactsTableViewCell.m in Sources */,
-				2723E7281976D1B400EF6AA3 /* CalendarTableViewController.m in Sources */,
+				27DF9AA81977544E00122B76 /* NutritionViewController.m in Sources */,
 				27DBF21A1965DA6E003A15DD /* SodexoTableViewCell.m in Sources */,
-				27006C01197378B200BD4DAF /* SodexoTableViewController.m in Sources */,
 				625F24F019649914005BDC64 /* BroncoBoardViewController.m in Sources */,
 				27DBF2111965D775003A15DD /* SodexoModel.m in Sources */,
 				625F24EB196498F2005BDC64 /* AthleticsViewController.m in Sources */,
 				625F24D819648DE5005BDC64 /* MenuViewController.m in Sources */,
 				625F24E01964961F005BDC64 /* IISideController.m in Sources */,
+				279BC2C219784EE700B330B6 /* CalendarTableViewCell.m in Sources */,
 				625F24E11964961F005BDC64 /* IIViewDeckController.m in Sources */,
 				625F24E619649709005BDC64 /* HomeViewController.m in Sources */,
 				625F24F519649940005BDC64 /* MapViewController.m in Sources */,
