@@ -2,7 +2,7 @@
 "Events":
     [            
         { 
-            "New Student Days":
+            "NewStudentDays":
             [
                 {
                 "event_day":"Friday",
@@ -253,7 +253,7 @@
         },
 
         {
-        "Artist Leture Series":
+        "ArtistLetureSeries":
             [
                 {
                 "event_day":"Tuesday",

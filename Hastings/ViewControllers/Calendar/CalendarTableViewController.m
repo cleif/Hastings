@@ -74,7 +74,9 @@
     
     for (NSDictionary * events in eventList) {
         CalendarModel * eventInfo   = [[CalendarModel alloc] init];
-        eventInfo.eventName     = [events objectForKey:@"New Student Days"];
+        NSDictionary * newStudentDays = [events objectForKey:@"NewStudentDays"];
+        NSDictionary * Homecoming = [events objectForKey:@"Homecoming"];
+        NSDictionary * artistLectureSeries = [events objectForKey:@"ArtistLectureSeries"];
         eventInfo.eventName     = [events objectForKey:@"event_title"];
         eventInfo.eventLocation = [events objectForKey:@"event_location"];
         eventInfo.eventTime     = [events objectForKey:@"event_time"];

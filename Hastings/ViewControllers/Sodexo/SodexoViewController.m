@@ -93,20 +93,16 @@
 
 
 
-//#pragma mark - Table view delegate
-//
-//
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    // Navigation logic may go here, for example:
-//    // Create the next view controller.
-//    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
-//    
-//    // Pass the selected object to the new view controller.
-//    
-//    // Push the view controller.
-//    [self.navigationController pushViewController:detailViewController animated:YES];
-//}
+#pragma mark - Table view delegate
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SodexoModel *model = [self.menuItems objectAtIndex:indexPath.row];
+    NutritionViewController *detailViewController = [[NutritionViewController alloc] initWithSodexoModel:model];
+
+    [self.navigationController pushViewController:detailViewController animated:YES];
+}
 
 - (void) populateMenuItems{
     
