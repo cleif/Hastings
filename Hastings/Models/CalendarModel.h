@@ -10,6 +10,7 @@
 
 @interface CalendarModel : NSObject
 
+@property (nonatomic, copy) NSString *eventID;
 @property (nonatomic, copy) NSString *eventName;
 @property (nonatomic, copy) NSString *eventLocation;
 @property (nonatomic, copy) NSString *eventTime;

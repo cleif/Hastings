@@ -1,339 +1,404 @@
 {
-"Events":
-    [            
-        { 
-            "NewStudentDays":
+"Events":   //never change     
+    [
+        {
+            "AllEvents": //never change
             [
+                //detlete data by section when not being used.  Change data when updates are needed.  Do not, remove or change the "event_type".  Keep the same formatting ALWAYS.
                 {
+                "event_id":"New Student Days",
                 "event_day":"Friday",
                 "event_title":"Check-In",
                 "event_location":"Lynn Farrell Arena",
                 "event_time":"9:30am - 1:00pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Friday",
                 "event_title":"Coffee & Lemonade",
                 "event_location":"Perkins Library",
                 "event_time":"9:30am - 2:30pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Friday",
                 "event_title":"Lunch",
                 "event_location":"Hazelrigg Student Union",
                 "event_time":"12:00pm - 1:30pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Friday",
                 "event_title":"Campus Tour",
                 "event_location":"Perkins Library",
                 "event_time":"12:00pm - 1:00pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Friday",
                 "event_title":"Excel Program Parents Open House",
                 "event_location":"Hazelrigg Student Union A/B",
                 "event_time":"1:00pm - 2:00pm"
                 },
                 {
+                "event_id":"New Student Days",    
                 "event_day":"Friday",
                 "event_title":"Welcoming Convocation",
                 "event_location":"Lynn Farrell Arena",
                 "event_time":"3:00pm - 4:00pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Friday",
                 "event_title":"Residence Hall Dinner(s)",
                 "event_location":"Respective Halls",
                 "event_time":"4:30pm - 8:00pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Friday",
                 "event_title":"1st Year Communter Students Dinner",
                 "event_location":"Perkins Library",
                 "event_time":"4:30pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Friday",
                 "event_title":"Commutter, Transfer & 22+ Dinner",
                 "event_location":"Daugherty Center",
                 "event_time":"4:30pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Friday",
                 "event_title":"New Student Traditions Night",
                 "event_location":"French Memorial Chapel",
                 "event_time":"8:00pm - 9:00pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Friday",
                 "event_title":"HC Fun Night at the YMCA/Pastime Lanes",
                 "event_location":"1220 W 18th St",
                 "event_time":"9:00pm - 12:00am"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Saturday",
                 "event_title":"Breakfast",
                 "event_location":"Hazelrigg Student Union",
                 "event_time":"7:30am - 8:45am"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Saturday",
                 "event_title":"1st Year Students INT101 Service Project",
                 "event_location":"French Memorial Chapel",
                 "event_time":"8:45am - 12:00pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Saturday",
                 "event_title":"Parent Orientation Session",
                 "event_location":"French Memorial Chapel",
                 "event_time":"9:45am - 10:30am"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Saturday",
                 "event_title":"Coffee & Lemonade",
                 "event_location":"French Memorial Chapel",
                 "event_time":"10:30am - 10:45am"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Saturday",
                 "event_title":"Panel Discussion for Parents",
                 "event_location":"French Memorial Chapel",
                 "event_time":"10:45am - 11:45am"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Saturday",
                 "event_title":"Grand Lunch Buffet",
                 "event_location":"Hazelrigg Student Union",
                 "event_time":"11:30am - 1:00pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Saturday",
                 "event_title":"Men's Soccer Scrimmage",
                 "event_location":"Osborne Family Sports Complex",
                 "event_time":"12:00pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Saturday",
                 "event_title":"Glassblowing & Printmaking",
                 "event_location":"Kiewit Building",
                 "event_time":"1:00pm - 1:45pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Saturday",
                 "event_title":"Glassblowing & Printmaking",
                 "event_description":"Kiewit Building",
                 "event_time":"2:00pm - 2:45pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Saturday",
                 "event_title":"Football Scrimmage",
                 "event_description":"Osborne Family Sports Complex",
                 "event_time":"2:30pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Saturday",
                 "event_title":"President's Buffet",
                 "event_description":"Great Lawn (Hurley-MacDonald)",
                 "event_time":"4:30pm - 6:30pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Saturday",
                 "event_title":"Dance",
                 "event_location":"Altman Lawn (PFF if needed)",
                 "event_time":"9:00pm - 12:00am"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Saturday",
                 "event_title":"Star Show",
                 "event_description":"Sachtleven Observatory",
                 "event_time":"9:30pm - 11:00pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Sunday",
                 "event_title":"Holy Donuts",
                 "event_description":"French Memorial Chapel",
                 "event_time":"9:15am - 10:00am"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Sunday",
                 "event_title":"Ecumenical Chapel Worship Service",
                 "event_description":"French Memorial Chapel",
                 "event_time":"10:00am - 10:45am"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Sunday",
                 "event_title":"Sunday Brunch",
                 "event_description":"Hazelrigg Student Union",
                 "event_time":"11:30am - 1:00pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Sunday",
                 "event_title":"I.D. Photos",
                 "event_description":"Hazelrigg Student Union",
                 "event_time":"11:00am - 4:30pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Sunday",
                 "event_title":"Student Organization Fair",
                 "event_description":"Lynn Farrell Arena",
                 "event_time":"12:45pm - 3:00pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Sunday",
                 "event_title":"Learning Center Open House",
                 "event_description":"Hurley-MacDonald (basement)",
                 "event_time":"2:00pm - 4:00pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Sunday",
                 "event_title":"Class of 2018 Photo",
                 "event_description":"French Memorial Chapel",
                 "event_time":"4:15pm - 4:30pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Sunday",
                 "event_title":"\"The Hook Up\"",
                 "event_location":"French Memorial Chapel",
                 "event_time":"4:30pm - 5:30pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Sunday",
                 "event_title":"Picnic",
                 "event_location":"President's House",
                 "event_time":"5:30pm - 6:30pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Sunday",
                 "event_title":"Floor Meeting(s)",
                 "event_description":"Respective Halls",
                 "event_time":"7:00pm - 8:00pm"
                 },
                 {
+                "event_id":"New Student Days",
                 "event_day":"Sunday",
                 "event_title":"Movie",
                 "event_description":"Altman Lawn (Chapel if needed)",
                 "event_time":"8:30pm - 11:30pm"
-                }
-            ]
-        },
-        {
-        "Homecoming":
-            [
+                },
                 {
+                "event_id":"Homecoming",
                 "event_day":"Monday",
-                "event_title":"[event name]",
-                "event_description":"[event location]",
-                "event_time":"[event time]"
+                "event_title":"Bed Races",
+                "event_description":"Kiewitt Building",
+                "event_time":"7:00pm - 8:00pm"
                 },
                 {
+                "event_id":"Homecoming",
                 "event_day":"Tudesday",
-                "event_title":"[event name]",
-                "event_description":"[event location]",
-                "event_time":"[event time]"
+                "event_title":"Chalk Walk",
+                "event_description":"Hazelrigg Student Union",
+                "event_time":"12:00am - 8:00am"
                 },
                 {
+                "event_id":"Homecoming",
                 "event_day":"Wednesday",
-                "event_title":"[event name]",
-                "event_description":"[event location]",
-                "event_time":"[event time]"
+                "event_title":"CANstruction",
+                "event_description":"Hazelrigg Student Union",
+                "event_time":"11:00am - 2:00pm"
                 },
                 {
+                "event_id":"Homecoming",
                 "event_day":"Thursday",
-                "event_title":"[event name]",
-                "event_description":"[event location]",
-                "event_time":"[event time]"
+                "event_title":"Skit Night",
+                "event_description":"Osborne Family",
+                "event_time":"7:00pm - 8:30pm"
                 },
                 {
+                "event_id":"Homecoming",
                 "event_day":"Friday",
-                "event_title":"[event name]",
-                "event_description":"[event location]",
-                "event_time":"[event time]"
-                }
-            ]
-        },
-
-        {
-        "ArtistLetureSeries":
-            [
+                "event_title":"Homecoming Dinner",
+                "event_description":"City Auditorium",
+                "event_time":"7:00pm - 9:00pm"
+                },
                 {
+                "event_id":"Homecoming",
+                "event_day":"Friday",
+                "event_title":"Casino Night",
+                "event_description":"The Lark",
+                "event_time":"9:00pm - 11:00pm"
+                },
+                {
+                "event_id":"Homecoming",
+                "event_day":"Saturday",
+                "event_title":"Homecoming Parade",
+                "event_description":"Downtown Hastings",
+                "event_time":"9:00am - 12:00am"
+                },
+                {
+                "event_id":"Homecoming",
+                "event_day":"Saturday",
+                "event_title":"Homecoming Football Game vs DWU",
+                "event_description":"Osborne Family Sports Complex",
+                "event_time":"1:00pm - 4:00pm"
+                },
+                {
+                "event_id":"Artist Lecture Series",
                 "event_day":"Tuesday",
                 "event_title":"Michele Simon - [insert title data]",
                 "event_description":"French Memorial Chapel",
                 "event_time":"7:00pm - 9:00pm"
                 },
                 {
+                "event_id":"Artist Lecture Series",
                 "event_day":"Wednesday",
                 "event_title":"Food 4 Thought Lunch Making",
                 "event_description":"Hazelrigg Student Union C",
                 "event_time":"9:00am - 10:00am"
                 },
                 {
+                "event_id":"Artist Lecture Series",
                 "event_day":"Wednesday",
                 "event_title":"Jim Victor Food Sculptor",
                 "event_description":"[insert room location]",
                 "event_time":"9:00am"
                 },
                 {
+                "event_id":"Artist Lecture Series",
                 "event_day":"Wednesday",
                 "event_title":"Dr. Jorge Zuniga",
                 "event_description":"French Memorial Chapel",
                 "event_time":"11:00am - 12:00pm"
                 },
                 {
+                "event_id":"Artist Lecture Series",
                 "event_day":"Wednesday",
                 "event_title":"Lunch",
                 "event_description":"Hazelrigg Student Union",
                 "event_time":"12:00pm - 1:00pm"
                 },
                 {
+                "event_id":"Artist Lecture Series",
                 "event_day":"Wednesday",
                 "event_title":"Panel: The Approaches to Food",
                 "event_description":"Hazelrigg Sudent Union A/B",
                 "event_time":"1:00pm - 2:00pm"
                 },
                 {
+                "event_id":"Artist Lecture Series",
                 "event_day":"Wednesday",
                 "event_title":"Same Cafe",
                 "event_description":"[location here]",
                 "event_time":"2:00pm - 3:00pm"
                 },
                 {
+                "event_id":"Artist Lecture Series",
                 "event_day":"Wednesday",
                 "event_title":"Anne Burkholder",
                 "event_description":"[location here]",
                 "event_time":"2:00pm - 3:00pm"
                 },
                 {
+                "event_id":"Artist Lecture Series",
                 "event_day":"Wednesday",
                 "event_title":"Jim Victor: The Scultping Process",
                 "event_description":"[location here]",
                 "event_time":"3:00pm - 4:00pm"
                 },
                 {
+                "event_id":"Artist Lecture Series",
                 "event_day":"Wednesday",
                 "event_title":"KC Federal Reserve",
                 "event_description":"[location here]",
                 "event_time":"3:00pm - 4:00pm"
                 },
                 {
+                "event_id":"Artist Lecture Series",
                 "event_day":"Wednesday",
                 "event_title":"Ellen Gustafason",
                 "event_description":"French Memorial Chapel",
                 "event_time":"7:00pm - 9:00pm"
                 },
                 {
+                "event_id":"Artist Lecture Series",
                 "event_day":"Thursday",
                 "event_title":"#ALSCupcakes",
                 "event_description":"Campus-Wide",
                 "event_time":"11:00am - 7:00pm"
                 },
                 {
+                "event_id":"Artist Lecture Series",
                 "event_day":"Thursday",
                 "event_title":"Ian Kleinman",
                 "event_description":"French Memorial Chapel",
                 "event_time":"7:00pm - 9:00pm"
                 },
                 {
+                "event_id":"Artist Lecture Series",
                 "event_day":"Friday",
                 "event_title":"ALS BBQ",
                 "event_description":"Hazelrigg Student Union (deck)",

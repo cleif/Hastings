@@ -38,7 +38,9 @@
 		279BC2BE19784EC400B330B6 /* CalendarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BC2BD19784EC400B330B6 /* CalendarTableViewController.m */; };
 		279BC2C219784EE700B330B6 /* CalendarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BC2C019784EE700B330B6 /* CalendarTableViewCell.m */; };
 		279BC2C319784EE700B330B6 /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279BC2C119784EE700B330B6 /* CalendarTableViewCell.xib */; };
-		279BC2C519785D6700B330B6 /* event-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 279BC2C419785D6700B330B6 /* event-data.json */; };
+		27D8D12719795A0F00208099 /* event-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 27D8D12619795A0F00208099 /* event-data.json */; };
+		27D8D12B1979843900208099 /* EventDetailViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D8D1291979843900208099 /* EventDetailViewTableViewController.m */; };
+		27D8D12C1979843900208099 /* EventDetailViewTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D8D12A1979843900208099 /* EventDetailViewTableViewController.xib */; };
 		27DBF20C1965A8AD003A15DD /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF20A1965A8AD003A15DD /* menu-icon.png */; };
 		27DBF20D1965A8AD003A15DD /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF20B1965A8AD003A15DD /* menu-icon@2x.png */; };
 		27DBF2111965D775003A15DD /* SodexoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBF2101965D775003A15DD /* SodexoModel.m */; };
@@ -126,7 +128,10 @@
 		279BC2BF19784EE700B330B6 /* CalendarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTableViewCell.h; sourceTree = "<group>"; };
 		279BC2C019784EE700B330B6 /* CalendarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTableViewCell.m; sourceTree = "<group>"; };
 		279BC2C119784EE700B330B6 /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
-		279BC2C419785D6700B330B6 /* event-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "event-data.json"; sourceTree = "<group>"; };
+		27D8D12619795A0F00208099 /* event-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "event-data.json"; sourceTree = "<group>"; };
+		27D8D1281979843900208099 /* EventDetailViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailViewTableViewController.h; sourceTree = "<group>"; };
+		27D8D1291979843900208099 /* EventDetailViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewTableViewController.m; sourceTree = "<group>"; };
+		27D8D12A1979843900208099 /* EventDetailViewTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailViewTableViewController.xib; sourceTree = "<group>"; };
 		27DBF20A1965A8AD003A15DD /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
 		27DBF20B1965A8AD003A15DD /* menu-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon@2x.png"; sourceTree = "<group>"; };
 		27DBF20F1965D775003A15DD /* SodexoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodexoModel.h; sourceTree = "<group>"; };
@@ -409,10 +414,13 @@
 		625F24CA19648D82005BDC64 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				279BC2C419785D6700B330B6 /* event-data.json */,
+				27D8D12619795A0F00208099 /* event-data.json */,
 				279BC2BC19784EC400B330B6 /* CalendarTableViewController.h */,
 				279BC2BD19784EC400B330B6 /* CalendarTableViewController.m */,
 				2723E7271976D1B400EF6AA3 /* CalendarTableViewController.xib */,
+				27D8D1281979843900208099 /* EventDetailViewTableViewController.h */,
+				27D8D1291979843900208099 /* EventDetailViewTableViewController.m */,
+				27D8D12A1979843900208099 /* EventDetailViewTableViewController.xib */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -576,6 +584,7 @@
 				624AD25A1964881E00B54741 /* Images.xcassets in Resources */,
 				2702C6CF1964F17D00BC6CEE /* iTunesArtwork.png in Resources */,
 				625F24FB19649F9B005BDC64 /* ContactsTableViewController.xib in Resources */,
+				27D8D12C1979843900208099 /* EventDetailViewTableViewController.xib in Resources */,
 				624AD24C1964881E00B54741 /* InfoPlist.strings in Resources */,
 				277715951974B94F0019A317 /* ContactsTableViewCell.xib in Resources */,
 				2702C6CC1964F17D00BC6CEE /* Icon-Small-40@2x.png in Resources */,
@@ -602,8 +611,8 @@
 				2723E7291976D1B400EF6AA3 /* CalendarTableViewController.xib in Resources */,
 				27DBF21C1965DAAF003A15DD /* SodexoTableViewCell.xib in Resources */,
 				2702C6CE1964F17D00BC6CEE /* Icon-Small@2x.png in Resources */,
+				27D8D12719795A0F00208099 /* event-data.json in Resources */,
 				2702C6CA1964F17D00BC6CEE /* Icon-60@2x.png in Resources */,
-				279BC2C519785D6700B330B6 /* event-data.json in Resources */,
 				2702C6CB1964F17D00BC6CEE /* Icon-Small-40.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,6 +637,7 @@
 				27F9A30C196A4192000193AE /* Annotation.m in Sources */,
 				27006BFE1973789A00BD4DAF /* TwitterViewController.m in Sources */,
 				279BC2BE19784EC400B330B6 /* CalendarTableViewController.m in Sources */,
+				27D8D12B1979843900208099 /* EventDetailViewTableViewController.m in Sources */,
 				625F24FA19649F9B005BDC64 /* ContactsTableViewController.m in Sources */,
 				625F24E21964961F005BDC64 /* IIWrapController.m in Sources */,
 				624AD24E1964881E00B54741 /* main.m in Sources */,

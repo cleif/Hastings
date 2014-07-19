@@ -66,7 +66,8 @@
 
 -(NSMutableArray *) getEventInfo{
     NSMutableArray * eventInfo    = [[NSMutableArray alloc] init];
-    
+    //move to pull from URL
+    //
     NSString *filePath              = [[NSBundle mainBundle] pathForResource:@"event-data" ofType:@"json"];
     NSData *eventData             = [NSData dataWithContentsOfFile:filePath];
     NSDictionary *results           = [NSJSONSerialization JSONObjectWithData:eventData options:kNilOptions error:nil];
@@ -74,9 +75,13 @@
     
     for (NSDictionary * events in eventList) {
         CalendarModel * eventInfo   = [[CalendarModel alloc] init];
-        NSDictionary * newStudentDays = [events objectForKey:@"NewStudentDays"];
-        NSDictionary * Homecoming = [events objectForKey:@"Homecoming"];
-        NSDictionary * artistLectureSeries = [events objectForKey:@"ArtistLectureSeries"];
+        NSDictionary * allEventsList = [events objectForKey:@"AllEvents"];
+
+        
+        for(NSDictionary * event in allEventsList){
+            
+        }
+        
         eventInfo.eventName     = [events objectForKey:@"event_title"];
         eventInfo.eventLocation = [events objectForKey:@"event_location"];
         eventInfo.eventTime     = [events objectForKey:@"event_time"];
