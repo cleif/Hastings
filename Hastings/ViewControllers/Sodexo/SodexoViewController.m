@@ -121,17 +121,36 @@
         SodexoModel * menuItem        = [[SodexoModel alloc] init];
         
         
-        menuItem.itemName         = [attributeDict valueForKey:@"item_name"];
-        menuItem.itemDescription  = [attributeDict valueForKey:@"item_desc"];
-        menuItem.calories          = [attributeDict valueForKey:@"calories"];
-        menuItem.fat               = [attributeDict valueForKey:@"fat"];
-        menuItem.saturatedFat      = [attributeDict valueForKey:@"satfat"];
-        menuItem.sodium            = [attributeDict valueForKey:@"sodium"];
-        menuItem.carbohydrates     = [attributeDict valueForKey:@"carbo"];
-        menuItem.sugars            = [attributeDict valueForKey:@"sugars"];
-        menuItem.proteins          = [attributeDict valueForKey:@"protein"];
-        menuItem.mealType          = [attributeDict valueForKey:@"meal"];
-        menuItem.day               = [attributeDict valueForKey:@"dayname"];
+        menuItem.itemName           = [attributeDict valueForKey:@"item_name"];
+        menuItem.itemDescription    = [attributeDict valueForKey:@"item_desc"];
+        menuItem.calories           = [attributeDict valueForKey:@"calories"];
+        menuItem.fat                = [attributeDict valueForKey:@"fat"];
+        menuItem.saturatedFat       = [attributeDict valueForKey:@"satfat"];
+        menuItem.sodium             = [attributeDict valueForKey:@"sodium"];
+        menuItem.carbohydrates      = [attributeDict valueForKey:@"carbo"];
+        menuItem.sugars             = [attributeDict valueForKey:@"sugars"];
+        menuItem.proteins           = [attributeDict valueForKey:@"protein"];
+        menuItem.mealType           = [attributeDict valueForKey:@"meal"];
+        menuItem.day                = [attributeDict valueForKey:@"dayname"];
+        menuItem.allergens          = [attributeDict valueForKey:@"allergens"];
+        menuItem.serving            = [attributeDict valueForKey:@"serv_size"];
+        menuItem.fatDV              = [attributeDict valueForKey:@"fat_pct_dv"];
+        menuItem.calContentFat      = [attributeDict valueForKey:@"calfat"];
+        menuItem.saturatedFatDV     = [attributeDict valueForKey:@"satfat_pct_dv"];
+        menuItem.transFat           = [attributeDict valueForKey:@"transfat"];
+        menuItem.cholesterol        = [attributeDict valueForKey:@"chol"];
+        menuItem.cholesterolDV      = [attributeDict valueForKey:@"chol_pct_dv"];
+        menuItem.carbohydratesDV    = [attributeDict valueForKey:@"carbo_pct_dv"];
+        menuItem.fiber              = [attributeDict valueForKey:@"dfib"];
+        menuItem.fiberDV            = [attributeDict valueForKey:@"dfib_pct_dv"];
+        menuItem.vitaminA           = [attributeDict valueForKey:@"vita_pct_dv"];
+        menuItem.vitaminC           = [attributeDict valueForKey:@"vitc_pct_dv"];
+        menuItem.calcium            = [attributeDict valueForKey:@"calcium_pct_dv"];
+        menuItem.ironDV             = [attributeDict valueForKey:@"iron_pct_dv"];
+        menuItem.ingredients        = [attributeDict valueForKey:@"ingredient"];
+        
+        
+        
         
         [self.allMenuItems addObject:menuItem];
     }
