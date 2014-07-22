@@ -38,7 +38,7 @@
     static NSString *CellIdentifier = @"EventTableViewCell";
     
     
-    //EventInfoModel * item = [self.eventsOfDay objectAtIndex:indexPath.row];
+    //EventInfoModel * item = [self.eventInfo objectAtIndex:indexPath.row];
     EventTableViewCell *cell = (EventTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if(cell == nil){

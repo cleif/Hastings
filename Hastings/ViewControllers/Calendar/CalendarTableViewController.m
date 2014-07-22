@@ -83,7 +83,6 @@
     NSDictionary *results           = [NSJSONSerialization JSONObjectWithData:eventData options:kNilOptions error:nil];
     NSDictionary *eventList         = [results objectForKey:@"Events"];
     
-    //ISSUE RESOLVED: This array was inside the first for loop - needed to be outside the for loop.
     NSMutableArray * allEventsList  = [[NSMutableArray alloc] init];
     
     for (NSDictionary * events in eventList) {
