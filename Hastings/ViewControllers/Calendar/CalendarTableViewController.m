@@ -8,6 +8,8 @@
 
 #import "CalendarTableViewController.h"
 #import "IIViewDeckController.h"
+#import "EventModel.h"
+#import "EventInfoModel.h"
 
 @interface CalendarTableViewController ()
 
@@ -65,29 +67,49 @@
 
 
 -(NSMutableArray *) getEventInfo{
-    NSMutableArray * eventInfo    = [[NSMutableArray alloc] init];
+    NSMutableArray * eventInfo      = [[NSMutableArray alloc] init];
     //move to pull from URL
     //
-    NSString *filePath              = [[NSBundle mainBundle] pathForResource:@"event-data" ofType:@"json"];
-    NSData *eventData             = [NSData dataWithContentsOfFile:filePath];
+    NSString *filePath              = [[NSBundle mainBundle] pathForResource:@"campus_events" ofType:@"json"];
+    NSData *eventData               = [NSData dataWithContentsOfFile:filePath];
     NSDictionary *results           = [NSJSONSerialization JSONObjectWithData:eventData options:kNilOptions error:nil];
-    NSDictionary *eventList       = [results objectForKey:@"Events"];
+    NSDictionary *eventList         = [results objectForKey:@"Events"];
+    
+    //ISSUE RESOLVED: This array was inside the first for loop - needed to be outside the for loop.
+    NSMutableArray * allEventsList  = [[NSMutableArray alloc] init];
     
     for (NSDictionary * events in eventList) {
-        CalendarModel * eventInfo   = [[CalendarModel alloc] init];
-        NSDictionary * allEventsList = [events objectForKey:@"AllEvents"];
 
-        
-        for(NSDictionary * event in allEventsList){
-            
+        EventModel * eventModel     = [[EventModel alloc] init];
+
+        eventModel.eventName        = [events valueForKey:@"event"];
+        eventModel.eventWeek        = [events valueForKey:@"event_week"];
+        eventModel.eventInfo        = [[NSMutableArray alloc] init];
+
+
+        NSDictionary * eventInfoDictionary = [events objectForKey:@"event_info"];
+
+        for (NSDictionary *eventInfo in eventInfoDictionary){
+
+            NSDictionary * eventsOfDayList      = [eventInfo objectForKey:@"events_of_day"];
+
+            EventInfoModel * eventInfoModel     = [[EventInfoModel alloc] init];
+            eventInfoModel.eventsOfDayList      = [[NSMutableArray alloc] init];
+
+            eventInfoModel.eventDay             = [eventInfo valueForKey:@"event_day"];
+
+            for(NSDictionary * eventDayInfo in eventsOfDayList){
+
+
+                eventInfoModel.eventTitle       = [eventDayInfo valueForKey:@"event_title"];
+                eventInfoModel.eventLocation    = [eventDayInfo valueForKey:@"event_location"];
+                eventInfoModel.eventTime        = [eventDayInfo valueForKey:@"event_time"];
+
+                [eventModel.eventInfo addObject:eventInfoModel];
+
+            }
         }
-        
-        eventInfo.eventName     = [events objectForKey:@"event_title"];
-        eventInfo.eventLocation = [events objectForKey:@"event_location"];
-        eventInfo.eventTime     = [events objectForKey:@"event_time"];
-        
-        [self.eventInfo addObject:eventInfo];
-        
+        [allEventsList addObject:eventModel];
     }
     return eventInfo;
 }

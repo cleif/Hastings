@@ -26,9 +26,9 @@
 
 -(void) bindCellDetails:(CalendarModel *) calendarInfo{
     
-    self.eventName.text     = calendarInfo.eventName;
-    self.eventLocation.text = calendarInfo.eventLocation;
-    self.eventTime.text     = calendarInfo.eventTime;
+//    self.eventName.text     = calendarInfo.eventName;
+//    self.eventLocation.text = calendarInfo.eventLocation;
+//    self.eventTime.text     = calendarInfo.eventTime;
     
 }
 

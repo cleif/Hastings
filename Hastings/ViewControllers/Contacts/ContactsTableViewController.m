@@ -66,8 +66,8 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //NSString * phoneNumber   = [@"telprompt://" stringByAppendingString:/*phone number variable.*/];
-    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
+//    NSString * phoneNumberPlaceHolder       = [@"tel://" stringByAppendingString:[[self.contactInfo valueForKey:@"contact_number"]componentsJoinedByString:indexPath]];
+//    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumberPlaceHolder]];
 }
 
 -(NSMutableArray *) getContactInfo{
