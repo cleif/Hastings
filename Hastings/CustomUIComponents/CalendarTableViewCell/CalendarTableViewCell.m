@@ -9,9 +9,9 @@
 #import "CalendarTableViewCell.h"
 
 @implementation CalendarTableViewCell
-@synthesize eventName       = _eventName;
-@synthesize eventLocation   = _eventLocation;
-@synthesize eventTime       = _eventTime;
+
+@synthesize eventName   = _eventName;
+
 - (void)awakeFromNib
 {
     // Initialization code

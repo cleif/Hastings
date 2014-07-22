@@ -29,6 +29,8 @@
 		272FE403197DA9C9000C3B92 /* EventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 272FE402197DA9C9000C3B92 /* EventModel.m */; };
 		272FE405197DACAB000C3B92 /* campus_events.json in Resources */ = {isa = PBXBuildFile; fileRef = 272FE404197DACAB000C3B92 /* campus_events.json */; };
 		272FE408197DAD5E000C3B92 /* EventInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 272FE407197DAD5E000C3B92 /* EventInfoModel.m */; };
+		272FE40D197EF1BB000C3B92 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 272FE40B197EF1BB000C3B92 /* EventTableViewCell.m */; };
+		272FE40E197EF1BB000C3B92 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 272FE40C197EF1BB000C3B92 /* EventTableViewCell.xib */; };
 		2777158F1974B8790019A317 /* ContactsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2777158E1974B8790019A317 /* ContactsModel.m */; };
 		277715941974B94F0019A317 /* ContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 277715921974B94F0019A317 /* ContactsTableViewCell.m */; };
 		277715951974B94F0019A317 /* ContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277715931974B94F0019A317 /* ContactsTableViewCell.xib */; };
@@ -118,6 +120,9 @@
 		272FE404197DACAB000C3B92 /* campus_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = campus_events.json; sourceTree = "<group>"; };
 		272FE406197DAD5E000C3B92 /* EventInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInfoModel.h; sourceTree = "<group>"; };
 		272FE407197DAD5E000C3B92 /* EventInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInfoModel.m; sourceTree = "<group>"; };
+		272FE40A197EF1BB000C3B92 /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
+		272FE40B197EF1BB000C3B92 /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
+		272FE40C197EF1BB000C3B92 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		2777158D1974B8790019A317 /* ContactsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsModel.h; sourceTree = "<group>"; };
 		2777158E1974B8790019A317 /* ContactsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsModel.m; sourceTree = "<group>"; };
 		277715911974B94F0019A317 /* ContactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewCell.h; sourceTree = "<group>"; };
@@ -245,6 +250,16 @@
 			path = "Hastings/Image Files";
 			sourceTree = "<group>";
 		};
+		272FE409197EF193000C3B92 /* EventTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				272FE40A197EF1BB000C3B92 /* EventTableViewCell.h */,
+				272FE40B197EF1BB000C3B92 /* EventTableViewCell.m */,
+				272FE40C197EF1BB000C3B92 /* EventTableViewCell.xib */,
+			);
+			path = EventTableViewCell;
+			sourceTree = "<group>";
+		};
 		277715901974B9230019A317 /* ContactsTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +300,7 @@
 		27DBF2141965DA2A003A15DD /* CustomUIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				272FE409197EF193000C3B92 /* EventTableViewCell */,
 				279BC2BB19784EB400B330B6 /* CalendarTableViewCell */,
 				277715901974B9230019A317 /* ContactsTableViewCell */,
 				27DBF2151965DA2A003A15DD /* SodexoTableViewCell */,
@@ -610,6 +626,7 @@
 				625F24E719649709005BDC64 /* HomeViewController.xib in Resources */,
 				27006BFB197373C800BD4DAF /* refresh.png in Resources */,
 				270F4B02196AE7950020978F /* TwitterViewController.xib in Resources */,
+				272FE40E197EF1BB000C3B92 /* EventTableViewCell.xib in Resources */,
 				278CBC7A19760FBA004A4587 /* map-marker.png in Resources */,
 				278CBC72197605C2004A4587 /* phone-icon.png in Resources */,
 				27DF9AA4197752D600122B76 /* About-Image-iOS.png in Resources */,
@@ -643,6 +660,7 @@
 			files = (
 				624AD2521964881E00B54741 /* AppDelegate.m in Sources */,
 				625F24D419648DA1005BDC64 /* AboutViewController.m in Sources */,
+				272FE40D197EF1BB000C3B92 /* EventTableViewCell.m in Sources */,
 				2777158F1974B8790019A317 /* ContactsModel.m in Sources */,
 				27F9A30C196A4192000193AE /* Annotation.m in Sources */,
 				27006BFE1973789A00BD4DAF /* TwitterViewController.m in Sources */,
