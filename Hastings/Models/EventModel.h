@@ -14,6 +14,4 @@
 @property (nonatomic, copy) NSString *eventWeek;
 @property (nonatomic, retain) NSMutableArray *eventInfo;
 
-
-
 @end

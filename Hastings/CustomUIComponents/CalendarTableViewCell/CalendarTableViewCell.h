@@ -12,6 +12,7 @@
 @interface CalendarTableViewCell : UITableViewCell
 
 -(void) bindCellDetails:(CalendarModel *) eventInfo;
+
 @property (strong, nonatomic) IBOutlet UILabel *eventName;
 
 @end

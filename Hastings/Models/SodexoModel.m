@@ -11,7 +11,7 @@
 
 @implementation SodexoModel
 
-@synthesize itemName = _itemName;
+@synthesize itemName        = _itemName;
 @synthesize itemDescription = _itemDescription;
 
 @synthesize calories        = _calories;

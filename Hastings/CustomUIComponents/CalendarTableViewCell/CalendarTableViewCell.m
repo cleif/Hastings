@@ -24,12 +24,9 @@
     // Configure the view for the selected state
 }
 
--(void) bindCellDetails:(CalendarModel *) calendarInfo{
+-(void) bindCellDetails:(EventModel *) eventInfo{
     
-//    self.eventName.text     = calendarInfo.eventName;
-//    self.eventLocation.text = calendarInfo.eventLocation;
-//    self.eventTime.text     = calendarInfo.eventTime;
-    
+    self.eventName.text     = eventInfo.eventName;
 }
 
 @end

@@ -17,6 +17,8 @@
 
 @implementation CalendarTableViewController
 
+@synthesize eventInfo   = _eventInfo;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -26,7 +28,8 @@
     self.title = @"Campus Events";
     
     self.eventInfo = [[NSMutableArray alloc] init];
-    [self getEventInfo];
+    self.eventInfo = [self getEventInfo];
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
@@ -39,8 +42,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
     return self.eventInfo.count;
 }
 
@@ -53,7 +54,7 @@
 {
  static NSString *CellIdentifier = @"CalendarTableViewCell";
  
- CalendarModel * item = [self.eventInfo objectAtIndex:indexPath.row];
+ EventModel * item = [self.eventInfo objectAtIndex:indexPath.row];
  CalendarTableViewCell *cell = (CalendarTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
  
  if(cell == nil){
@@ -65,11 +66,18 @@
  return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    EventModel *model = [self.eventInfo objectAtIndex:indexPath.row];
+    EventDetailViewTableViewController *detailViewController = [[EventDetailViewTableViewController alloc] initWithEventModel:model];
+    
+    [self.navigationController pushViewController:detailViewController animated:YES];
+}
+
 
 -(NSMutableArray *) getEventInfo{
     NSMutableArray * eventInfo      = [[NSMutableArray alloc] init];
     //move to pull from URL
-    //
     NSString *filePath              = [[NSBundle mainBundle] pathForResource:@"campus_events" ofType:@"json"];
     NSData *eventData               = [NSData dataWithContentsOfFile:filePath];
     NSDictionary *results           = [NSJSONSerialization JSONObjectWithData:eventData options:kNilOptions error:nil];
@@ -111,6 +119,6 @@
         }
         [allEventsList addObject:eventModel];
     }
-    return eventInfo;
+    return allEventsList;
 }
 @end

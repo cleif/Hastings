@@ -31,6 +31,7 @@
 		272FE408197DAD5E000C3B92 /* EventInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 272FE407197DAD5E000C3B92 /* EventInfoModel.m */; };
 		272FE40D197EF1BB000C3B92 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 272FE40B197EF1BB000C3B92 /* EventTableViewCell.m */; };
 		272FE40E197EF1BB000C3B92 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 272FE40C197EF1BB000C3B92 /* EventTableViewCell.xib */; };
+		272FE410197F046F000C3B92 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272FE40F197F046F000C3B92 /* SystemConfiguration.framework */; };
 		2777158F1974B8790019A317 /* ContactsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2777158E1974B8790019A317 /* ContactsModel.m */; };
 		277715941974B94F0019A317 /* ContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 277715921974B94F0019A317 /* ContactsTableViewCell.m */; };
 		277715951974B94F0019A317 /* ContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277715931974B94F0019A317 /* ContactsTableViewCell.xib */; };
@@ -123,6 +124,7 @@
 		272FE40A197EF1BB000C3B92 /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
 		272FE40B197EF1BB000C3B92 /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
 		272FE40C197EF1BB000C3B92 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		272FE40F197F046F000C3B92 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2777158D1974B8790019A317 /* ContactsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsModel.h; sourceTree = "<group>"; };
 		2777158E1974B8790019A317 /* ContactsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsModel.m; sourceTree = "<group>"; };
 		277715911974B94F0019A317 /* ContactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewCell.h; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272FE410197F046F000C3B92 /* SystemConfiguration.framework in Frameworks */,
 				270F4B09196AEF900020978F /* AddressBook.framework in Frameworks */,
 				270F4B0A196AEF900020978F /* AddressBookUI.framework in Frameworks */,
 				270F4B0B196AEF900020978F /* CoreData.framework in Frameworks */,
@@ -342,6 +345,7 @@
 		624AD2401964881E00B54741 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				272FE40F197F046F000C3B92 /* SystemConfiguration.framework */,
 				270F4B03196AEF900020978F /* AddressBook.framework */,
 				270F4B04196AEF900020978F /* AddressBookUI.framework */,
 				270F4B05196AEF900020978F /* CoreData.framework */,

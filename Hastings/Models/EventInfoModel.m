@@ -10,5 +10,10 @@
 
 @implementation EventInfoModel
 
+@synthesize eventsOfDayList     = _eventsOfDayList;
+@synthesize eventTitle          = _eventTitle;
+@synthesize eventLocation       = _eventLocation;
+@synthesize eventTime           = _eventTime;
+
 
 @end
