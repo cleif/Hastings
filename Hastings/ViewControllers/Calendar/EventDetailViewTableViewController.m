@@ -15,9 +15,12 @@
 
 @implementation EventDetailViewTableViewController
 
--(id)initWithEventModel:(EventInfoModel *) eventModel{
+-(id) initWithEventModel:(EventModel *) eventModel{
+    
     self = [super initWithNibName:nil bundle:nil];
+    
     if (self) {
+        
         self.model  = eventModel;
     }
     return self;
@@ -32,35 +35,39 @@
     //self.eventTime.text       = self.model.eventTime;
 }
 
+
+
 #pragma mark - Table view data source
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     static NSString *CellIdentifier = @"EventTableViewCell";
     
     
-    //EventInfoModel * item = [self.eventInfo objectAtIndex:indexPath.row];
+    EventInfoModel * item = [self.model.eventInfo objectAtIndex:indexPath.row];
     EventTableViewCell *cell = (EventTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if(cell == nil){
         
         cell = [[[NSBundle mainBundle] loadNibNamed:@"EventTableViewCell" owner:self options:nil] objectAtIndex:0];
     }
-    //[cell bindCellDetails:item];
+    
+    [cell bindCellDetails:item];
     
     return cell;
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
     //Section based off of the number in event_day
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    //count of total item in the events of day list
-    return 0;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return self.model.eventInfo.count;
 }
+
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     return 60;

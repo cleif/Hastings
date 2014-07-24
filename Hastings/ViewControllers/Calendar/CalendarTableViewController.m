@@ -98,26 +98,30 @@
 
         for (NSDictionary *eventInfo in eventInfoDictionary){
 
-            NSDictionary * eventsOfDayList      = [eventInfo objectForKey:@"events_of_day"];
+            
+           NSDictionary * eventsOfDayList      = [eventInfo objectForKey:@"events_of_day"];
 
-            EventInfoModel * eventInfoModel     = [[EventInfoModel alloc] init];
-            eventInfoModel.eventsOfDayList      = [[NSMutableArray alloc] init];
-
-            eventInfoModel.eventDay             = [eventInfo valueForKey:@"event_day"];
 
             for(NSDictionary * eventDayInfo in eventsOfDayList){
-
-
+                
+                EventInfoModel * eventInfoModel     = [[EventInfoModel alloc] init];
+                eventInfoModel.eventsOfDayList      = [[NSMutableArray alloc] init];
+                eventInfoModel.eventDay             = [eventInfo valueForKey:@"event_day"];
+                
                 eventInfoModel.eventTitle       = [eventDayInfo valueForKey:@"event_title"];
                 eventInfoModel.eventLocation    = [eventDayInfo valueForKey:@"event_location"];
                 eventInfoModel.eventTime        = [eventDayInfo valueForKey:@"event_time"];
 
                 [eventModel.eventInfo addObject:eventInfoModel];
-
             }
         }
+        
+        //new nsmut
+        
+        
         [allEventsList addObject:eventModel];
     }
+    
     return allEventsList;
 }
 @end
