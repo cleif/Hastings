@@ -7,11 +7,12 @@
 //
 
 #import "CalendarTableViewCell.h"
+#import "EventModel.h"
 
 @implementation CalendarTableViewCell
-@synthesize eventName       = _eventName;
-@synthesize eventLocation   = _eventLocation;
-@synthesize eventTime       = _eventTime;
+
+@synthesize eventName   = _eventName;
+
 - (void)awakeFromNib
 {
     // Initialization code
@@ -24,12 +25,9 @@
     // Configure the view for the selected state
 }
 
--(void) bindCellDetails:(CalendarModel *) calendarInfo{
+-(void) bindCellDetails:(EventModel *) eventInfo{
     
-    self.eventName.text     = calendarInfo.eventName;
-    self.eventLocation.text = calendarInfo.eventLocation;
-    self.eventTime.text     = calendarInfo.eventTime;
-    
+    self.eventName.text     = eventInfo.eventName;
 }
 
 @end

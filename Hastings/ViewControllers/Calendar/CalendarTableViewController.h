@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "calendarTableViewCell.h"
+#import "EventDetailViewTableViewController.h"
+#import "EventModel.h"
 
 @interface CalendarTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSMutableArray *eventInfo;
+
+-(void) bindCellDetails:(EventModel *) eventInfo;
 
 @end

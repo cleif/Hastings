@@ -10,10 +10,9 @@
 #import "CalendarModel.h"
 
 @interface CalendarTableViewCell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UILabel *eventName;
-@property (strong, nonatomic) IBOutlet UILabel *eventLocation;
-@property (strong, nonatomic) IBOutlet UILabel *eventTime;
 
 -(void) bindCellDetails:(CalendarModel *) eventInfo;
+
+@property (strong, nonatomic) IBOutlet UILabel *eventName;
 
 @end
