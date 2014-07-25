@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "EventModel.h"
 @interface CalendarModel : NSObject
 
-@property (nonatomic, copy) NSString *eventID;
-@property (nonatomic, copy) NSString *eventName;
-@property (nonatomic, copy) NSString *eventLocation;
-@property (nonatomic, copy) NSString *eventTime;
-@property (nonatomic, copy) NSString *eventDay;
+
+
+@property   (nonatomic, copy)   NSString          *eventName;
+@property   (nonatomic, copy)   NSString          *eventWeek;
+@property   (nonatomic, retain) NSMutableArray    *eventModels;
+
 @end

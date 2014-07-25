@@ -8,6 +8,7 @@
 
 #import "EventDetailViewTableViewController.h"
 #import  "EventInfoModel.h"
+#import "CalendarTableViewController.h"
 
 @interface EventDetailViewTableViewController ()
 
@@ -15,27 +16,25 @@
 
 @implementation EventDetailViewTableViewController
 
--(id) initWithEventModel:(EventModel *) eventModel{
+-(id)initWithEventModel:(CalendarModel *) calendarModel{
     
     self = [super initWithNibName:nil bundle:nil];
     
     if (self) {
         
-        self.model  = eventModel;
+        self.calendarModel = calendarModel;
     }
     return self;
+    
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
+    
     [super viewDidLoad];
     
-    //self.eventTitle.text      = self.model.eventTitle;
-    //self.eventLocation.text   = self.model.eventLocation;
-    //self.eventTime.text       = self.model.eventTime;
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
 }
-
-
 
 #pragma mark - Table view data source
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -43,7 +42,8 @@
     static NSString *CellIdentifier = @"EventTableViewCell";
     
     
-    EventInfoModel * item = [self.model.eventInfo objectAtIndex:indexPath.row];
+    EventModel * item = [self.calendarModel.eventModels objectAtIndex:indexPath.row];
+    
     EventTableViewCell *cell = (EventTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if(cell == nil){
@@ -61,15 +61,33 @@
     //Section based off of the number in event_day
     return 1;
 }
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return self.model.eventInfo.count;
+    //count of total item in the events of day list
+    return self.calendarModel.eventModels.count;
 }
-
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     return 60;
 }
+
+
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSMutableArray *eventInfoModelList = [self.calendarModel.eventModels objectAtIndex:indexPath.row];
+    
+    
+    
+    
+    
+//    EventDetailViewTableViewController *detailViewController = [[EventDetailViewTableViewController alloc] initWithEventModel:model];
+//    
+//    [self.navigationController pushViewController:detailViewController animated:YES];
+}
+    
+    
+    
+
 @end

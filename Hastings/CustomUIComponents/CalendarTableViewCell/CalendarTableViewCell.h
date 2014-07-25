@@ -14,5 +14,6 @@
 -(void) bindCellDetails:(CalendarModel *) eventInfo;
 
 @property (strong, nonatomic) IBOutlet UILabel *eventName;
+@property (strong, nonatomic) IBOutlet UILabel *eventWeek;
 
 @end

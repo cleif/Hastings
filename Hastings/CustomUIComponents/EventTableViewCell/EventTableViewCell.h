@@ -13,10 +13,8 @@
 
 @interface EventTableViewCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *eventTitle;
-@property (strong, nonatomic) IBOutlet UILabel *eventLocation;
-@property (strong, nonatomic) IBOutlet UILabel *eventTime;
-@property (strong, retain)    NSString    *eventDay;
 
--(void) bindCellDetails:(EventInfoModel *) eventDetails;
+
+-(void) bindCellDetails:(EventModel *) EventDetailInfo;
 
 @end

@@ -11,13 +11,17 @@
 
 @interface EventInfoModel : NSObject
 
-@property (nonatomic, copy) NSString *eventDay;
-@property (nonatomic, retain) NSMutableArray *eventsOfDayList;
+//@property (nonatomic, copy) NSString *eventDay;
+//@property (nonatomic, retain) NSMutableArray *eventsOfDayList;
+//
+//@property (nonatomic, copy) NSString *eventTitle;
+//@property (nonatomic, copy) NSString *eventLocation;
+//@property (nonatomic, copy) NSString *eventTime;
+//
+//@property (nonatomic, retain) EventInfoModel *event;
 
-@property (nonatomic, copy) NSString *eventTitle;
-@property (nonatomic, copy) NSString *eventLocation;
-@property (nonatomic, copy) NSString *eventTime;
-
-@property (nonatomic, retain) EventInfoModel *event;
+@property (nonatomic, copy) NSString    *eventTitle;
+@property (nonatomic, copy) NSString    *eventLocation;
+@property (nonatomic, copy) NSString    *eventTime;
 
 @end

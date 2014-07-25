@@ -13,10 +13,10 @@
 
 @interface EventDetailViewTableViewController : UITableViewController
 
-@property (retain, nonatomic) EventModel        *model;
+@property (retain, nonatomic) CalendarModel        *calendarModel;
 
 
--(id)initWithEventModel:(EventModel *) eventModel;
+-(id)initWithEventModel:(CalendarModel *) calendarModel;
 
 @end
  

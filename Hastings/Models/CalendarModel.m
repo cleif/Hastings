@@ -10,4 +10,9 @@
 
 @implementation CalendarModel
 
+@synthesize eventName       = _eventName;
+@synthesize eventWeek       = _eventWeek;
+@synthesize eventModels     = _eventModels;
+
+
 @end
