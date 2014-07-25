@@ -78,7 +78,7 @@
     
     NSMutableArray *eventInfoModelList = [self.calendarModel.eventModels objectAtIndex:indexPath.row];
     
-    
+    //pass this list to the next tablle view
     
     
     
