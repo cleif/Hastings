@@ -80,6 +80,10 @@
 		62B0B700198140B900AAD9CA /* EventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0B6FE198140B900AAD9CA /* EventModel.m */; };
 		62B0B7051981436100AAD9CA /* CalendarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0B7031981436100AAD9CA /* CalendarTableViewCell.m */; };
 		62B0B7061981436100AAD9CA /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62B0B7041981436100AAD9CA /* CalendarTableViewCell.xib */; };
+		D2D10CDC19868995005C7242 /* EventInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D10CDA19868995005C7242 /* EventInfoTableViewController.m */; };
+		D2D10CDD19868995005C7242 /* EventInfoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D10CDB19868995005C7242 /* EventInfoTableViewController.xib */; };
+		D2D10CE2198689A6005C7242 /* EventInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D10CE0198689A6005C7242 /* EventInfoTableViewCell.m */; };
+		D2D10CE3198689A6005C7242 /* EventInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D10CE1198689A6005C7242 /* EventInfoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,6 +198,12 @@
 		62B0B7021981436100AAD9CA /* CalendarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTableViewCell.h; sourceTree = "<group>"; };
 		62B0B7031981436100AAD9CA /* CalendarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTableViewCell.m; sourceTree = "<group>"; };
 		62B0B7041981436100AAD9CA /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
+		D2D10CD919868995005C7242 /* EventInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInfoTableViewController.h; sourceTree = "<group>"; };
+		D2D10CDA19868995005C7242 /* EventInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInfoTableViewController.m; sourceTree = "<group>"; };
+		D2D10CDB19868995005C7242 /* EventInfoTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventInfoTableViewController.xib; sourceTree = "<group>"; };
+		D2D10CDF198689A6005C7242 /* EventInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInfoTableViewCell.h; sourceTree = "<group>"; };
+		D2D10CE0198689A6005C7242 /* EventInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInfoTableViewCell.m; sourceTree = "<group>"; };
+		D2D10CE1198689A6005C7242 /* EventInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventInfoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +288,7 @@
 		27DBF2141965DA2A003A15DD /* CustomUIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				D2D10CDE198689A6005C7242 /* EventInfoTableViewCell */,
 				62B0B7011981436100AAD9CA /* CalendarTableViewCell */,
 				62B0B6EA1981405A00AAD9CA /* EventTableViewCell */,
 				277715901974B9230019A317 /* ContactsTableViewCell */,
@@ -508,6 +519,9 @@
 		62B0B6F01981408500AAD9CA /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				D2D10CD919868995005C7242 /* EventInfoTableViewController.h */,
+				D2D10CDA19868995005C7242 /* EventInfoTableViewController.m */,
+				D2D10CDB19868995005C7242 /* EventInfoTableViewController.xib */,
 				62B0B6F11981408500AAD9CA /* CalendarTableViewController.h */,
 				62B0B6F21981408500AAD9CA /* CalendarTableViewController.m */,
 				62B0B6F31981408500AAD9CA /* campus_events.json */,
@@ -526,6 +540,16 @@
 				62B0B7041981436100AAD9CA /* CalendarTableViewCell.xib */,
 			);
 			path = CalendarTableViewCell;
+			sourceTree = "<group>";
+		};
+		D2D10CDE198689A6005C7242 /* EventInfoTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D2D10CDF198689A6005C7242 /* EventInfoTableViewCell.h */,
+				D2D10CE0198689A6005C7242 /* EventInfoTableViewCell.m */,
+				D2D10CE1198689A6005C7242 /* EventInfoTableViewCell.xib */,
+			);
+			path = EventInfoTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -603,6 +627,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D10CE3198689A6005C7242 /* EventInfoTableViewCell.xib in Resources */,
 				2723E72E197713FA00EF6AA3 /* SodexoViewController.xib in Resources */,
 				624AD25A1964881E00B54741 /* Images.xcassets in Resources */,
 				2702C6CF1964F17D00BC6CEE /* iTunesArtwork.png in Resources */,
@@ -633,6 +658,7 @@
 				62B0B6F81981408500AAD9CA /* campus_events.json in Resources */,
 				277715971974C39B0019A317 /* contact-info.json in Resources */,
 				27DF9AA91977544E00122B76 /* NutritionViewController.xib in Resources */,
+				D2D10CDD19868995005C7242 /* EventInfoTableViewController.xib in Resources */,
 				27DBF21C1965DAAF003A15DD /* SodexoTableViewCell.xib in Resources */,
 				2702C6CE1964F17D00BC6CEE /* Icon-Small@2x.png in Resources */,
 				2702C6CA1964F17D00BC6CEE /* Icon-60@2x.png in Resources */,
@@ -656,6 +682,7 @@
 			files = (
 				624AD2521964881E00B54741 /* AppDelegate.m in Sources */,
 				625F24D419648DA1005BDC64 /* AboutViewController.m in Sources */,
+				D2D10CDC19868995005C7242 /* EventInfoTableViewController.m in Sources */,
 				2777158F1974B8790019A317 /* ContactsModel.m in Sources */,
 				62B0B7051981436100AAD9CA /* CalendarTableViewCell.m in Sources */,
 				27F9A30C196A4192000193AE /* Annotation.m in Sources */,
@@ -673,6 +700,7 @@
 				27DBF21A1965DA6E003A15DD /* SodexoTableViewCell.m in Sources */,
 				625F24F019649914005BDC64 /* BroncoBoardViewController.m in Sources */,
 				62B0B6FF198140B900AAD9CA /* EventInfoModel.m in Sources */,
+				D2D10CE2198689A6005C7242 /* EventInfoTableViewCell.m in Sources */,
 				27DBF2111965D775003A15DD /* SodexoModel.m in Sources */,
 				625F24EB196498F2005BDC64 /* AthleticsViewController.m in Sources */,
 				62B0B6F71981408500AAD9CA /* CalendarTableViewController.m in Sources */,
