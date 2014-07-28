@@ -11,6 +11,7 @@
 #import "EventModel.h"
 #import "EventInfoModel.h"
 
+
 @interface CalendarTableViewController ()
 
 @end
@@ -114,14 +115,14 @@
             
             for (NSDictionary *eventOfDayItem in eventsOfDayList) {
                 
-                EventInfoModel *t = [[EventInfoModel alloc] init];
+                EventInfoModel * eventInfoModel = [[EventInfoModel alloc] init];
                 
-                t.eventTitle       = [eventOfDayItem valueForKey:@"event_title"];
-                t.eventLocation    = [eventOfDayItem valueForKey:@"event_location"];
-                t.eventTime        = [eventOfDayItem valueForKey:@"event_time"];
+                eventInfoModel.eventTitle       = [eventOfDayItem valueForKey:@"event_title"];
+                eventInfoModel.eventLocation    = [eventOfDayItem valueForKey:@"event_location"];
+                eventInfoModel.eventTime        = [eventOfDayItem valueForKey:@"event_time"];
                 
 
-                [eventModel.eventInfoModelList addObject:t];
+                [eventModel.eventInfoModelList addObject:eventInfoModel];
             }
             
             

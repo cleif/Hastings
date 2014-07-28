@@ -28,6 +28,8 @@
     
     [super viewDidLoad];
     
+    self.screenName = @"AboutViewController";
+    
     self.title = @"About";
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self.viewDeckController action:@selector(toggleLeftView)];
     [self.navigationItem setLeftBarButtonItem: menuButton];

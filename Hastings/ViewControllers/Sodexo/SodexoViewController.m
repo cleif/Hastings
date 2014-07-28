@@ -35,6 +35,8 @@
 {
     [super viewDidLoad];
     
+    self.screenName = @"SodexoViewController";
+    
     self.mealTableView.delegate     = self;
     self.mealTableView.dataSource   = self;
     

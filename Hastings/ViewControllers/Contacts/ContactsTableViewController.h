@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "ContactsTableViewCell.h"
 
+#import "GAITrackedViewController.h"
+
 @interface ContactsTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSMutableArray *contactInfo;

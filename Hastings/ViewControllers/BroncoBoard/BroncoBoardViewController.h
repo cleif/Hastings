@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BroncoBoardViewController : UIViewController
+#import "GAITrackedViewController.h"
+
+@interface BroncoBoardViewController : GAITrackedViewController
 @property (strong, nonatomic) IBOutlet UIWebView *BBWebView;
 
 @end

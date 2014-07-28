@@ -36,6 +36,12 @@
     [self.window makeKeyAndVisible];
     
     return YES;
+    
+    //google analytics
+    [GAI sharedInstance].trackUncaughtExceptions    = YES;
+    [[GAI sharedInstance].logger setLogLevel:kGAILogLevelVerbose];
+    [GAI sharedInstance].dispatchInterval           = 20;
+    id<GAITracker> tracker                          = [[GAI sharedInstance] trackerWithTrackingId:@"UA-53196381-1"];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

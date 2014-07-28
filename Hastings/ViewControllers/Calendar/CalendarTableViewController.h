@@ -11,6 +11,8 @@
 #import "EventDetailViewTableViewController.h"
 #import "EventModel.h"
 
+#import "GAITrackedViewController.h"
+
 @interface CalendarTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSMutableArray *eventInfo;

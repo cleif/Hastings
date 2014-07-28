@@ -10,7 +10,9 @@
 #import <MapKit/MapKit.h>
 #import "Annotation.h"
 
-@interface MapViewController : UIViewController <MKMapViewDelegate>
+#import "GAITrackedViewController.h"
+
+@interface MapViewController : GAITrackedViewController <MKMapViewDelegate>
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 

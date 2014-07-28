@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TwitterViewController : UIViewController
+#import "GAITrackedViewController.h"
+
+@interface TwitterViewController : GAITrackedViewController
 @property (strong, nonatomic) IBOutlet UIWebView *twitterWebView;
 
 @end

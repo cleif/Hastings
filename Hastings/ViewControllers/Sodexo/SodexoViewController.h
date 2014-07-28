@@ -10,7 +10,9 @@
 #import "SodexoTableViewCell.h"
 #import "NutritionViewController.h"
 
-@interface SodexoViewController : UIViewController <NSXMLParserDelegate, UITableViewDelegate, UITableViewDataSource>
+#import "GAITrackedViewController.h"
+
+@interface SodexoViewController : GAITrackedViewController <NSXMLParserDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) NSMutableArray *menuItems;
 @property (strong, nonatomic) NSMutableArray *allMenuItems;

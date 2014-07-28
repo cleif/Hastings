@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+#import "GAITrackedViewController.h"
+
+@interface HomeViewController : GAITrackedViewController
 @property (strong, nonatomic) IBOutlet UIWebView *HomeWebView;
 
 @end
