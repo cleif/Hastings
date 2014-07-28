@@ -29,7 +29,7 @@
     
     [super viewDidLoad];
     
-    self.screenName = @"HomeViewController";
+    //self.screenName = @"HomeViewController";
     
     //refresh
     UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemClicked)];
@@ -57,6 +57,10 @@
     [self loadInitialView];
 }
 
-
+//google analytics
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.screenName = @"HomeViewController";
+}
 
 @end
