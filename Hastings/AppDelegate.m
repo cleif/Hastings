@@ -25,6 +25,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
+    self.window                             = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    
     IIViewDeckController* deckController    = [self initializeMainViewControllers];
     
     self.menuViewController                 = deckController.leftController;
