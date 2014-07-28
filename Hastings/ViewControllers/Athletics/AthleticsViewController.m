@@ -57,5 +57,4 @@
     [super viewDidAppear:animated];
     self.screenName = @"Athletics";
 }
-
 @end
