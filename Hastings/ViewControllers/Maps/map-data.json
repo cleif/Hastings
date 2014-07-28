@@ -6,147 +6,147 @@
     "latitude":40.590561,
     "longitude":-98.373438,
     "title":"Kiewit Building",
-    "snippet":""
+    "snippet":"Art, Recreation, Public Safety"
   },
   {
     "_id":2,
     "latitude":40.5907,
     "longitude":-98.374554,
     "title":"Hurley-McDonald",
-    "snippet":""
+    "snippet":"Administrative Offices, Education, Learning Center, "
   },
   {
     "_id":3,
     "latitude":40.590246,
     "longitude":-98.374471,
     "title":"Perkins Library",
-    "snippet":""
+    "snippet":"Books, Video, Media checkouts"
   },
   {
     "_id":4,
     "latitude":40.591074,
     "longitude":-98.373674,
     "title":"Daugherty Center",
-    "snippet":""
+    "snippet":"President's Office, Political Science/Sociology"
   },
   {
     "_id":5,
     "latitude":40.591628,
     "longitude":-98.373567,
     "title":"French Memorial Chapel",
-    "snippet":""
+    "snippet":"Wednesdays at 10:00am"
   },
   {
     "_id":6,
     "latitude":40.592288,
     "longitude":-98.373674,
     "title":"McCormick Hall",
-    "snippet":""
+    "snippet":"English, History, Foreign Language"
   },
   {
     "_id":7,
     "latitude":40.592321,
     "longitude":-98.373299,
     "title":"Scott Studio Theatre",
-    "snippet":""
+    "snippet":"Black-box theatre, Campus Productions"
   },
   {
     "_id":8,
     "latitude":40.592688,
     "longitude":-98.37346,
-    "title":"Wilson Mathematics & Computer Science Center",
-    "snippet":""
+    "title":"Wilson Center",
+    "snippet":"Math & Computer Science"
   },
   {
     "_id":9,
     "latitude":40.592631,
     "longitude":-98.374629,
     "title":"Taylor Hall",
-    "snippet":""
+    "snippet":"Women's Residence Hall"
   },
   {
     "_id":10,
     "latitude":40.593193,
     "longitude":-98.375297,
     "title":"Stone Health Center",
-    "snippet":""
+    "snippet":"Nurse and Counselors on Staff"
   },
   {
     "_id":11,
     "latitude":40.593095,
     "longitude":-98.374597,
     "title":"Babcock Hall",
-    "snippet":""
+    "snippet":"Women's Residence Hall"
   },
   {
     "_id":12,
     "latitude":40.593071,
     "longitude":-98.372226,
     "title":"Bronc Hall",
-    "snippet":""
+    "snippet":"Men's Residence Hall"
   },
   {
     "_id":13,
     "latitude":40.592337,
     "longitude":-98.372022,
     "title":"Altman Hall",
-    "snippet":""
+    "snippet":"Co-Ed Residence Hall"
   },
   {
     "_id":14,
     "latitude":40.592653,
     "longitude":-98.371067,
     "title":"Maintenance Department",
-    "snippet":""
+    "snippet":"Package Pick-Up, Maintenance Request"
   },
   {
     "_id":15,
     "latitude":40.591074,
     "longitude":-98.371947,
     "title":"Morrison-Reeves Science Center",
-    "snippet":""
+    "snippet":"Natural, Physical, Biological and Applied Sciences"
   },
   {
     "_id":16,
     "latitude":40.593869,
     "longitude":-98.372966,
     "title":"Hazelrigg Student Union (HSU)",
-    "snippet":""
+    "snippet":"Dining Hall and General Student Needs"
   },
   {
     "_id":17,
     "latitude":40.595596,
     "longitude":-98.373063,
     "title":"Gray Center for Communication Arts",
-    "snippet":""
+    "snippet":"Communications, Mac Lab, Journalism, Web/Media Production"
   },
   {
     "_id":18,
     "latitude":40.593934,
     "longitude":-98.371821,
     "title":"Weyer Hall",
-    "snippet":""
+    "snippet":"Men's Residence Hall"
   },
   {
     "_id":19,
     "latitude":40.594431,
     "longitude":-98.371829,
     "title":"Fuhr Hall of Music",
-    "snippet":""
+    "snippet":"Music Department"
   },
   {
     "_id":20,
     "latitude":40.595839,
     "longitude":-98.370638,
-    "title":"Farrell Arena/Fleharty Educational Center",
-    "snippet":""
+    "title":"Lynn Farrell Arena/Fleharty Educational Center",
+    "snippet":"Arena, Business/Economics, P.E."
   },
   {
     "_id":21,
     "latitude":40.594625,
     "longitude":-98.369629,
     "title":"Physical Fitness Facility (PFF)",
-    "snippet":""
+    "snippet":"Indoor Practice Facilities"
   },
   {
     "_id":22,
@@ -160,21 +160,21 @@
     "latitude":40.596129,
     "longitude":-98.368763,
     "title":"Lloyd Wilson Field/Stadium",
-    "snippet":""
+    "snippet":"Football and Soccer"
   },
   {
     "_id":24,
     "latitude":40.594408,
     "longitude":-98.365992,
     "title":"Bronco Village Apartments",
-    "snippet":""
+    "snippet":"Upperclassmen House"
   },
   {
     "_id":25,
     "latitude":40.595308,
     "longitude":-98.364667,
     "title":"Barrett Alumni Center",
-    "snippet":""
+    "snippet":"Alumni Contact and Other Information"
   },
   {
     "_id":26,
@@ -188,14 +188,21 @@
     "latitude":40.525371,
     "longitude":-98.382986,
     "title":"Sachtleben Observatory",
-    "snippet":""
+    "snippet":"Starline: 402.262.7378"
   },
   {
-    "_id":28,
-    "latitude":40.5962,
-    "longitude":-98.374084,
-    "title":"The Den",
-    "snippet":"@HC_DEN - Voted Hastings College's Best House."
-  }
+  "_id":28,
+  "latitude":40.5832975,
+  "longitude":-98.3748975,
+  "title":"Duncan Field",
+  "snippet":"Home of Bronco Baseball"
+  },
+ {
+ "_id":29,
+ "latitude":40.624045,
+ "longitude":-98.380426,
+ "title":"Smith Softball Complex",
+ "snippet":"Home of Bronco Softball"
+ }
 ]
 }

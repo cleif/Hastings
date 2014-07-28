@@ -11,6 +11,8 @@
 #import "EventModel.h"
 #import "EventInfoModel.h"
 
+#import "GAIDictionaryBuilder.h"
+
 
 @interface CalendarTableViewController ()
 
@@ -137,6 +139,15 @@
     }
     
     return allEventsList;
+}
+
+//google analytics
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    id<GAITracker> tracker  = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:@"Calendar"];
+    [tracker send:[[GAIDictionaryBuilder createAppView] build]];
 }
 
 //Old parsing attempts

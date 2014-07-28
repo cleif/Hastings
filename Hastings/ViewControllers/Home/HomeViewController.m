@@ -60,7 +60,7 @@
 //google analytics
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    self.screenName = @"HomeViewController";
+    self.screenName = @"Home";
 }
 
 @end

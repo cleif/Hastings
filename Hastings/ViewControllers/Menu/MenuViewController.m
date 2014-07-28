@@ -172,7 +172,7 @@
             cell.textLabel.text = @"Broncoboard";
             break;
         case 5:
-            cell.textLabel.text = @"Sodexo";
+            cell.textLabel.text = @"Dining Hall";
             break;
         case 6:
             cell.textLabel.text = @"Campus Events";

@@ -41,33 +41,17 @@
 {
     [super viewDidLoad];
     
-    self.screenName = @"MapViewController";
+    //self.screenName = @"MapViewController";
     
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self.viewDeckController action:@selector(toggleLeftView)];
     [self.navigationItem setLeftBarButtonItem: menuButton];
     
-    self.mapView.delegate = self;
-
-    self.title = @"Campus Map";
-    //map implementation
-    //create region
-    MKCoordinateRegion hastingsCollegeRegion;
-    //center
-    CLLocationCoordinate2D center;
-    center.latitude = HC_LATITUDE;
-    center.longitude = HC_LONGGITUDE;
     
-    //spans
-    MKCoordinateSpan span;
-    span.latitudeDelta = SPAN;
-    span.longitudeDelta = SPAN;
-    hastingsCollegeRegion.center = center;
-    hastingsCollegeRegion.span = span;
+    UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemClicked)];
+    [self.navigationItem setRightBarButtonItem: refreshButton];
     
-    //set map view
-    [mapView setRegion:hastingsCollegeRegion animated:YES];
+    [self loadInitialView];
     
-    [self.mapView addAnnotations:[self getCampusLocations]];
 }
 
 - (MKAnnotationView *) mapView:(MKMapView *) mapView viewForAnnotation:(id <MKAnnotation>)annotation {
@@ -78,13 +62,13 @@
         
         if (annotationView == nil) {
             
-            
             annotationView                           = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@""];
             annotationView.image                     = [UIImage imageNamed:@"map-marker.png"];
             annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
             annotationView.tintColor                 = [UIColor colorWithRed:153.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1];;
             annotationView.enabled                   = YES;
             annotationView.canShowCallout            = YES;
+            
         }
         else
         {
@@ -110,13 +94,10 @@
             [anotationView setFrame:endFrame];
         }
                          completion:^ (BOOL finished){
-                             
-                             
-                             
+
                          }];
     }
 }
-
 
 -(NSMutableArray*) getCampusLocations{
     
@@ -144,13 +125,43 @@
         
         [returnLocationList addObject:campusLocation];
    }
-//    
-//    //add the array of locations to the location list
-    
-    
-    
+
     //return the list to populate the map.
     return returnLocationList;
+}
+
+-(void)loadInitialView{
+    
+    self.mapView.delegate = self;
+    
+    self.title = @"Campus Map";
+    
+    MKCoordinateRegion hastingsCollegeRegion;
+    
+    CLLocationCoordinate2D center;
+    center.latitude = HC_LATITUDE;
+    center.longitude = HC_LONGGITUDE;
+    
+    MKCoordinateSpan span;
+    span.latitudeDelta = SPAN;
+    span.longitudeDelta = SPAN;
+    hastingsCollegeRegion.center = center;
+    hastingsCollegeRegion.span = span;
+    
+    [mapView setRegion:hastingsCollegeRegion animated:YES];
+    
+    [self.mapView addAnnotations:[self getCampusLocations]];
+}
+
+//add spinner UX
+-(void)buttonItemClicked{
+    [self loadInitialView];
+}
+
+//google analytics
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.screenName = @"Maps";
 }
 
 @end

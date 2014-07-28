@@ -27,7 +27,7 @@
     
     [super viewDidLoad];
     
-    self.screenName = @"AthleticsViewController";
+    //self.screenName = @"AthleticsViewController";
     
     //refresh
     UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemClicked)];
@@ -50,6 +50,12 @@
 
 -(void)buttonItemClicked{
     [self loadInitialView];
+}
+
+//google analytics
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.screenName = @"Athletics";
 }
 
 @end

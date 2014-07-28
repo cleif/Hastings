@@ -8,6 +8,10 @@
 
 #import "ContactsTableViewController.h"
 #import "IIViewDeckController.h"
+#import "ContactsModel.h"
+#import "ContactsTableViewCell.h"
+
+#import "GAIDictionaryBuilder.h"
 
 @interface ContactsTableViewController ()
 
@@ -64,10 +68,13 @@
     return cell;
 }
 
-
+//TODO: Fix the Phone number variable.
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //NSString * phoneNumber   = [@"telprompt://" stringByAppendingString:/*phone number variable.*/];
-    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
+    
+    ContactsModel * contactItem = [self.contactInfo objectAtIndex:indexPath.row];
+    
+    NSString * phoneNumber      = [@"tel://" stringByAppendingString: contactItem.contactNumber];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
 }
 
 -(NSMutableArray *) getContactInfo{
@@ -88,6 +95,15 @@
         
     }
     return contactInfo;
+}
+
+//google analytics
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    id<GAITracker> tracker  = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:@"Contacts"];
+    [tracker send:[[GAIDictionaryBuilder createAppView] build]];
 }
 
 @end

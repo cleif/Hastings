@@ -29,8 +29,6 @@
     
     self.contactName.text   = contactInfo.contactName;
     self.contactNumber.text = contactInfo.contactNumber;
-    //self.menuItem.text = menuDetails.itemName;
-    //self.menuDescription.text = menuDetails.itemDescription;
     
 }
 

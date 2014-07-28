@@ -35,7 +35,7 @@
 {
     [super viewDidLoad];
     
-    self.screenName = @"SodexoViewController";
+    //self.screenName = @"SodexoViewController";
     
     self.mealTableView.delegate     = self;
     self.mealTableView.dataSource   = self;
@@ -220,5 +220,11 @@
         default:
             break;
     }
+}
+
+//google analytics
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.screenName = @"Sodexo";
 }
 @end

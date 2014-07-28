@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     
-    self.screenName = @"BroncoBoardViewController";
+    //self.screenName = @"BroncoBoardViewController";
     
     //refresh
     UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemClicked)];
@@ -51,6 +51,12 @@
 
 -(void)buttonItemClicked{
     [self loadInitialView];
+}
+
+//google analytics
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.screenName = @"BroncoBoard";
 }
 
 @end

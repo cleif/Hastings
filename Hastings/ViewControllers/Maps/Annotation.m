@@ -12,4 +12,12 @@
 
 @synthesize coordinate, title, subtitle, buildingName, buildingDesc;
 
+//-(NSString *) title{
+//    return self.title;
+//}
+//
+//-(NSString *) subtitle{
+//    return self.subtitle;
+//}
+
 @end

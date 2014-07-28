@@ -56,7 +56,7 @@
 //google analytics
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    self.screenName = @"TwitterViewController";
+    self.screenName = @"Twitter";
 }
 
 @end
