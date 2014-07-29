@@ -72,21 +72,21 @@
 		625F24FB19649F9B005BDC64 /* ContactsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625F24F919649F9B005BDC64 /* ContactsTableViewController.xib */; };
 		62B0B6EE1981405A00AAD9CA /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0B6EC1981405A00AAD9CA /* EventTableViewCell.m */; };
 		62B0B6EF1981405A00AAD9CA /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62B0B6ED1981405A00AAD9CA /* EventTableViewCell.xib */; };
-		62B0B6F71981408500AAD9CA /* CalendarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0B6F21981408500AAD9CA /* CalendarTableViewController.m */; };
-		62B0B6F81981408500AAD9CA /* campus_events.json in Resources */ = {isa = PBXBuildFile; fileRef = 62B0B6F31981408500AAD9CA /* campus_events.json */; };
-		62B0B6F91981408500AAD9CA /* EventDetailViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0B6F51981408500AAD9CA /* EventDetailViewTableViewController.m */; };
-		62B0B6FA1981408500AAD9CA /* EventDetailViewTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62B0B6F61981408500AAD9CA /* EventDetailViewTableViewController.xib */; };
 		62B0B6FF198140B900AAD9CA /* EventInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0B6FC198140B900AAD9CA /* EventInfoModel.m */; };
 		62B0B700198140B900AAD9CA /* EventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0B6FE198140B900AAD9CA /* EventModel.m */; };
 		62B0B7051981436100AAD9CA /* CalendarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0B7031981436100AAD9CA /* CalendarTableViewCell.m */; };
 		62B0B7061981436100AAD9CA /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62B0B7041981436100AAD9CA /* CalendarTableViewCell.xib */; };
-		D2D10CDC19868995005C7242 /* EventInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D10CDA19868995005C7242 /* EventInfoTableViewController.m */; };
-		D2D10CDD19868995005C7242 /* EventInfoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D10CDB19868995005C7242 /* EventInfoTableViewController.xib */; };
 		D2D10CE2198689A6005C7242 /* EventInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D10CE0198689A6005C7242 /* EventInfoTableViewCell.m */; };
 		D2D10CE3198689A6005C7242 /* EventInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D10CE1198689A6005C7242 /* EventInfoTableViewCell.xib */; };
 		D2D10CF01986A3CB005C7242 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D10CEF1986A3CB005C7242 /* libGoogleAnalyticsServices.a */; };
 		D2D10CF31986A3E1005C7242 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D10CF11986A3E1005C7242 /* libz.dylib */; };
 		D2D10CF41986A3E1005C7242 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D10CF21986A3E1005C7242 /* SystemConfiguration.framework */; };
+		D2D10CFF198864CC005C7242 /* CalendarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D10CF7198864CC005C7242 /* CalendarTableViewController.m */; };
+		D2D10D00198864CC005C7242 /* campus_events.json in Resources */ = {isa = PBXBuildFile; fileRef = D2D10CF8198864CC005C7242 /* campus_events.json */; };
+		D2D10D01198864CC005C7242 /* EventDetailViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D10CFA198864CC005C7242 /* EventDetailViewTableViewController.m */; };
+		D2D10D02198864CC005C7242 /* EventDetailViewTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D10CFB198864CC005C7242 /* EventDetailViewTableViewController.xib */; };
+		D2D10D03198864CC005C7242 /* EventInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D10CFD198864CC005C7242 /* EventInfoTableViewController.m */; };
+		D2D10D04198864CC005C7242 /* EventInfoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D10CFE198864CC005C7242 /* EventInfoTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,12 +188,6 @@
 		62B0B6EB1981405A00AAD9CA /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
 		62B0B6EC1981405A00AAD9CA /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
 		62B0B6ED1981405A00AAD9CA /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
-		62B0B6F11981408500AAD9CA /* CalendarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTableViewController.h; sourceTree = "<group>"; };
-		62B0B6F21981408500AAD9CA /* CalendarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTableViewController.m; sourceTree = "<group>"; };
-		62B0B6F31981408500AAD9CA /* campus_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = campus_events.json; sourceTree = "<group>"; };
-		62B0B6F41981408500AAD9CA /* EventDetailViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailViewTableViewController.h; sourceTree = "<group>"; };
-		62B0B6F51981408500AAD9CA /* EventDetailViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewTableViewController.m; sourceTree = "<group>"; };
-		62B0B6F61981408500AAD9CA /* EventDetailViewTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailViewTableViewController.xib; sourceTree = "<group>"; };
 		62B0B6FB198140B900AAD9CA /* EventInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInfoModel.h; sourceTree = "<group>"; };
 		62B0B6FC198140B900AAD9CA /* EventInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInfoModel.m; sourceTree = "<group>"; };
 		62B0B6FD198140B900AAD9CA /* EventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventModel.h; sourceTree = "<group>"; };
@@ -201,9 +195,6 @@
 		62B0B7021981436100AAD9CA /* CalendarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTableViewCell.h; sourceTree = "<group>"; };
 		62B0B7031981436100AAD9CA /* CalendarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTableViewCell.m; sourceTree = "<group>"; };
 		62B0B7041981436100AAD9CA /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
-		D2D10CD919868995005C7242 /* EventInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInfoTableViewController.h; sourceTree = "<group>"; };
-		D2D10CDA19868995005C7242 /* EventInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInfoTableViewController.m; sourceTree = "<group>"; };
-		D2D10CDB19868995005C7242 /* EventInfoTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventInfoTableViewController.xib; sourceTree = "<group>"; };
 		D2D10CDF198689A6005C7242 /* EventInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInfoTableViewCell.h; sourceTree = "<group>"; };
 		D2D10CE0198689A6005C7242 /* EventInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInfoTableViewCell.m; sourceTree = "<group>"; };
 		D2D10CE1198689A6005C7242 /* EventInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventInfoTableViewCell.xib; sourceTree = "<group>"; };
@@ -220,6 +211,15 @@
 		D2D10CEF1986A3CB005C7242 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		D2D10CF11986A3E1005C7242 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D2D10CF21986A3E1005C7242 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D2D10CF6198864CC005C7242 /* CalendarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTableViewController.h; sourceTree = "<group>"; };
+		D2D10CF7198864CC005C7242 /* CalendarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTableViewController.m; sourceTree = "<group>"; };
+		D2D10CF8198864CC005C7242 /* campus_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = campus_events.json; sourceTree = "<group>"; };
+		D2D10CF9198864CC005C7242 /* EventDetailViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailViewTableViewController.h; sourceTree = "<group>"; };
+		D2D10CFA198864CC005C7242 /* EventDetailViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewTableViewController.m; sourceTree = "<group>"; };
+		D2D10CFB198864CC005C7242 /* EventDetailViewTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailViewTableViewController.xib; sourceTree = "<group>"; };
+		D2D10CFC198864CC005C7242 /* EventInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInfoTableViewController.h; sourceTree = "<group>"; };
+		D2D10CFD198864CC005C7242 /* EventInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInfoTableViewController.m; sourceTree = "<group>"; };
+		D2D10CFE198864CC005C7242 /* EventInfoTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventInfoTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -405,7 +405,7 @@
 		625F24C619648D82005BDC64 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				62B0B6F01981408500AAD9CA /* Calendar */,
+				D2D10CF5198864CC005C7242 /* Calendar */,
 				625F24C719648D82005BDC64 /* About */,
 				625F24C819648D82005BDC64 /* Athletics */,
 				625F24C919648D82005BDC64 /* BroncoBoard */,
@@ -539,22 +539,6 @@
 			path = EventTableViewCell;
 			sourceTree = "<group>";
 		};
-		62B0B6F01981408500AAD9CA /* Calendar */ = {
-			isa = PBXGroup;
-			children = (
-				D2D10CD919868995005C7242 /* EventInfoTableViewController.h */,
-				D2D10CDA19868995005C7242 /* EventInfoTableViewController.m */,
-				D2D10CDB19868995005C7242 /* EventInfoTableViewController.xib */,
-				62B0B6F11981408500AAD9CA /* CalendarTableViewController.h */,
-				62B0B6F21981408500AAD9CA /* CalendarTableViewController.m */,
-				62B0B6F31981408500AAD9CA /* campus_events.json */,
-				62B0B6F41981408500AAD9CA /* EventDetailViewTableViewController.h */,
-				62B0B6F51981408500AAD9CA /* EventDetailViewTableViewController.m */,
-				62B0B6F61981408500AAD9CA /* EventDetailViewTableViewController.xib */,
-			);
-			path = Calendar;
-			sourceTree = "<group>";
-		};
 		62B0B7011981436100AAD9CA /* CalendarTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,6 +575,22 @@
 			);
 			name = GoogleAnalytics;
 			path = Hastings/GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		D2D10CF5198864CC005C7242 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				D2D10CF6198864CC005C7242 /* CalendarTableViewController.h */,
+				D2D10CF7198864CC005C7242 /* CalendarTableViewController.m */,
+				D2D10CF8198864CC005C7242 /* campus_events.json */,
+				D2D10CF9198864CC005C7242 /* EventDetailViewTableViewController.h */,
+				D2D10CFA198864CC005C7242 /* EventDetailViewTableViewController.m */,
+				D2D10CFB198864CC005C7242 /* EventDetailViewTableViewController.xib */,
+				D2D10CFC198864CC005C7242 /* EventInfoTableViewController.h */,
+				D2D10CFD198864CC005C7242 /* EventInfoTableViewController.m */,
+				D2D10CFE198864CC005C7242 /* EventInfoTableViewController.xib */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -639,6 +639,9 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				TargetAttributes = {
+					624AD23D1964881E00B54741 = {
+						DevelopmentTeam = FMBVF93JC3;
+					};
 					624AD25E1964881E00B54741 = {
 						TestTargetID = 624AD23D1964881E00B54741;
 					};
@@ -672,8 +675,8 @@
 				2723E72E197713FA00EF6AA3 /* SodexoViewController.xib in Resources */,
 				624AD25A1964881E00B54741 /* Images.xcassets in Resources */,
 				2702C6CF1964F17D00BC6CEE /* iTunesArtwork.png in Resources */,
+				D2D10D02198864CC005C7242 /* EventDetailViewTableViewController.xib in Resources */,
 				625F24FB19649F9B005BDC64 /* ContactsTableViewController.xib in Resources */,
-				62B0B6FA1981408500AAD9CA /* EventDetailViewTableViewController.xib in Resources */,
 				624AD24C1964881E00B54741 /* InfoPlist.strings in Resources */,
 				277715951974B94F0019A317 /* ContactsTableViewCell.xib in Resources */,
 				2702C6CC1964F17D00BC6CEE /* Icon-Small-40@2x.png in Resources */,
@@ -682,7 +685,9 @@
 				625F24F119649914005BDC64 /* BroncoBoardViewController.xib in Resources */,
 				625F24F619649940005BDC64 /* MapViewController.xib in Resources */,
 				625F24EC196498F2005BDC64 /* AthleticsViewController.xib in Resources */,
+				D2D10D00198864CC005C7242 /* campus_events.json in Resources */,
 				278CBC7C19761232004A4587 /* detail-icon.png in Resources */,
+				D2D10D04198864CC005C7242 /* EventInfoTableViewController.xib in Resources */,
 				279AA51F197416D80009545F /* map-data.json in Resources */,
 				2702C6CD1964F17D00BC6CEE /* Icon-Small.png in Resources */,
 				625F24E719649709005BDC64 /* HomeViewController.xib in Resources */,
@@ -696,10 +701,8 @@
 				625F24D519648DA1005BDC64 /* AboutViewController.xib in Resources */,
 				27F9A309196A31F0000193AE /* default.png in Resources */,
 				2702C6D01964F17D00BC6CEE /* iTunesArtwork@2x.png in Resources */,
-				62B0B6F81981408500AAD9CA /* campus_events.json in Resources */,
 				277715971974C39B0019A317 /* contact-info.json in Resources */,
 				27DF9AA91977544E00122B76 /* NutritionViewController.xib in Resources */,
-				D2D10CDD19868995005C7242 /* EventInfoTableViewController.xib in Resources */,
 				27DBF21C1965DAAF003A15DD /* SodexoTableViewCell.xib in Resources */,
 				2702C6CE1964F17D00BC6CEE /* Icon-Small@2x.png in Resources */,
 				2702C6CA1964F17D00BC6CEE /* Icon-60@2x.png in Resources */,
@@ -723,13 +726,15 @@
 			files = (
 				624AD2521964881E00B54741 /* AppDelegate.m in Sources */,
 				625F24D419648DA1005BDC64 /* AboutViewController.m in Sources */,
-				D2D10CDC19868995005C7242 /* EventInfoTableViewController.m in Sources */,
+				D2D10D01198864CC005C7242 /* EventDetailViewTableViewController.m in Sources */,
 				2777158F1974B8790019A317 /* ContactsModel.m in Sources */,
 				62B0B7051981436100AAD9CA /* CalendarTableViewCell.m in Sources */,
 				27F9A30C196A4192000193AE /* Annotation.m in Sources */,
+				D2D10CFF198864CC005C7242 /* CalendarTableViewController.m in Sources */,
 				27006BFE1973789A00BD4DAF /* TwitterViewController.m in Sources */,
 				62B0B700198140B900AAD9CA /* EventModel.m in Sources */,
 				625F24FA19649F9B005BDC64 /* ContactsTableViewController.m in Sources */,
+				D2D10D03198864CC005C7242 /* EventInfoTableViewController.m in Sources */,
 				625F24E21964961F005BDC64 /* IIWrapController.m in Sources */,
 				624AD24E1964881E00B54741 /* main.m in Sources */,
 				2723E72D197713FA00EF6AA3 /* SodexoViewController.m in Sources */,
@@ -737,14 +742,12 @@
 				277715941974B94F0019A317 /* ContactsTableViewCell.m in Sources */,
 				27DF9AA81977544E00122B76 /* NutritionViewController.m in Sources */,
 				62B0B6EE1981405A00AAD9CA /* EventTableViewCell.m in Sources */,
-				62B0B6F91981408500AAD9CA /* EventDetailViewTableViewController.m in Sources */,
 				27DBF21A1965DA6E003A15DD /* SodexoTableViewCell.m in Sources */,
 				625F24F019649914005BDC64 /* BroncoBoardViewController.m in Sources */,
 				62B0B6FF198140B900AAD9CA /* EventInfoModel.m in Sources */,
 				D2D10CE2198689A6005C7242 /* EventInfoTableViewCell.m in Sources */,
 				27DBF2111965D775003A15DD /* SodexoModel.m in Sources */,
 				625F24EB196498F2005BDC64 /* AthleticsViewController.m in Sources */,
-				62B0B6F71981408500AAD9CA /* CalendarTableViewController.m in Sources */,
 				625F24D819648DE5005BDC64 /* MenuViewController.m in Sources */,
 				625F24E01964961F005BDC64 /* IISideController.m in Sources */,
 				625F24E11964961F005BDC64 /* IIViewDeckController.m in Sources */,
@@ -867,7 +870,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "749DD63D-0CCA-41D5-AE4A-570E3D19D79E";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -887,7 +890,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "749DD63D-0CCA-41D5-AE4A-570E3D19D79E";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
