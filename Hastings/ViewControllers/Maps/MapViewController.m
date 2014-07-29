@@ -161,7 +161,7 @@
 //google analytics
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    self.screenName = @"Maps";
+    self.screenName = @"Campus Map";
 }
 
 @end

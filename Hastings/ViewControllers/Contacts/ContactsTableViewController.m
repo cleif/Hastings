@@ -32,6 +32,7 @@
     
     self.contactInfo = [[NSMutableArray alloc] init];
     [self getContactInfo];
+
 }
 
 #pragma mark - Table view data source
@@ -102,8 +103,9 @@
     [super viewDidAppear:animated];
     
     id<GAITracker> tracker  = [[GAI sharedInstance] defaultTracker];
-    [tracker set:kGAIScreenName value:@"Contacts"];
+    [tracker set:kGAIScreenName value:@"Campus Contacts"];
     [tracker send:[[GAIDictionaryBuilder createAppView] build]];
+    
 }
 
 @end

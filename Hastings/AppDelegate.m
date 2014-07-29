@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "GAIDictionaryBuilder.h"
 
 @implementation AppDelegate
 
@@ -42,6 +43,9 @@
     [[GAI sharedInstance].logger setLogLevel:kGAILogLevelVerbose];
     [GAI sharedInstance].dispatchInterval           = 20;
     id<GAITracker> tracker                          = [[GAI sharedInstance] trackerWithTrackingId:@"UA-53195499-1"];
+    
+    [tracker set:kGAIScreenName value:@"App Opened"];
+    [tracker send: [[GAIDictionaryBuilder createAppView] build]];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

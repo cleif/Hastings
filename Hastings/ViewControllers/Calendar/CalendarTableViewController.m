@@ -38,8 +38,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-//TODO: count of events 
+{ 
     return 1;
 }
 
@@ -82,7 +81,12 @@
 
 -(NSMutableArray *) getEventInfo{
     
-    //pulls JSON data
+    //pulls JSON data FROM web
+    //NSURLRequest *urlRequest        = [NSURLRequest requestWithURL: [NSURL URLWithString:@"https://dl.dropboxusercontent.com/s/5vfwlsep6axr823/campus_events.json"]];
+    //[[NSURLConnection alloc]initWithRequest:urlRequest delegate:self];
+    
+    
+    
     NSString *filePath              = [[NSBundle mainBundle] pathForResource:@"campus_events" ofType:@"json"];
     NSData *eventData               = [NSData dataWithContentsOfFile:filePath];
     NSDictionary *results           = [NSJSONSerialization JSONObjectWithData:eventData options:kNilOptions error:nil];
@@ -146,7 +150,7 @@
     [super viewDidAppear:animated];
     
     id<GAITracker> tracker  = [[GAI sharedInstance] defaultTracker];
-    [tracker set:kGAIScreenName value:@"Calendar"];
+    [tracker set:kGAIScreenName value:@"Campus Events"];
     [tracker send:[[GAIDictionaryBuilder createAppView] build]];
 }
 

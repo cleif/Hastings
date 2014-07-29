@@ -92,4 +92,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+//google analytics
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.screenName = @"Nutrition Facts";
+}
+
 @end

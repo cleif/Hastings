@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "SodexoModel.h"
+#import "GAITrackedViewController.h"
 
-@interface NutritionViewController : UIViewController
+@interface NutritionViewController : GAITrackedViewController
 @property (strong, nonatomic) IBOutlet UILabel *itemName;
 
 @property (strong, nonatomic) IBOutlet UILabel *itemCalories;

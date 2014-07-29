@@ -225,6 +225,6 @@
 //google analytics
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    self.screenName = @"Sodexo";
+    self.screenName = @"Dining Hall";
 }
 @end
