@@ -15,13 +15,13 @@
 
 @implementation EventInfoTableViewController
 
--(id)initWithEventInfoModel:(NSMutableArray *) eventInfoModelList{
+-(id)initWithEventInfoModel:(EventModel *) eventInfoModel{
     
     self = [super initWithNibName:nil bundle:nil];
     
     if (self) {
         
-        self.eventModel.eventInfoModelList = eventInfoModelList;
+        self.eventModel = eventInfoModel;
     }
     return self;
     
@@ -50,13 +50,18 @@
     return self.eventModel.eventInfoModelList.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 60;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
     static NSString *CellIdentifier = @"EventInfoTableViewCell";
     
     
-    EventModel * item = [self.eventModel.eventInfoModelList objectAtIndex:indexPath.row];
+    EventInfoModel * item = [self.eventModel.eventInfoModelList objectAtIndex:indexPath.row];
     
     EventInfoTableViewCell *cell = (EventInfoTableViewCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     

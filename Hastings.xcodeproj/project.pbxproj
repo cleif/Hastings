@@ -87,6 +87,7 @@
 		D2D10D02198864CC005C7242 /* EventDetailViewTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D10CFB198864CC005C7242 /* EventDetailViewTableViewController.xib */; };
 		D2D10D03198864CC005C7242 /* EventInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D10CFD198864CC005C7242 /* EventInfoTableViewController.m */; };
 		D2D10D04198864CC005C7242 /* EventInfoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D10CFE198864CC005C7242 /* EventInfoTableViewController.xib */; };
+		D2D10D06198867BB005C7242 /* CalendarTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D10D05198867BB005C7242 /* CalendarTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -220,6 +221,7 @@
 		D2D10CFC198864CC005C7242 /* EventInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInfoTableViewController.h; sourceTree = "<group>"; };
 		D2D10CFD198864CC005C7242 /* EventInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInfoTableViewController.m; sourceTree = "<group>"; };
 		D2D10CFE198864CC005C7242 /* EventInfoTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventInfoTableViewController.xib; sourceTree = "<group>"; };
+		D2D10D05198867BB005C7242 /* CalendarTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewController.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -580,6 +582,7 @@
 		D2D10CF5198864CC005C7242 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				D2D10D05198867BB005C7242 /* CalendarTableViewController.xib */,
 				D2D10CF6198864CC005C7242 /* CalendarTableViewController.h */,
 				D2D10CF7198864CC005C7242 /* CalendarTableViewController.m */,
 				D2D10CF8198864CC005C7242 /* campus_events.json */,
@@ -690,6 +693,7 @@
 				D2D10D04198864CC005C7242 /* EventInfoTableViewController.xib in Resources */,
 				279AA51F197416D80009545F /* map-data.json in Resources */,
 				2702C6CD1964F17D00BC6CEE /* Icon-Small.png in Resources */,
+				D2D10D06198867BB005C7242 /* CalendarTableViewController.xib in Resources */,
 				625F24E719649709005BDC64 /* HomeViewController.xib in Resources */,
 				27006BFB197373C800BD4DAF /* refresh.png in Resources */,
 				270F4B02196AE7950020978F /* TwitterViewController.xib in Resources */,

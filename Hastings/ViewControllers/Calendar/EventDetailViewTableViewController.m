@@ -9,6 +9,7 @@
 #import "EventDetailViewTableViewController.h"
 #import  "EventInfoModel.h"
 #import "CalendarTableViewController.h"
+#import "EventInfoTableViewController.h"
 
 @interface EventDetailViewTableViewController ()
 
@@ -27,6 +28,18 @@
     return self;
     
 }
+
+//-(id)initWithEventInfoModel:(NSMutableArray *) eventInfoModelList{
+//    
+//    self = [super initWithNibName:nil bundle:nil];
+//    
+//    if (self) {
+//        
+//        self.eventModel.eventInfoModelList = eventInfoModelList;
+//    }
+//    return self;
+//    
+//}
 
 - (void)viewDidLoad{
     
@@ -71,20 +84,13 @@
     return 60;
 }
 
-
-
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    NSMutableArray *eventInfoModelList = [self.calendarModel.eventModels objectAtIndex:indexPath.row];
+    EventModel *eventInfoModelList = [self.calendarModel.eventModels objectAtIndex:indexPath.row];
     
-    //pass this list to the next tablle view
+    EventInfoTableViewController *detailInfoViewController = [[EventInfoTableViewController alloc] initWithEventInfoModel:eventInfoModelList];
     
-    
-    
-//    EventDetailViewTableViewController *detailViewController = [[EventDetailViewTableViewController alloc] initWithEventModel:model];
-//    
-//    [self.navigationController pushViewController:detailViewController animated:YES];
+    [self.navigationController pushViewController:detailInfoViewController animated:YES];
 }
     
     

@@ -28,11 +28,12 @@
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self.viewDeckController action:@selector(toggleLeftView)];
     [self.navigationItem setLeftBarButtonItem: menuButton];
     
+    UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemClicked)];
+    [self.navigationItem setRightBarButtonItem: refreshButton];
+    
     self.title = @"Campus Events";
     
-    self.eventInfo = [[NSMutableArray alloc] init];
-    self.eventInfo = [self getEventInfo];
-    [self.tableView reloadData];
+    [self loadInitialView];
 }
 
 #pragma mark - Table view data source
@@ -81,20 +82,14 @@
 
 -(NSMutableArray *) getEventInfo{
     
-    //pulls JSON data FROM web
-    //NSURLRequest *urlRequest        = [NSURLRequest requestWithURL: [NSURL URLWithString:@"https://dl.dropboxusercontent.com/s/5vfwlsep6axr823/campus_events.json"]];
-    //[[NSURLConnection alloc]initWithRequest:urlRequest delegate:self];
+    NSString *urlString         = @"https://dl.dropboxusercontent.com/s/5vfwlsep6axr823/campus_events.json";
+    NSURL *url                  = [NSURL URLWithString:urlString];
+    NSData *eventData           = [NSData dataWithContentsOfURL:url];
     
-    
-    
-    NSString *filePath              = [[NSBundle mainBundle] pathForResource:@"campus_events" ofType:@"json"];
-    NSData *eventData               = [NSData dataWithContentsOfFile:filePath];
-    NSDictionary *results           = [NSJSONSerialization JSONObjectWithData:eventData options:kNilOptions error:nil];
-    
-  
+    id response                 = [NSJSONSerialization JSONObjectWithData:eventData options:NSJSONReadingMutableContainers error: nil];
+    NSDictionary *results       = response;
+
     NSMutableArray *allEventsList = [[NSMutableArray alloc] init];
-    
-    //Main Events
     NSDictionary *calendarList         = [results objectForKey:@"Events"];
     
     NSArray *eventInfoList = [[NSArray alloc] init];
@@ -154,6 +149,17 @@
     [tracker send:[[GAIDictionaryBuilder createAppView] build]];
 }
 
+-(void)loadInitialView{
+
+    self.eventInfo = [[NSMutableArray alloc] init];
+    self.eventInfo = [self getEventInfo];
+    [self.tableView reloadData];
+}
+
+//add spinner UX
+-(void)buttonItemClicked{
+    [self loadInitialView];
+}
 //Old parsing attempts
 /*{
 //    //NSMutableArray * events      = [[NSMutableArray alloc] init];

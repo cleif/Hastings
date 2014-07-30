@@ -16,6 +16,6 @@
 @property (retain, nonatomic) EventModel        *eventModel;
 
 
--(id)initWithEventInfoModel:(NSMutableArray *) eventInfoModelList;
+-(id)initWithEventInfoModel:(EventModel *) eventInfoModel;
 
 @end

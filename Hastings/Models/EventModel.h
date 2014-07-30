@@ -17,7 +17,7 @@
 //@property (nonatomic, retain) NSMutableArray *eventInfo;
 
 @property   (nonatomic, copy)   NSString        *eventDay;
-@property   (nonatomic, retain) EventInfoModel *eventInfoModel;
+@property   (nonatomic, retain) EventInfoModel  *eventInfoModel;
 @property   (nonatomic, retain) NSMutableArray  *eventInfoModelList;
 
 @end
