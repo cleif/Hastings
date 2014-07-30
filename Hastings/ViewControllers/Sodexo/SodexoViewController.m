@@ -40,7 +40,7 @@
     self.mealTableView.delegate     = self;
     self.mealTableView.dataSource   = self;
     
-    [self filterDay];
+    //[self filterDay];
     [self.mealSegment addTarget:self action:@selector(selectMeal:) forControlEvents:UIControlEventValueChanged];
     
     //refresh
@@ -177,28 +177,30 @@
     }
 }
 
--(NSMutableArray *) filterDay {
-    NSDateFormatter *df = [[NSDateFormatter alloc] init];
-    [df setDateFormat:@"yyyy-MM-dd"];
-    NSDate *menuDate = [df dateFromString:@"menudate==%@"];
-    //NSDate *currentDate = [NSDate date];
-    NSDate *testDate = [df dateFromString:@"2014-05-05"];
-    //NSComparisonResult result = [currentDate compare:menuDate];
-    NSComparisonResult result = [testDate compare:menuDate];
-    NSPredicate * filterPredicateDay;
-    switch (result) {
-        case NSOrderedSame:
-            filterPredicateDay    = [NSPredicate predicateWithFormat:@"menudate==%@", menuDate];
-            break;
-            
-        default:
-            break;
-    }
-    NSArray * filter = [self.allMenuItems filteredArrayUsingPredicate:filterPredicateDay];
-    self.menuItems  = [NSMutableArray arrayWithArray:filter];
-    [self.mealTableView reloadData];
-    return nil;
-}
+
+////WORK IN PROGRESS
+//-(NSMutableArray *) filterDay {
+//    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+//    [df setDateFormat:@"yyyy-MM-dd"];
+//    NSDate *menuDate = [df dateFromString:@"menudate==%@"];
+//    //NSDate *currentDate = [NSDate date];
+//    NSDate *testDate = [df dateFromString:@"2014-05-05"];
+//    //NSComparisonResult result = [currentDate compare:menuDate];
+//    NSComparisonResult result = [testDate compare:menuDate];
+//    NSPredicate * filterPredicateDay;
+//    switch (result) {
+//        case NSOrderedSame:
+//            filterPredicateDay    = [NSPredicate predicateWithFormat:@"menudate==%@", menuDate];
+//            break;
+//            
+//        default:
+//            break;
+//    }
+//    NSArray * filter = [self.allMenuItems filteredArrayUsingPredicate:filterPredicateDay];
+//    self.menuItems  = [NSMutableArray arrayWithArray:filter];
+//    [self.mealTableView reloadData];
+//    return nil;
+//}
 
 -(NSMutableArray *) filterBreakfast{
     NSPredicate * filterPredicateMeal   = [NSPredicate predicateWithFormat:@"mealType==%@", @"Breakfast"];
