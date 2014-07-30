@@ -68,6 +68,7 @@
             annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
             annotationView.enabled                   = YES;
             annotationView.canShowCallout            = YES;
+            annotationView.rightCalloutAccessoryView = NO;
         }
         else
         {
