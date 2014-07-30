@@ -40,7 +40,7 @@
     self.mealTableView.delegate     = self;
     self.mealTableView.dataSource   = self;
     
-    //[self filterDay];
+    //[self filterDay];    
     [self.mealSegment addTarget:self action:@selector(selectMeal:) forControlEvents:UIControlEventValueChanged];
     
     //refresh
