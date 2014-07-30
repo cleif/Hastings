@@ -10,8 +10,7 @@
 
 @implementation Annotation
 
-@synthesize coordinate, title, subtitle, buildingName, buildingDesc;
-
+@synthesize coordinate, title, subtitle;
 //-(NSString *) title{
 //    return self.title;
 //}

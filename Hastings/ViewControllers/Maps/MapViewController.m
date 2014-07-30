@@ -54,21 +54,20 @@
     
 }
 
+
 - (MKAnnotationView *) mapView:(MKMapView *) mapView viewForAnnotation:(id <MKAnnotation>)annotation {
     
     if ([annotation isKindOfClass:[Annotation class]]) {
         
-        MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [self.mapView dequeueReusableAnnotationViewWithIdentifier:@""];
+        MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [self.mapView dequeueReusableAnnotationViewWithIdentifier:@"identifier"];
         
         if (annotationView == nil) {
             
-            annotationView                           = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@""];
+            annotationView                           = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"identifier"];
             annotationView.image                     = [UIImage imageNamed:@"map-marker.png"];
             annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-            annotationView.tintColor                 = [UIColor colorWithRed:153.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1];;
             annotationView.enabled                   = YES;
             annotationView.canShowCallout            = YES;
-            
         }
         else
         {
@@ -119,8 +118,8 @@
 
         Annotation *campusLocation   = [[Annotation alloc] init];
         
-        campusLocation.buildingName         = [item objectForKey:@"title"];
-        campusLocation.buildingDesc        = [item objectForKey:@"snippet"];
+        campusLocation.title         = [item objectForKey:@"title"];
+        campusLocation.subtitle      = [item objectForKey:@"snippet"];
         campusLocation.coordinate           = coordinate;
         
         [returnLocationList addObject:campusLocation];
