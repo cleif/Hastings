@@ -28,10 +28,8 @@
 		2777158F1974B8790019A317 /* ContactsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2777158E1974B8790019A317 /* ContactsModel.m */; };
 		277715941974B94F0019A317 /* ContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 277715921974B94F0019A317 /* ContactsTableViewCell.m */; };
 		277715951974B94F0019A317 /* ContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277715931974B94F0019A317 /* ContactsTableViewCell.xib */; };
-		277715971974C39B0019A317 /* contact-info.json in Resources */ = {isa = PBXBuildFile; fileRef = 277715961974C39B0019A317 /* contact-info.json */; };
 		278CBC72197605C2004A4587 /* phone-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 278CBC71197605C2004A4587 /* phone-icon.png */; };
 		278CBC7C19761232004A4587 /* detail-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 278CBC7B19761232004A4587 /* detail-icon.png */; };
-		279AA51F197416D80009545F /* map-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 279AA51E197416D80009545F /* map-data.json */; };
 		279BC2BA19784E5000B330B6 /* CalendarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BC2B919784E5000B330B6 /* CalendarModel.m */; };
 		27DBF20C1965A8AD003A15DD /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF20A1965A8AD003A15DD /* menu-icon.png */; };
 		27DBF20D1965A8AD003A15DD /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DBF20B1965A8AD003A15DD /* menu-icon@2x.png */; };
@@ -81,7 +79,6 @@
 		D2D10CF31986A3E1005C7242 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D10CF11986A3E1005C7242 /* libz.dylib */; };
 		D2D10CF41986A3E1005C7242 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D10CF21986A3E1005C7242 /* SystemConfiguration.framework */; };
 		D2D10CFF198864CC005C7242 /* CalendarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D10CF7198864CC005C7242 /* CalendarTableViewController.m */; };
-		D2D10D00198864CC005C7242 /* campus_events.json in Resources */ = {isa = PBXBuildFile; fileRef = D2D10CF8198864CC005C7242 /* campus_events.json */; };
 		D2D10D01198864CC005C7242 /* EventDetailViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D10CFA198864CC005C7242 /* EventDetailViewTableViewController.m */; };
 		D2D10D02198864CC005C7242 /* EventDetailViewTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D10CFB198864CC005C7242 /* EventDetailViewTableViewController.xib */; };
 		D2D10D03198864CC005C7242 /* EventInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D10CFD198864CC005C7242 /* EventInfoTableViewController.m */; };
@@ -127,10 +124,8 @@
 		277715911974B94F0019A317 /* ContactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewCell.h; sourceTree = "<group>"; };
 		277715921974B94F0019A317 /* ContactsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewCell.m; sourceTree = "<group>"; };
 		277715931974B94F0019A317 /* ContactsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsTableViewCell.xib; sourceTree = "<group>"; };
-		277715961974C39B0019A317 /* contact-info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "contact-info.json"; sourceTree = "<group>"; };
 		278CBC71197605C2004A4587 /* phone-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone-icon.png"; sourceTree = "<group>"; };
 		278CBC7B19761232004A4587 /* detail-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detail-icon.png"; sourceTree = "<group>"; };
-		279AA51E197416D80009545F /* map-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "map-data.json"; sourceTree = "<group>"; };
 		279BC2B819784E5000B330B6 /* CalendarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarModel.h; sourceTree = "<group>"; };
 		279BC2B919784E5000B330B6 /* CalendarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarModel.m; sourceTree = "<group>"; };
 		27DBF20A1965A8AD003A15DD /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
@@ -214,7 +209,6 @@
 		D2D10CF21986A3E1005C7242 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D2D10CF6198864CC005C7242 /* CalendarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTableViewController.h; sourceTree = "<group>"; };
 		D2D10CF7198864CC005C7242 /* CalendarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTableViewController.m; sourceTree = "<group>"; };
-		D2D10CF8198864CC005C7242 /* campus_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = campus_events.json; sourceTree = "<group>"; };
 		D2D10CF9198864CC005C7242 /* EventDetailViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailViewTableViewController.h; sourceTree = "<group>"; };
 		D2D10CFA198864CC005C7242 /* EventDetailViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewTableViewController.m; sourceTree = "<group>"; };
 		D2D10CFB198864CC005C7242 /* EventDetailViewTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailViewTableViewController.xib; sourceTree = "<group>"; };
@@ -457,7 +451,6 @@
 		625F24CB19648D82005BDC64 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				277715961974C39B0019A317 /* contact-info.json */,
 				625F24F719649F9B005BDC64 /* ContactsTableViewController.h */,
 				625F24F819649F9B005BDC64 /* ContactsTableViewController.m */,
 				625F24F919649F9B005BDC64 /* ContactsTableViewController.xib */,
@@ -478,7 +471,6 @@
 		625F24CD19648D82005BDC64 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				279AA51E197416D80009545F /* map-data.json */,
 				27F9A30B196A4192000193AE /* Annotation.m */,
 				27F9A30A196A4192000193AE /* Annotation.h */,
 				625F24F219649940005BDC64 /* MapViewController.h */,
@@ -588,7 +580,6 @@
 				D2D10D05198867BB005C7242 /* CalendarTableViewController.xib */,
 				D2D10CF6198864CC005C7242 /* CalendarTableViewController.h */,
 				D2D10CF7198864CC005C7242 /* CalendarTableViewController.m */,
-				D2D10CF8198864CC005C7242 /* campus_events.json */,
 				D2D10CF9198864CC005C7242 /* EventDetailViewTableViewController.h */,
 				D2D10CFA198864CC005C7242 /* EventDetailViewTableViewController.m */,
 				D2D10CFB198864CC005C7242 /* EventDetailViewTableViewController.xib */,
@@ -691,10 +682,8 @@
 				625F24F119649914005BDC64 /* BroncoBoardViewController.xib in Resources */,
 				625F24F619649940005BDC64 /* MapViewController.xib in Resources */,
 				625F24EC196498F2005BDC64 /* AthleticsViewController.xib in Resources */,
-				D2D10D00198864CC005C7242 /* campus_events.json in Resources */,
 				278CBC7C19761232004A4587 /* detail-icon.png in Resources */,
 				D2D10D04198864CC005C7242 /* EventInfoTableViewController.xib in Resources */,
-				279AA51F197416D80009545F /* map-data.json in Resources */,
 				2702C6CD1964F17D00BC6CEE /* Icon-Small.png in Resources */,
 				D2D10D06198867BB005C7242 /* CalendarTableViewController.xib in Resources */,
 				625F24E719649709005BDC64 /* HomeViewController.xib in Resources */,
@@ -709,7 +698,6 @@
 				625F24D519648DA1005BDC64 /* AboutViewController.xib in Resources */,
 				27F9A309196A31F0000193AE /* default.png in Resources */,
 				2702C6D01964F17D00BC6CEE /* iTunesArtwork@2x.png in Resources */,
-				277715971974C39B0019A317 /* contact-info.json in Resources */,
 				27DF9AA91977544E00122B76 /* NutritionViewController.xib in Resources */,
 				27DBF21C1965DAAF003A15DD /* SodexoTableViewCell.xib in Resources */,
 				2702C6CE1964F17D00BC6CEE /* Icon-Small@2x.png in Resources */,

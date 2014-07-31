@@ -39,13 +39,12 @@
     return YES;
     
     //google analytics
-//    [GAI sharedInstance].trackUncaughtExceptions    = YES;
-//    [[GAI sharedInstance].logger setLogLevel:kGAILogLevelVerbose];
+    [GAI sharedInstance].trackUncaughtExceptions    = YES;
+    [[GAI sharedInstance].logger setLogLevel:kGAILogLevelVerbose];
     [GAI sharedInstance].dispatchInterval           = 20;
-    
     id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-53195499-1"];
     
-//    [tracker set:kGAIScreenName value:@"App Opened"];
+    [tracker set:kGAIScreenName value:@"App Opened"];
     [tracker send: [[GAIDictionaryBuilder createAppView] build]];
 }
 							

@@ -44,8 +44,10 @@
     [self.mealSegment addTarget:self action:@selector(selectMeal:) forControlEvents:UIControlEventValueChanged];
     
     //refresh
+    
     UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(populateMenuItems)];
     [self.navigationItem setRightBarButtonItem: refreshButton];
+    
     
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self.viewDeckController action:@selector(toggleLeftView)];
     [self.navigationItem setLeftBarButtonItem: menuButton];
@@ -114,6 +116,7 @@
     
     [parser parse];
     [self refreshTableView:self.mealSegment.selectedSegmentIndex];
+    
 }
 
 - (void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict{
@@ -180,11 +183,11 @@
 
 
 //WORK IN PROGRESS
--(NSMutableArray *):(SodexoModel *) filterDay {
+-(NSMutableArray *):(SodexoModel *) dayModel: filterDay {
     
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     [df setDateFormat:@"yyyy-MM-dd"];
-    NSDate *menuDate = [df dateFromString:@"2014-05-05"];
+    NSDate *menuDate = [df dateFromString: dayModel.menuDate];
     //NSDate *currentDate = [NSDate date];
     NSDate *testDate = [df dateFromString:@"2014-05-05"];
     //NSComparisonResult result = [currentDate compare:menuDate];

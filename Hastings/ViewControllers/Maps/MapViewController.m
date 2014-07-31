@@ -103,11 +103,15 @@
     
     // create array to hold all locations
     NSMutableArray *returnLocationList  = [[NSMutableArray alloc] init];
+    
+    //web pull of JSON
+    NSString *urlString         = @"https://dl.dropboxusercontent.com/s/tggw69zw1olitc7/map-data.json";
+    NSURL *url                  = [NSURL URLWithString:urlString];
+    NSData *eventData           = [NSData dataWithContentsOfURL:url];
+    
+    id response                 = [NSJSONSerialization JSONObjectWithData:eventData options:NSJSONReadingMutableContainers error: nil];
+    NSDictionary *results       = response;
 
-    // create connection to data source and create dictionary of data
-    NSString *filePath                  = [[NSBundle mainBundle] pathForResource:@"map-data" ofType:@"json"];
-    NSData *hcData                      = [NSData dataWithContentsOfFile:filePath];
-    NSDictionary *results               = [NSJSONSerialization JSONObjectWithData:hcData options:kNilOptions error:nil];
     NSDictionary *buildingList          = [results objectForKey:@"Locations"];
     
     //loop through dictionary adding title and snippet with coordinates to array

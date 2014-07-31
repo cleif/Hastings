@@ -29,27 +29,27 @@
     
     [super viewDidLoad];
     
-    
-    //refresh
+    //refresh button
     UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemClicked)];
     [self.navigationItem setRightBarButtonItem: refreshButton];
-    
-    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self.viewDeckController action:@selector(toggleLeftView)];
-    [self.navigationItem setLeftBarButtonItem: menuButton];
     
     self.title = @"Home";
     
     [self loadInitialView];
 }
 
+//handles the inital loading of view data
 -(void)loadInitialView{
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self.viewDeckController action:@selector(toggleLeftView)];
+    [self.navigationItem setLeftBarButtonItem: menuButton];
+    
     NSString *fullURL = @"http://www.hastings.edu";
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_HomeWebView loadRequest:requestObj];
 }
 
-//add spinner UX
+//refresh button action
 -(void)buttonItemClicked{
     [self loadInitialView];
 }

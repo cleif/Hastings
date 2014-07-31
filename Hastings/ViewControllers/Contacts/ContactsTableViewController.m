@@ -81,9 +81,14 @@
 -(NSMutableArray *) getContactInfo{
     NSMutableArray * contactInfo    = [[NSMutableArray alloc] init];
     
-    NSString *filePath              = [[NSBundle mainBundle] pathForResource:@"contact-info" ofType:@"json"];
-    NSData *contactData             = [NSData dataWithContentsOfFile:filePath];
-    NSDictionary *results           = [NSJSONSerialization JSONObjectWithData:contactData options:kNilOptions error:nil];
+    //web JSON Pull
+    NSString *urlString         = @"https://dl.dropboxusercontent.com/s/cs6lh1ucca4xcq1/contact-info.json";
+    NSURL *url                  = [NSURL URLWithString:urlString];
+    NSData *eventData           = [NSData dataWithContentsOfURL:url];
+    
+    id response                 = [NSJSONSerialization JSONObjectWithData:eventData options:NSJSONReadingMutableContainers error: nil];
+    NSDictionary *results       = response;
+
     NSDictionary *contactList       = [results objectForKey:@"Contacts"];
 
     for (NSDictionary * contacts in contactList) {
