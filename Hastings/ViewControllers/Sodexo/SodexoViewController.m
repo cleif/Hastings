@@ -40,7 +40,7 @@
     self.mealTableView.delegate     = self;
     self.mealTableView.dataSource   = self;
     
-    //[self filterDay];    
+    //[self filterDay];
     [self.mealSegment addTarget:self action:@selector(selectMeal:) forControlEvents:UIControlEventValueChanged];
     
     //refresh
@@ -50,7 +50,7 @@
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self.viewDeckController action:@selector(toggleLeftView)];
     [self.navigationItem setLeftBarButtonItem: menuButton];
     
-    self.title = @"Sodexo";
+    self.title = @"Dining Hall";
     
     self.menuItems = [[NSMutableArray alloc] init];
     self.allMenuItems = [[NSMutableArray alloc] init];
@@ -151,6 +151,7 @@
         menuItem.calcium            = [attributeDict valueForKey:@"calcium_pct_dv"];
         menuItem.ironDV             = [attributeDict valueForKey:@"iron_pct_dv"];
         menuItem.ingredients        = [attributeDict valueForKey:@"ingredient"];
+        menuItem.menuDate           = [attributeDict valueForKey:@"menudate"];
         
         
         
@@ -178,29 +179,30 @@
 }
 
 
-////WORK IN PROGRESS
-//-(NSMutableArray *) filterDay {
-//    NSDateFormatter *df = [[NSDateFormatter alloc] init];
-//    [df setDateFormat:@"yyyy-MM-dd"];
-//    NSDate *menuDate = [df dateFromString:@"menudate==%@"];
-//    //NSDate *currentDate = [NSDate date];
-//    NSDate *testDate = [df dateFromString:@"2014-05-05"];
-//    //NSComparisonResult result = [currentDate compare:menuDate];
-//    NSComparisonResult result = [testDate compare:menuDate];
-//    NSPredicate * filterPredicateDay;
-//    switch (result) {
-//        case NSOrderedSame:
-//            filterPredicateDay    = [NSPredicate predicateWithFormat:@"menudate==%@", menuDate];
-//            break;
-//            
-//        default:
-//            break;
-//    }
-//    NSArray * filter = [self.allMenuItems filteredArrayUsingPredicate:filterPredicateDay];
-//    self.menuItems  = [NSMutableArray arrayWithArray:filter];
-//    [self.mealTableView reloadData];
-//    return nil;
-//}
+//WORK IN PROGRESS
+-(NSMutableArray *):(SodexoModel *) filterDay {
+    
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"yyyy-MM-dd"];
+    NSDate *menuDate = [df dateFromString:@"2014-05-05"];
+    //NSDate *currentDate = [NSDate date];
+    NSDate *testDate = [df dateFromString:@"2014-05-05"];
+    //NSComparisonResult result = [currentDate compare:menuDate];
+    NSComparisonResult result = [testDate compare:menuDate];
+    NSPredicate * filterPredicateDay;
+    switch (result) {
+        case NSOrderedSame:
+            filterPredicateDay    = [NSPredicate predicateWithFormat:@"menudate==%@", menuDate];
+            break;
+            
+        default:
+            break;
+    }
+    NSArray * filter = [self.allMenuItems filteredArrayUsingPredicate:filterPredicateDay];
+    self.menuItems  = [NSMutableArray arrayWithArray:filter];
+    [self.mealTableView reloadData];
+    return nil;
+}
 
 -(NSMutableArray *) filterBreakfast{
     NSPredicate * filterPredicateMeal   = [NSPredicate predicateWithFormat:@"mealType==%@", @"Breakfast"];

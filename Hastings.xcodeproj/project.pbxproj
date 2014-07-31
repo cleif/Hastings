@@ -30,7 +30,6 @@
 		277715951974B94F0019A317 /* ContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277715931974B94F0019A317 /* ContactsTableViewCell.xib */; };
 		277715971974C39B0019A317 /* contact-info.json in Resources */ = {isa = PBXBuildFile; fileRef = 277715961974C39B0019A317 /* contact-info.json */; };
 		278CBC72197605C2004A4587 /* phone-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 278CBC71197605C2004A4587 /* phone-icon.png */; };
-		278CBC7A19760FBA004A4587 /* map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 278CBC7919760FBA004A4587 /* map-marker.png */; };
 		278CBC7C19761232004A4587 /* detail-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 278CBC7B19761232004A4587 /* detail-icon.png */; };
 		279AA51F197416D80009545F /* map-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 279AA51E197416D80009545F /* map-data.json */; };
 		279BC2BA19784E5000B330B6 /* CalendarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BC2B919784E5000B330B6 /* CalendarModel.m */; };
@@ -88,6 +87,8 @@
 		D2D10D03198864CC005C7242 /* EventInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D10CFD198864CC005C7242 /* EventInfoTableViewController.m */; };
 		D2D10D04198864CC005C7242 /* EventInfoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D10CFE198864CC005C7242 /* EventInfoTableViewController.xib */; };
 		D2D10D06198867BB005C7242 /* CalendarTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D10D05198867BB005C7242 /* CalendarTableViewController.xib */; };
+		D2D2F7EF1989559300E0CAF1 /* map-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D2F7EE1989559300E0CAF1 /* map-marker@2x.png */; };
+		D2D2F7F11989565500E0CAF1 /* map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D2F7F01989565500E0CAF1 /* map-marker.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,7 +129,6 @@
 		277715931974B94F0019A317 /* ContactsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsTableViewCell.xib; sourceTree = "<group>"; };
 		277715961974C39B0019A317 /* contact-info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "contact-info.json"; sourceTree = "<group>"; };
 		278CBC71197605C2004A4587 /* phone-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone-icon.png"; sourceTree = "<group>"; };
-		278CBC7919760FBA004A4587 /* map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker.png"; sourceTree = "<group>"; };
 		278CBC7B19761232004A4587 /* detail-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detail-icon.png"; sourceTree = "<group>"; };
 		279AA51E197416D80009545F /* map-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "map-data.json"; sourceTree = "<group>"; };
 		279BC2B819784E5000B330B6 /* CalendarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarModel.h; sourceTree = "<group>"; };
@@ -222,6 +222,8 @@
 		D2D10CFD198864CC005C7242 /* EventInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInfoTableViewController.m; sourceTree = "<group>"; };
 		D2D10CFE198864CC005C7242 /* EventInfoTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventInfoTableViewController.xib; sourceTree = "<group>"; };
 		D2D10D05198867BB005C7242 /* CalendarTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewController.xib; sourceTree = SOURCE_ROOT; };
+		D2D2F7EE1989559300E0CAF1 /* map-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker@2x.png"; sourceTree = "<group>"; };
+		D2D2F7F01989565500E0CAF1 /* map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,8 +262,9 @@
 		2702C6C21964F17D00BC6CEE /* Image Files */ = {
 			isa = PBXGroup;
 			children = (
+				D2D2F7F01989565500E0CAF1 /* map-marker.png */,
+				D2D2F7EE1989559300E0CAF1 /* map-marker@2x.png */,
 				278CBC7B19761232004A4587 /* detail-icon.png */,
-				278CBC7919760FBA004A4587 /* map-marker.png */,
 				278CBC71197605C2004A4587 /* phone-icon.png */,
 				27006BF9197373C800BD4DAF /* refresh.png */,
 				27F9A308196A31F0000193AE /* default.png */,
@@ -697,11 +700,12 @@
 				625F24E719649709005BDC64 /* HomeViewController.xib in Resources */,
 				27006BFB197373C800BD4DAF /* refresh.png in Resources */,
 				270F4B02196AE7950020978F /* TwitterViewController.xib in Resources */,
-				278CBC7A19760FBA004A4587 /* map-marker.png in Resources */,
 				62B0B6EF1981405A00AAD9CA /* EventTableViewCell.xib in Resources */,
 				278CBC72197605C2004A4587 /* phone-icon.png in Resources */,
 				27DF9AA4197752D600122B76 /* About-Image-iOS.png in Resources */,
+				D2D2F7F11989565500E0CAF1 /* map-marker.png in Resources */,
 				27DBF20D1965A8AD003A15DD /* menu-icon@2x.png in Resources */,
+				D2D2F7EF1989559300E0CAF1 /* map-marker@2x.png in Resources */,
 				625F24D519648DA1005BDC64 /* AboutViewController.xib in Resources */,
 				27F9A309196A31F0000193AE /* default.png in Resources */,
 				2702C6D01964F17D00BC6CEE /* iTunesArtwork@2x.png in Resources */,
