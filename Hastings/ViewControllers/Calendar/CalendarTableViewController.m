@@ -141,8 +141,8 @@
 }
 
 //google analytics
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     
     id<GAITracker> tracker  = [[GAI sharedInstance] defaultTracker];
     [tracker set:kGAIScreenName value:@"Campus Events"];

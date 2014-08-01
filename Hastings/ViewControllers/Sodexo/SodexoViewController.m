@@ -18,9 +18,10 @@
 
 @implementation SodexoViewController
 
-@synthesize mealSegment     = _mealSegment;
-@synthesize mealTableView   = _mealTableView;
-@synthesize allMenuItems    = _allMenuItems;
+@synthesize mealSegment         = _mealSegment;
+@synthesize mealTableView       = _mealTableView;
+@synthesize allMenuItems        = _allMenuItems;
+@synthesize didRetrieveItems    = _didRetrieveItems;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,8 +40,8 @@
     
     self.mealTableView.delegate     = self;
     self.mealTableView.dataSource   = self;
+    self.didRetrieveItems = false;
     
-    //[self filterDay];
     [self.mealSegment addTarget:self action:@selector(selectMeal:) forControlEvents:UIControlEventValueChanged];
     
     //refresh
@@ -57,6 +58,11 @@
     self.menuItems = [[NSMutableArray alloc] init];
     self.allMenuItems = [[NSMutableArray alloc] init];
     [self populateMenuItems];
+    if (!self.didRetrieveItems) {
+        UIAlertView *alert      = [[UIAlertView alloc] initWithTitle:@"No Menu Today" message:@"There is no menu for today" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+
 }
 #pragma mark - Table view data source
 
@@ -121,12 +127,19 @@
 
 - (void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict{
     
+    
+    
+    NSDateFormatter *df                 = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"yyyy-MM-dd"];
+    NSString *formattedCurrentDate      = [df stringFromDate:[NSDate date]];
+    //NSString *testDate                  = @"2014-05-05";
+
     if ( [elementName isEqualToString:@"weeklymenu"]){
-        
-        //initialize
+
         SodexoModel * menuItem        = [[SodexoModel alloc] init];
+        NSString *menuDate = [attributeDict valueForKey:@"menudate"];
         
-        
+        if ([formattedCurrentDate isEqualToString:menuDate]) {
         menuItem.itemName           = [attributeDict valueForKey:@"item_name"];
         menuItem.itemDescription    = [attributeDict valueForKey:@"item_desc"];
         menuItem.calories           = [attributeDict valueForKey:@"calories"];
@@ -155,10 +168,9 @@
         menuItem.ironDV             = [attributeDict valueForKey:@"iron_pct_dv"];
         menuItem.ingredients        = [attributeDict valueForKey:@"ingredient"];
         menuItem.menuDate           = [attributeDict valueForKey:@"menudate"];
-        
-        
-        
-        
+            self.didRetrieveItems = true;
+        }
+
         [self.allMenuItems addObject:menuItem];
     }
 }
@@ -183,29 +195,6 @@
 
 
 //WORK IN PROGRESS
--(NSMutableArray *):(SodexoModel *) dayModel: filterDay {
-    
-    NSDateFormatter *df = [[NSDateFormatter alloc] init];
-    [df setDateFormat:@"yyyy-MM-dd"];
-    NSDate *menuDate = [df dateFromString: dayModel.menuDate];
-    //NSDate *currentDate = [NSDate date];
-    NSDate *testDate = [df dateFromString:@"2014-05-05"];
-    //NSComparisonResult result = [currentDate compare:menuDate];
-    NSComparisonResult result = [testDate compare:menuDate];
-    NSPredicate * filterPredicateDay;
-    switch (result) {
-        case NSOrderedSame:
-            filterPredicateDay    = [NSPredicate predicateWithFormat:@"menudate==%@", menuDate];
-            break;
-            
-        default:
-            break;
-    }
-    NSArray * filter = [self.allMenuItems filteredArrayUsingPredicate:filterPredicateDay];
-    self.menuItems  = [NSMutableArray arrayWithArray:filter];
-    [self.mealTableView reloadData];
-    return nil;
-}
 
 -(NSMutableArray *) filterBreakfast{
     NSPredicate * filterPredicateMeal   = [NSPredicate predicateWithFormat:@"mealType==%@", @"Breakfast"];
@@ -254,8 +243,8 @@
 }
 
 //google analytics
--(void) viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     self.screenName = @"Dining Hall";
 }
 @end

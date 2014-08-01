@@ -39,5 +39,6 @@
 @synthesize calcium         = _calcium;
 @synthesize ironDV          = _ironDV;
 @synthesize ingredients     = _ingredients;
+@synthesize menuDate        = _menuDate;
 
 @end

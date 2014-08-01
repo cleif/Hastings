@@ -18,5 +18,6 @@
 @property (strong, nonatomic) NSMutableArray *allMenuItems;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *mealSegment;
 @property (strong, nonatomic) IBOutlet UITableView *mealTableView;
+@property BOOL didRetrieveItems;
 
 @end
