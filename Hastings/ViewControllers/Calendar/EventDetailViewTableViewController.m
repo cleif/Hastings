@@ -29,18 +29,6 @@
     
 }
 
-//-(id)initWithEventInfoModel:(NSMutableArray *) eventInfoModelList{
-//    
-//    self = [super initWithNibName:nil bundle:nil];
-//    
-//    if (self) {
-//        
-//        self.eventModel.eventInfoModelList = eventInfoModelList;
-//    }
-//    return self;
-//    
-//}
-
 - (void)viewDidLoad{
     
     [super viewDidLoad];
@@ -54,14 +42,12 @@
     
     static NSString *CellIdentifier = @"EventTableViewCell";
     
-    
-    EventModel * item = [self.calendarModel.eventModels objectAtIndex:indexPath.row];
-    
-    EventTableViewCell *cell = (EventTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    EventModel * item               = [self.calendarModel.eventModels objectAtIndex:indexPath.row];
+    EventTableViewCell *cell        = (EventTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if(cell == nil){
         
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"EventTableViewCell" owner:self options:nil] objectAtIndex:0];
+        cell                        = [[[NSBundle mainBundle] loadNibNamed:@"EventTableViewCell" owner:self options:nil] objectAtIndex:0];
     }
     
     [cell bindCellDetails:item];
@@ -70,13 +56,11 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
-    //Section based off of the number in event_day
+
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    //count of total item in the events of day list
+
     return self.calendarModel.eventModels.count;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -86,9 +70,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    EventModel *eventInfoModelList = [self.calendarModel.eventModels objectAtIndex:indexPath.row];
+    EventModel *eventInfoModelList                          = [self.calendarModel.eventModels objectAtIndex:indexPath.row];
     
-    EventInfoTableViewController *detailInfoViewController = [[EventInfoTableViewController alloc] initWithEventInfoModel:eventInfoModelList];
+    EventInfoTableViewController *detailInfoViewController  = [[EventInfoTableViewController alloc] initWithEventInfoModel:eventInfoModelList];
     
     [self.navigationController pushViewController:detailInfoViewController animated:YES];
 }

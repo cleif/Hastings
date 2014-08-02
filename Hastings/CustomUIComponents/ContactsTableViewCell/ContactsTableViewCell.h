@@ -10,6 +10,7 @@
 #import "ContactsModel.h"
 
 @interface ContactsTableViewCell : UITableViewCell
+
 @property (strong, nonatomic) IBOutlet UILabel *contactName;
 @property (strong, nonatomic) IBOutlet UILabel *contactNumber;
 

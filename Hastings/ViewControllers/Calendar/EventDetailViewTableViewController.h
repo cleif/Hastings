@@ -15,7 +15,6 @@
 
 @property (retain, nonatomic) CalendarModel        *calendarModel;
 
-
 -(id)initWithEventModel:(CalendarModel *) calendarModel;
 
 @end

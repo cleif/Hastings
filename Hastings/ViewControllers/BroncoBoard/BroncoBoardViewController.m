@@ -19,7 +19,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+
     }
     return self;
 }
@@ -27,10 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //self.screenName = @"BroncoBoardViewController";
-    
-    //refresh
+
     UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemClicked)];
     [self.navigationItem setRightBarButtonItem: refreshButton];
     
@@ -43,6 +40,7 @@
 }
 
 -(void)loadInitialView{
+    
     NSString *fullURL = @"http://broncoboard.hastings.edu";
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
@@ -50,6 +48,7 @@
 }
 
 -(void)buttonItemClicked{
+    
     [self loadInitialView];
 }
 

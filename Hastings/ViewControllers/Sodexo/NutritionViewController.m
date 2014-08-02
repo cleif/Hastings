@@ -57,39 +57,34 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
+    
     [super viewDidLoad];
-    self.itemName.text              = self.model.itemName;
-    self.itemCaloriesValue.text     = self.model.calories;
-    self.itemFatsValue.text         = self.model.fat;
-    self.itemSatFatsValue.text      = self.model.saturatedFat;
-    self.itemSodiumValue.text       = self.model.sodium;
-    self.itemCarbsValue.text        = self.model.carbohydrates;
-    self.itemSugarValue.text        = self.model.sugars;
-    self.itemProteinValue.text      = self.model.proteins;
-    self.itemAllergenValue.text     = self.model.allergens;
-    self.itemServingValue.text      = self.model.serving;
-    self.itemFatDVValue.text     = self.model.fatDV;
-    self.itemCalContentFatValue.text     = self.model.calContentFat;
-    self.itemSatFatDVValue.text     = self.model.saturatedFatDV;
-    self.itemTransFat.text     = self.model.transFat;
-    self.itemCholesterolValue.text     = self.model.cholesterol;
-    self.itemCholesterolDVValue.text     = self.model.cholesterolDV;
-    self.itemCarbsDVValue.text     = self.model.carbohydratesDV;
-    self.itemFiberValue.text     = self.model.fiber;
-    self.itemFiberDVValue.text     = self.model.fiberDV;
-    self.itemVitAValue.text     = self.model.vitaminA;
-    self.itemVitCValue.text     = self.model.vitaminC;
-    self.itemCalciumDVValue.text     = self.model.calcium;
-    self.itemIronDVValue.text     = self.model.ironDV;
-    self.itemIngredients.text     = self.model.ingredients;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.itemName.text                  = self.model.itemName;
+    self.itemCaloriesValue.text         = self.model.calories;
+    self.itemFatsValue.text             = self.model.fat;
+    self.itemSatFatsValue.text          = self.model.saturatedFat;
+    self.itemSodiumValue.text           = self.model.sodium;
+    self.itemCarbsValue.text            = self.model.carbohydrates;
+    self.itemSugarValue.text            = self.model.sugars;
+    self.itemProteinValue.text          = self.model.proteins;
+    self.itemAllergenValue.text         = self.model.allergens;
+    self.itemServingValue.text          = self.model.serving;
+    self.itemFatDVValue.text            = self.model.fatDV;
+    self.itemCalContentFatValue.text    = self.model.calContentFat;
+    self.itemSatFatDVValue.text         = self.model.saturatedFatDV;
+    self.itemTransFat.text              = self.model.transFat;
+    self.itemCholesterolValue.text      = self.model.cholesterol;
+    self.itemCholesterolDVValue.text    = self.model.cholesterolDV;
+    self.itemCarbsDVValue.text          = self.model.carbohydratesDV;
+    self.itemFiberValue.text            = self.model.fiber;
+    self.itemFiberDVValue.text          = self.model.fiberDV;
+    self.itemVitAValue.text             = self.model.vitaminA;
+    self.itemVitCValue.text             = self.model.vitaminC;
+    self.itemCalciumDVValue.text        = self.model.calcium;
+    self.itemIronDVValue.text           = self.model.ironDV;
+    self.itemIngredients.text           = self.model.ingredients;
+    
 }
 
 //google analytics

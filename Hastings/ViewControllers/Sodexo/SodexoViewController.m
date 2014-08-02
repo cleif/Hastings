@@ -27,7 +27,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+
     }
     return self;
 }
@@ -36,19 +36,14 @@
 {
     [super viewDidLoad];
     
-    //self.screenName = @"SodexoViewController";
-    
     self.mealTableView.delegate     = self;
     self.mealTableView.dataSource   = self;
     self.didRetrieveItems = false;
     
     [self.mealSegment addTarget:self action:@selector(selectMeal:) forControlEvents:UIControlEventValueChanged];
     
-    //refresh
-    
     UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(populateMenuItems)];
     [self.navigationItem setRightBarButtonItem: refreshButton];
-    
     
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self.viewDeckController action:@selector(toggleLeftView)];
     [self.navigationItem setLeftBarButtonItem: menuButton];
@@ -136,8 +131,8 @@
 
     if ( [elementName isEqualToString:@"weeklymenu"]){
 
-        SodexoModel * menuItem        = [[SodexoModel alloc] init];
-        NSString *menuDate = [attributeDict valueForKey:@"menudate"];
+        SodexoModel * menuItem      = [[SodexoModel alloc] init];
+        NSString *menuDate          = [attributeDict valueForKey:@"menudate"];
         
         if ([formattedCurrentDate isEqualToString:menuDate]) {
         menuItem.itemName           = [attributeDict valueForKey:@"item_name"];
@@ -168,7 +163,7 @@
         menuItem.ironDV             = [attributeDict valueForKey:@"iron_pct_dv"];
         menuItem.ingredients        = [attributeDict valueForKey:@"ingredient"];
         menuItem.menuDate           = [attributeDict valueForKey:@"menudate"];
-            self.didRetrieveItems = true;
+        self.didRetrieveItems       = true;
         }
 
         [self.allMenuItems addObject:menuItem];
@@ -193,14 +188,10 @@
     }
 }
 
-
-//WORK IN PROGRESS
-
 -(NSMutableArray *) filterBreakfast{
     NSPredicate * filterPredicateMeal   = [NSPredicate predicateWithFormat:@"mealType==%@", @"Breakfast"];
-    //NSMutableArray * filteredMeals  = [[NSMutableArray alloc] init];
-    NSArray * filter                = [self.allMenuItems filteredArrayUsingPredicate:filterPredicateMeal];
-    self.menuItems                  = [NSMutableArray arrayWithArray:filter];
+    NSArray * filter                    = [self.allMenuItems filteredArrayUsingPredicate:filterPredicateMeal];
+    self.menuItems                      = [NSMutableArray arrayWithArray:filter];
     [self.mealTableView reloadData];
     
     return nil;
@@ -208,7 +199,6 @@
 
 -(NSMutableArray *) filterLunch{
     NSPredicate * filterPredicate   = [NSPredicate predicateWithFormat:@"mealType==%@", @"Lunch"];
-    //NSMutableArray * filteredMeals  = [[NSMutableArray alloc] init];
     NSArray * filter                = [self.allMenuItems filteredArrayUsingPredicate:filterPredicate];
     self.menuItems                  = [NSMutableArray arrayWithArray:filter];
     [self.mealTableView reloadData];
@@ -218,7 +208,6 @@
 
 -(NSMutableArray *) filterDinner{
     NSPredicate * filterPredicate   = [NSPredicate predicateWithFormat:@"mealType==%@", @"Dinner"];
-    //NSMutableArray * filteredMeals  = [[NSMutableArray alloc] init];
     NSArray * filter                = [self.allMenuItems filteredArrayUsingPredicate:filterPredicate];
     self.menuItems                  = [NSMutableArray arrayWithArray:filter];
     [self.mealTableView reloadData];
@@ -231,12 +220,15 @@
         case 0:
             [self filterBreakfast];
             break;
+            
         case 1:
             [self filterLunch];
             break;
+            
         case 2:
             [self filterDinner];
             break;
+            
         default:
             break;
     }

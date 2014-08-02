@@ -10,13 +10,8 @@
 
 @implementation Annotation
 
-@synthesize coordinate, title, subtitle;
-//-(NSString *) title{
-//    return self.title;
-//}
-//
-//-(NSString *) subtitle{
-//    return self.subtitle;
-//}
+@synthesize coordinate;
+@synthesize title;
+@synthesize subtitle;
 
 @end

@@ -12,8 +12,8 @@
 #import "EventInfoModel.h"
 
 @interface EventTableViewCell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UILabel *eventTitle;
 
+@property (strong, nonatomic) IBOutlet UILabel *eventTitle;
 
 -(void) bindCellDetails:(EventModel *) EventDetailInfo;
 

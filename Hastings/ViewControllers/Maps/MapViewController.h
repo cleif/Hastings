@@ -15,7 +15,6 @@
 @interface MapViewController : GAITrackedViewController <MKMapViewDelegate>
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
-
 @property (nonatomic, strong) NSMutableArray *mapData;
 
 @end

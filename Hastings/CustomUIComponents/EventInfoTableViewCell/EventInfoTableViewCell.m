@@ -14,20 +14,16 @@
 @synthesize eventLocation   = _eventLocation;
 @synthesize eventTime       = _eventTime;
 
-- (void)awakeFromNib
-{
-    // Initialization code
+- (void)awakeFromNib {
+
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 
--(void) bindCellDetails:(EventInfoModel *) EventDetailInfo{
+-(void) bindCellDetails:(EventInfoModel *) EventDetailInfo {
     
     self.eventTitle.text        = EventDetailInfo.eventTitle;
     self.eventLocation.text     = EventDetailInfo.eventLocation;

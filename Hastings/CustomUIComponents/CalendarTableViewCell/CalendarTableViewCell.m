@@ -13,19 +13,15 @@
 
 @synthesize eventName   = _eventName;
 
-- (void)awakeFromNib
-{
-    // Initialization code
+- (void)awakeFromNib {
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
--(void) bindCellDetails:(CalendarModel *) eventInfo{
+-(void) bindCellDetails:(CalendarModel *) eventInfo {
     
     self.eventName.text     = eventInfo.eventName;
     self.eventWeek.text     = eventInfo.eventWeek;

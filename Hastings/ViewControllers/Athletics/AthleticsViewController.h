@@ -11,6 +11,7 @@
 #import "GAITrackedViewController.h"
 
 @interface AthleticsViewController : GAITrackedViewController
+
 @property (strong, nonatomic) IBOutlet UIWebView *AthleticsWebView;
 
 @end

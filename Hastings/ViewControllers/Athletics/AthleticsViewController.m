@@ -26,10 +26,7 @@
 - (void)viewDidLoad{
     
     [super viewDidLoad];
-    
-    //self.screenName = @"AthleticsViewController";
-    
-    //refresh
+
     UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemClicked)];
     [self.navigationItem setRightBarButtonItem: refreshButton];
     
@@ -42,6 +39,7 @@
 }
 
 -(void)loadInitialView{
+    
     NSString *fullURL = @"http://www.hastingsbroncos.com";
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
@@ -49,6 +47,7 @@
 }
 
 -(void)buttonItemClicked{
+    
     [self loadInitialView];
 }
 

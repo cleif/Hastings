@@ -28,8 +28,7 @@
 - (void) viewDidLoad{
     
     [super viewDidLoad];
-    
-    //refresh button
+
     UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemClicked)];
     [self.navigationItem setRightBarButtonItem: refreshButton];
     
@@ -38,8 +37,8 @@
     [self loadInitialView];
 }
 
-//handles the inital loading of view data
 -(void)loadInitialView{
+    
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self.viewDeckController action:@selector(toggleLeftView)];
     [self.navigationItem setLeftBarButtonItem: menuButton];
     
@@ -49,8 +48,8 @@
     [_HomeWebView loadRequest:requestObj];
 }
 
-//refresh button action
 -(void)buttonItemClicked{
+    
     [self loadInitialView];
 }
 

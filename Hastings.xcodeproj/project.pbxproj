@@ -471,8 +471,8 @@
 		625F24CD19648D82005BDC64 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				27F9A30B196A4192000193AE /* Annotation.m */,
 				27F9A30A196A4192000193AE /* Annotation.h */,
+				27F9A30B196A4192000193AE /* Annotation.m */,
 				625F24F219649940005BDC64 /* MapViewController.h */,
 				625F24F319649940005BDC64 /* MapViewController.m */,
 				625F24F419649940005BDC64 /* MapViewController.xib */,
@@ -577,9 +577,9 @@
 		D2D10CF5198864CC005C7242 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				D2D10D05198867BB005C7242 /* CalendarTableViewController.xib */,
 				D2D10CF6198864CC005C7242 /* CalendarTableViewController.h */,
 				D2D10CF7198864CC005C7242 /* CalendarTableViewController.m */,
+				D2D10D05198867BB005C7242 /* CalendarTableViewController.xib */,
 				D2D10CF9198864CC005C7242 /* EventDetailViewTableViewController.h */,
 				D2D10CFA198864CC005C7242 /* EventDetailViewTableViewController.m */,
 				D2D10CFB198864CC005C7242 /* EventDetailViewTableViewController.xib */,

@@ -12,6 +12,6 @@
 
 @synthesize eventDay            = _eventDay;
 @synthesize eventInfoModel      = _eventInfoModel;
-@synthesize eventInfoModelList = _eventInfoModelList;
+@synthesize eventInfoModelList  = _eventInfoModelList;
 
 @end

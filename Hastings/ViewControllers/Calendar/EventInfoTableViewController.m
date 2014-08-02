@@ -27,7 +27,6 @@
     
 }
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -60,10 +59,8 @@
     
     static NSString *CellIdentifier = @"EventInfoTableViewCell";
     
-    
-    EventInfoModel * item = [self.eventModel.eventInfoModelList objectAtIndex:indexPath.row];
-    
-    EventInfoTableViewCell *cell = (EventInfoTableViewCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    EventInfoModel * item           = [self.eventModel.eventInfoModelList objectAtIndex:indexPath.row];
+    EventInfoTableViewCell *cell    = (EventInfoTableViewCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if(cell == nil){
         

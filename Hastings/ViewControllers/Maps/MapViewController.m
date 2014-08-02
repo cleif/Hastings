@@ -26,13 +26,11 @@
 @synthesize mapView;
 @synthesize mapData;
 
-
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        
     }
     return self;
 }
@@ -41,11 +39,8 @@
 {
     [super viewDidLoad];
     
-    //self.screenName = @"MapViewController";
-    
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon.png"] style:UIBarButtonItemStylePlain target:self.viewDeckController action:@selector(toggleLeftView)];
     [self.navigationItem setLeftBarButtonItem: menuButton];
-    
     
     UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"] style:UIBarButtonItemStylePlain target:self action:@selector(buttonItemClicked)];
     [self.navigationItem setRightBarButtonItem: refreshButton];
@@ -100,21 +95,17 @@
 }
 
 -(NSMutableArray*) getCampusLocations{
-    
-    // create array to hold all locations
+
     NSMutableArray *returnLocationList  = [[NSMutableArray alloc] init];
-    
-    //web pull of JSON
-    NSString *urlString         = @"https://dl.dropboxusercontent.com/s/tggw69zw1olitc7/map-data.json";
-    NSURL *url                  = [NSURL URLWithString:urlString];
-    NSData *eventData           = [NSData dataWithContentsOfURL:url];
-    
-    id response                 = [NSJSONSerialization JSONObjectWithData:eventData options:NSJSONReadingMutableContainers error: nil];
-    NSDictionary *results       = response;
+
+    NSString *urlString                 = @"https://dl.dropboxusercontent.com/s/tggw69zw1olitc7/map-data.json";
+    NSURL *url                          = [NSURL URLWithString:urlString];
+    NSData *eventData                   = [NSData dataWithContentsOfURL:url];
+    id response                         = [NSJSONSerialization JSONObjectWithData:eventData options:NSJSONReadingMutableContainers error: nil];
+    NSDictionary *results               = response;
 
     NSDictionary *buildingList          = [results objectForKey:@"Locations"];
     
-    //loop through dictionary adding title and snippet with coordinates to array
     for (NSDictionary *item in buildingList) {
         
         CLLocationCoordinate2D coordinate;
@@ -130,15 +121,13 @@
         [returnLocationList addObject:campusLocation];
    }
 
-    //return the list to populate the map.
     return returnLocationList;
 }
 
 -(void)loadInitialView{
     
-    self.mapView.delegate = self;
-    
     self.title = @"Campus Map";
+    self.mapView.delegate = self;
     
     MKCoordinateRegion hastingsCollegeRegion;
     
@@ -157,7 +146,6 @@
     [self.mapView addAnnotations:[self getCampusLocations]];
 }
 
-//add spinner UX
 -(void)buttonItemClicked{
     [self loadInitialView];
 }

@@ -15,7 +15,6 @@
 
 @property (retain, nonatomic) EventModel        *eventModel;
 
-
 -(id)initWithEventInfoModel:(EventModel *) eventInfoModel;
 
 @end

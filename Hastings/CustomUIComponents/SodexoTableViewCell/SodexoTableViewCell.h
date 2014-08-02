@@ -11,10 +11,10 @@
 
 
 @interface SodexoTableViewCell : UITableViewCell
+
 @property (strong, nonatomic) IBOutlet UILabel *menuItem;
 @property (strong, nonatomic) IBOutlet UILabel *menuDescription;
 
 -(void) bindCellDetails:(SodexoModel *) menuDetails;
-
 
 @end

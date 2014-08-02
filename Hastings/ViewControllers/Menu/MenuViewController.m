@@ -111,30 +111,39 @@
             
         case 0:
             break;
+            
         case 1:
             [self displayHomeViewController];
             break;
+            
         case 2:
             [self displayAthleticsViewController];
             break;
+            
         case 3:
             [self displayMapViewController];
             break;
+            
         case 4:
             [self displayBroncoBoardViewController];
             break;
+            
         case 5:
             [self displaySodexoViewController];
             break;
+            
         case 6:
             [self displayCalendarViewController];
             break;
+            
         case 7:
             [self displayTwitterViewController];
             break;
+            
         case 8:
             [self displayContactsViewController];
             break;
+            
         case 9:
             [self displayAboutViewController];
             break;
@@ -159,30 +168,39 @@
     {
         case 0:
             break;
+            
         case 1:
             cell.textLabel.text = @"Home";
             break;
+            
         case 2:
             cell.textLabel.text = @"Athletics";
             break;
+            
         case 3:
             cell.textLabel.text = @"Campus Map";
             break;
+            
         case 4:
             cell.textLabel.text = @"Broncoboard";
             break;
+            
         case 5:
             cell.textLabel.text = @"Dining Hall";
             break;
+            
         case 6:
             cell.textLabel.text = @"Campus Events";
             break;
+            
         case 7:
             cell.textLabel.text = @"Twitter";
             break;
+            
         case 8:
             cell.textLabel.text = @"Campus Contacts";
             break;
+            
         case 9:
             cell.textLabel.text = @"About";
             break;
