@@ -78,8 +78,6 @@
     return 60;
 }
 
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
@@ -97,10 +95,7 @@
     return cell;
 }
 
-
-
 #pragma mark - Table view delegate
-
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -163,6 +158,7 @@
         menuItem.ironDV             = [attributeDict valueForKey:@"iron_pct_dv"];
         menuItem.ingredients        = [attributeDict valueForKey:@"ingredient"];
         menuItem.menuDate           = [attributeDict valueForKey:@"menudate"];
+        
         self.didRetrieveItems       = true;
         }
 
